@@ -1,0 +1,75 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "electric",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.1166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 1.9833333333333334,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 2.0166666666666666,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": -1,
+            "y": -1
+          }
+        },
+        {
+          "frame": 2.0833333333333335,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": -1,
+            "y": -1
+          }
+        },
+        {
+          "frame": 2.1166666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 1.9833333333333334,
+          "value": 255
+        },
+        {
+          "frame": 2,
+          "value": 0
+        },
+        {
+          "frame": 2.0166666666666666,
+          "value": 255
+        },
+        {
+          "frame": 2.0833333333333335,
+          "value": 255
+        },
+        {
+          "frame": 2.1,
+          "value": 0
+        },
+        {
+          "frame": 2.1166666666666667,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": []
+}
