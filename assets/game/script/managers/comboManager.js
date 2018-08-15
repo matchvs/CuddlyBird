@@ -26,7 +26,7 @@ cc.Class({
             comboPrefab.color = new cc.Color(245, 100, 100);
             comboPrefab.getComponent(cc.Label).string = "combo" + (Game.PlayerManager.rival.combo - 1);
         }
-        var moveBy = cc.moveBy(0.5,cc.p(0,15));
+        var moveBy = cc.moveBy(0.5,cc.p(0,20));
         var callFunc = cc.callFunc(this.comboDelete, comboPrefab);
         var seq = cc.sequence(moveBy,callFunc);
         comboPrefab.runAction(seq);

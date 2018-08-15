@@ -20,9 +20,5 @@ cc.Class({
         effect.parent = this.node;
         effect.setPosition(pos);
     },
-    recycleEffect(target) {
-        //this.effectPool.put(target);
-    },
-
     // update (dt) {},
 });

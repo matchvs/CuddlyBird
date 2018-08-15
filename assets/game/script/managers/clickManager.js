@@ -47,7 +47,6 @@ cc.Class({
         }
     },
     setJump(block){
-        //sprite.color = new cc.Color(127.5, 127.5, 127.5);
         let seq = cc.repeatForever(
             cc.sequence(
                 cc.moveBy(1, 0, 5),
@@ -60,7 +59,6 @@ cc.Class({
 
     },
     setStop(block){
-       //sprite.color = new cc.Color(255, 255, 255, 255);
         block.stopAllActions();
         let pos = this.arrMap[block.row][block.col].pos;
         block.setPosition(pos);

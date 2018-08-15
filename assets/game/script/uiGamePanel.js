@@ -263,7 +263,8 @@ cc.Class({
             round: this.round,
             count: this.count,
             selfData: selfData,
-            rivalData: rivalData
+            rivalData: rivalData,
+            gamestate: Game.GameManager.gameState
         }
         if (Game.GameManager.gameState !== GameState.Over) {
             mvs.engine.sendFrameEvent(JSON.stringify({
@@ -291,9 +292,10 @@ cc.Class({
         if (this.count <=0){
             this.gameStart();
         }
-        if (data.round !== 0){
-            Game.GameManager.bReconnect = true;
+        if (data.round === 0 || data.gamestate !== GameState.Play){
+            return;
         }
+        Game.GameManager.bReconnect = true;
         this.round = data.round;
         this.count = data.count;
         Game.PlayerManager.self.setData(data.rivalData);
@@ -308,6 +310,7 @@ cc.Class({
         Game.PlayerManager.rival.changeScore();
         this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
         this.showLcon();
+        Game.GameManager.gameState = GameState.Play;
     }
 
 

@@ -12,7 +12,7 @@ cc.Class({
     onLoad () {
         this._super();
         this.nodeDict["reconnection"].on("click", this.gameReconnection, this);
-        this.time = 15;
+        this.time = 10;
         this.schedule(this.countOut,1);
     },
     init(string){
@@ -21,15 +21,14 @@ cc.Class({
     close() {
         uiFunc.closeUI(this.node.name);
         this.node.destroy();
-        Game.GameManager.bUiReconnection = true;
-        mvs.engine.reconnect();
     },
     gameOut(){
         Game.GameManager.recurLobby();
         this.close();
     },
     gameReconnection(){
-        Game.GameManager.reconnect();
+        Game.GameManager.bUiReconnection = true;
+        mvs.engine.reconnect();
         this.close();
     },
     countOut(){

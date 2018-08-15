@@ -1,6 +1,13 @@
 var mvs = require("Matchvs");
 cc.Class({
     extends: cc.Component,
+
+    blockInput() {
+        Game.GameManager.getComponent(cc.BlockInputEvents).enabled = true;
+        setTimeout(function() {
+            Game.GameManager.node.getComponent(cc.BlockInputEvents).enabled = false;
+        }, 1000);
+    },
     onLoad() {
         Game.GameManager = this;
         cc.game.addPersistRootNode(this.node);
@@ -34,8 +41,8 @@ cc.Class({
     },
 
     gameOver: function() {
-        console.log("游戏结束");
-        if (Game.GameManager.gameState !== GameState.Over) {
+        var gamePanel = uiFunc.findUI("uiGamePanel");
+        if (gamePanel && Game.GameManager.gameState !== GameState.Over) {
             Game.GameManager.gameState = GameState.Over;
             this.readyCnt = 0;
             setTimeout(function() {
@@ -74,6 +81,7 @@ cc.Class({
         if (result !== 0) {
             console.log('初始化失败,错误码:' + result);
         }
+        Game.GameManager.blockInput();
         this.loginServer();
     },
     networkStateNotify: function(netNotify) {
@@ -83,6 +91,7 @@ cc.Class({
             GLB.isRoomOwner = true;
         }
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
+        clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
     },
 
     kickPlayerNotify: function(kickPlayerNotify) {
@@ -216,6 +225,7 @@ cc.Class({
             console.log("错误信息：" + msg);
             if (Game.GameManager.gameState === GameState.Play && this.bUiReconnection) {
                 this.bUiReconnection = false;
+                Game.GameManager.gameState = GameState.None;
                 uiFunc.openUI("uiReconnection");
             }
         }
@@ -224,7 +234,6 @@ cc.Class({
         if (this.bReconnect) {
             return;
         }
-        cc.log("无法获取房间信息，不能进行重新连接")
         uiFunc.openUI("uiTip", function(obj) {
             var uiTip = obj.getComponent("uiTip");
             if (uiTip) {
@@ -285,11 +294,6 @@ cc.Class({
             cc.game.removePersistRootNode(this.node);
             cc.director.loadScene('lobby');
         }.bind(this), 2500);
-    },
-    aaa() {
-        mvs.engine.logout("");
-        cc.game.removePersistRootNode(this.node);
-        cc.director.loadScene('lobby');
     },
     initResponse: function() {
         console.log('初始化成功，开始注册用户');

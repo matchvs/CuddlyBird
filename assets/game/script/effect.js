@@ -32,7 +32,6 @@ cc.Class({
         this.scheduleOnce(this.destroyBullet,1);
     },
     destroyBullet() {
-        //Game.EffectManager.recycleEffect(this.node);
         this.node.destroy();
     },
 

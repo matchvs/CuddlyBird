@@ -33,10 +33,9 @@ cc.Class({
         this.newArrMap.push(array);
         this.index++;
         if(this.index === 8) {
-            this.index = 0;
-            //this.newArrMap.reverse();
             this.deleteWholeBlock();
-            this.arrMap = this.newArrMap;
+            this.arrMap.push(...this.newArrMap);
+            this.newArrMap = [];
             this.bubblingSort(this.arrMap);
             this.initMap(this.arrMap);
         }
@@ -105,7 +104,6 @@ cc.Class({
         Game.ClickManager.setChoiceBox();
     },
     getArrMap(){
-        cc.log(this.arrMap);
         var arrMap = [];
         for (let row = 0; row < 8 ; row++){
             arrMap[row] = [];
@@ -120,7 +118,6 @@ cc.Class({
             }
         }
         return arrMap;
-        cc.log(arrMap);
     },
     nextRound(){
         this.deleteWholeBlock()
