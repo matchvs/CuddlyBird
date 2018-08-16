@@ -1,7 +1,6 @@
 var mvs = require("Matchvs");
 cc.Class({
     extends: cc.Component,
-
     blockInput() {
         Game.GameManager.getComponent(cc.BlockInputEvents).enabled = true;
         setTimeout(function() {
@@ -21,6 +20,7 @@ cc.Class({
 
         this.bUiReconnection = true;
         this.bReconnect = false;
+        this.number = 0;
 
         this.start_game_time = new Date().getTime();
         this.network = window.network;
@@ -41,6 +41,7 @@ cc.Class({
     },
 
     gameOver: function() {
+        console.log("游戏结束");
         var gamePanel = uiFunc.findUI("uiGamePanel");
         if (gamePanel && Game.GameManager.gameState !== GameState.Over) {
             Game.GameManager.gameState = GameState.Over;
@@ -215,19 +216,37 @@ cc.Class({
 
     errorResponse: function(error, msg) {
         if (error === 1001) {
-            uiFunc.openUI("uiTip", function(obj) {
-                var uiTip = obj.getComponent("uiTip");
-                if (uiTip) {
-                    uiTip.setData("网络断开连接");
-                }
-            });
-            console.log("错误信息：" + error);
-            console.log("错误信息：" + msg);
-            if (Game.GameManager.gameState === GameState.Play && this.bUiReconnection) {
-                this.bUiReconnection = false;
-                Game.GameManager.gameState = GameState.None;
-                uiFunc.openUI("uiReconnection");
-            }
+            // uiFunc.openUI("uiTip", function(obj) {
+            //     var uiTip = obj.getComponent("uiTip");
+            //     if (uiTip) {
+            //         uiTip.setData("网络断开连接");
+            //     }
+            // });
+        }
+        console.log("错误信息：" + error);
+        console.log("错误信息：" + msg);
+        if (Game.GameManager.gameState === GameState.Play && this.bUiReconnection) {
+            this.bUiReconnection = false;
+            Game.GameManager.gameState = GameState.None;
+            this.schedule(this.reconnectCountDown,1);
+
+        }
+    },
+    reconnectCountDown(){
+        //cc.log("123456789765435135");
+        //uiFunc.openUI("uiReconnection");
+        this.number++;
+        cc.log("当前断线重连计数:" + this.number);
+        mvs.engine.reconnect();
+        if (this.number >= 15){
+            this.stopReconnectCountDown(false);
+        }
+    },
+    stopReconnectCountDown(success){
+        this.number = 0;
+        this.unschedule(this.reconnectCountDown);
+        if(!success) {
+            this.recurLobby();
         }
     },
     reconnect() {
@@ -254,6 +273,7 @@ cc.Class({
             cc.log("重连玩家信息" + GLB.userInfo.id);
             if (roomUserInfoList.length <= 0) {
                 cc.log("无法获取房间信息，不能进行重新连接")
+                this.stopReconnectCountDown(false);
                 uiFunc.openUI("uiTip", function(obj) {
                     var uiTip = obj.getComponent("uiTip");
                     if (uiTip) {
@@ -263,6 +283,13 @@ cc.Class({
                 this.recurLobby();
                 return;
             }
+            this.stopReconnectCountDown(true);
+            uiFunc.openUI("uiTip", function(obj) {
+                var uiTip = obj.getComponent("uiTip");
+                if (uiTip) {
+                    uiTip.setData("网络已断开连接，正在重新连接");
+                }
+            });
             var gamePanel = uiFunc.findUI("uiGamePanel");
             if (gamePanel) {
                 cc.log("游戏界面已存在");
@@ -285,6 +312,7 @@ cc.Class({
             GLB.isRoomOwner = false;
         } else {
             cc.log("重新连接失败" + status);
+            this.stopReconnectCountDown(false);
             this.recurLobby();
         }
     },
@@ -524,7 +552,7 @@ cc.Class({
                 );
             }
             catch (e) {
-                
+
             }
         }
     },
@@ -578,7 +606,7 @@ cc.Class({
                 );
             }
             catch (e) {
-                
+
             }
         } else {
             Game.GameManager.network.send("connector.entryHandler.findPlayerByAccount", {
