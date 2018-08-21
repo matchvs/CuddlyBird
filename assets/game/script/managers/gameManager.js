@@ -652,7 +652,7 @@ cc.Class({
                 }
             }
             if (!isContainSelf) {
-                this.setRankData(0);
+                this.setRankData(-1);
             }
         });
     },
