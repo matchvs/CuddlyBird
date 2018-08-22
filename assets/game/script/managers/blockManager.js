@@ -74,6 +74,7 @@ cc.Class({
     deleteBlock(first,last,id){
         if (this.arrMap[first.row][first.col].sprite === null
             || this.arrMap[last.row][last.col].sprite === null){
+
             return false;
         }
         cc.audioEngine.play(this.linkAudio, false, 1);
@@ -85,7 +86,7 @@ cc.Class({
         this.arrMap[last.row][last.col].sprite = null;
 
         var pos = this.arrMap[last.row][last.col].pos;
-        if (Game.GameManager.gameState !== GameState.Over) {
+        if (Game.GameManager.gameState !== GameState.Over && GLB.isRoomOwner) {
             mvs.engine.sendFrameEvent(JSON.stringify({
                 action: GLB.ADD_COMBO,
                 playerId: id,
@@ -99,7 +100,9 @@ cc.Class({
     },
     deleteWholeBlock(){
         this.arrMap = [];
-        this.node.removeAllChildren();
+        if(this.node.children.length > 0){
+            this.node.removeAllChildren();
+        }
         Game.ClickManager.curSelec = null;
         Game.ClickManager.setChoiceBox();
     },
@@ -133,7 +136,6 @@ cc.Class({
             }
         }
         return false;
-    }
-
+    },
     // update (dt) {},
 });

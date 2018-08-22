@@ -1,6 +1,12 @@
 var mvs = require("Matchvs");
 cc.Class({
     extends: cc.Component,
+    properties: {
+        uiTip:{
+            type: cc.Prefab,
+            default: null
+        }
+    },
     blockInput() {
         Game.GameManager.getComponent(cc.BlockInputEvents).enabled = true;
         setTimeout(function() {
@@ -27,6 +33,10 @@ cc.Class({
         this.network.chooseNetworkMode();
         this.findPlayerByAccountListener();
         this.getUserInfoFromRank();
+
+        this.uiTipBk = cc.instantiate(this.uiTip);
+        this.uiTipBk.parent = this.node;
+        this.uiTipBk.active = false;
     },
 
     leaveRoom: function(data) {
@@ -91,6 +101,12 @@ cc.Class({
         if (netNotify.userID !== GLB.userInfo.id) {
             GLB.isRoomOwner = true;
         }
+        uiFunc.openUI("uiTip", function(obj) {
+            var uiTip = obj.getComponent("uiTip");
+            if (uiTip) {
+                uiTip.setData("对手离开了游戏");
+            }
+        });
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
         clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
     },
@@ -215,26 +231,38 @@ cc.Class({
     },
 
     errorResponse: function(error, msg) {
-        if (error === 1001) {
-            // uiFunc.openUI("uiTip", function(obj) {
-            //     var uiTip = obj.getComponent("uiTip");
-            //     if (uiTip) {
-            //         uiTip.setData("网络断开连接");
-            //     }
-            // });
-        }
+        //clientEvent.dispatch(clientEvent.eventType.aaa);
+        let recurLobby = true;
+        var uiTip = cc.instantiate(this.uiTipBk);
+        uiTip.active = true;
+        uiTip.parent = cc.Canvas.instance.node;
+        uiTip.getComponent("uiTip").setData("网络断开连接");
+        uiTip.setPosition(cc.p(0,0));
         console.log("错误信息：" + error);
         console.log("错误信息：" + msg);
-        if (Game.GameManager.gameState === GameState.Play && this.bUiReconnection) {
-            this.bUiReconnection = false;
-            Game.GameManager.gameState = GameState.None;
-            this.schedule(this.reconnectCountDown,1);
-
+        var gamePanel = uiFunc.findUI("uiGamePanel");
+        if (gamePanel) {
+            if (this.bUiReconnection) {
+                this.bUiReconnection = false;
+                Game.GameManager.gameState = GameState.None;
+                this.schedule(this.reconnectCountDown,1);
+            }
+            recurLobby = false;
+            cc.log("游戏界面存在");
+        }
+        if (recurLobby) {
+            var uiLobbyPanelVer = uiFunc.findUI("uiLobbyPanelVer");
+            if (uiLobbyPanelVer) {
+                setTimeout(function() {
+                    uiFunc.closeUI("uiLobbyPanelVer");
+                    uiLobbyPanelVer.destroy();
+                }.bind(this), 2500);
+            }else{
+                this.recurLobby();
+            }
         }
     },
     reconnectCountDown(){
-        //cc.log("123456789765435135");
-        //uiFunc.openUI("uiReconnection");
         this.number++;
         cc.log("当前断线重连计数:" + this.number);
         mvs.engine.reconnect();
@@ -287,7 +315,7 @@ cc.Class({
             uiFunc.openUI("uiTip", function(obj) {
                 var uiTip = obj.getComponent("uiTip");
                 if (uiTip) {
-                    uiTip.setData("网络已断开连接，正在重新连接");
+                    uiTip.setData("正在重新连接");
                 }
             });
             var gamePanel = uiFunc.findUI("uiGamePanel");
@@ -310,8 +338,15 @@ cc.Class({
                 }.bind(this));
             }
             GLB.isRoomOwner = false;
+            this.bUiReconnection = true;
         } else {
             cc.log("重新连接失败" + status);
+            uiFunc.openUI("uiTip", function(obj) {
+                var uiTip = obj.getComponent("uiTip");
+                if (uiTip) {
+                    uiTip.setData("重新连接失败");
+                }
+            });
             this.stopReconnectCountDown(false);
             this.recurLobby();
         }
@@ -436,8 +471,8 @@ cc.Class({
                     Game.PlayerManager.self.addScore();
                 } else {
                     Game.PlayerManager.rival.addScore();
-                    Game.ClickManager.curBlocBeDelete(cpProto.firstPos);
-                    Game.ClickManager.curBlocBeDelete(cpProto.lastPos);
+                    Game.ClickManager.curBlocBeDelete(cpProto.firstPos,cpProto.lastPos);
+                    //Game.ClickManager.curBlocBeDelete(cpProto.lastPos);
                 }
                 Game.PathManager.addPath(cpProto.arrPath, cpProto.playerId);
             }
@@ -461,26 +496,18 @@ cc.Class({
                 }
             }
             if (info.cpProto.indexOf(GLB.UPDATA_ARR_MAP) >= 0) {
-                if (GLB.userInfo.id !== cpProto.playerId) {
-                    cc.log("精灵帧，断线玩家准备重新生成砖块");
-                    Game.BlockManager.updataArrMap(cpProto.array);
-                }
+                Game.BlockManager.updataArrMap(cpProto.array);
             }
             if (info.cpProto.indexOf(GLB.RECONNECTION_DATA) >= 0) {
-                if (GLB.userInfo.id !== cpProto.playerId) {
-                    cc.log("精灵帧，断线玩家准备更新数据");
-                    clientEvent.dispatch(clientEvent.eventType.setReconnectionData, cpProto.gameData);
+                if (cpProto.playerId === GLB.userInfo.id){
+                    uiFunc.openUI("uiTip", function(obj) {
+                        var uiTip = obj.getComponent("uiTip");
+                        if (uiTip) {
+                            uiTip.setData("对手重新连接");
+                        }
+                    });
                 }
-            }
-            if (info.cpProto.indexOf(GLB.CONTINUE_GAME) >= 0) {
-                if (GLB.userInfo.id !== cpProto.playerId) {
-                    uiFunc.findUI("uiGameStop");
-                    var uiGameStop = uiFunc.findUI("uiGameStop");
-                    if (uiGameStop) {
-                        uiGameStop.getComponent("uiGameStop").close();
-                    }
-                    clientEvent.dispatch(clientEvent.eventType.continueGame);
-                }
+                clientEvent.dispatch(clientEvent.eventType.setReconnectionData, cpProto);
             }
         }
         if (Game.GameManager.gameState === GameState.Play) {
@@ -652,7 +679,7 @@ cc.Class({
                 }
             }
             if (!isContainSelf) {
-                this.setRankData(-1);
+                this.setRankData(0);
             }
         });
     },

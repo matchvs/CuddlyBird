@@ -41,28 +41,22 @@ cc.Class({
 
     setData: function(rankdata) {
         console.log("setData");
-        var filterData = [];
         for (var i = 0; i < rankdata.length; i++) {
-            if (rankdata[i].score >= 0) {
-                filterData.push(rankdata[i]);
-            }
-        }
-        for (var i = 0; i < filterData.length; i++) {
             if (i === 0) {
                 this.rank1Node.active = true;
-                this.rank1Info.setData(i, filterData[i]);
+                this.rank1Info.setData(i, rankdata[i]);
             } else if (i === 1) {
                 this.rank2Node.active = true;
-                this.rank2Info.setData(i, filterData[i]);
+                this.rank2Info.setData(i, rankdata[i]);
             } else if (i === 2) {
                 this.rank3Node.active = true;
-                this.rank3Info.setData(i, filterData[i]);
+                this.rank3Info.setData(i, rankdata[i]);
             } else {
                 var temp = cc.instantiate(this.rankPrefab);
                 temp.active = true;
                 temp.parent = this.rankPrefab.parent;
                 var rankInfo = temp.getComponent("rankUserInfo");
-                rankInfo.setData(i, filterData[i]);
+                rankInfo.setData(i, rankdata[i]);
             }
         }
     }

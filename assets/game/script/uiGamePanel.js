@@ -33,9 +33,9 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
+        //clientEvent.on(clientEvent.eventType.aaa, this.aaa, this);
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
-        clientEvent.on(clientEvent.eventType.continueGame,this.gameStart,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
         clientEvent.on(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.on(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
@@ -46,7 +46,6 @@ cc.Class({
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
         this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
-        //var string = JSON.stringify(Game.GameManager.avatarUrl);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -56,6 +55,9 @@ cc.Class({
                 id: Game.PlayerManager.self.playerId
             }));
         }
+    },
+    aaa(){
+        this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
     },
     showLcon(){
         this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
@@ -154,6 +156,9 @@ cc.Class({
         }
     },
     exit() {
+        if (!Game.ClickManager.bClick){
+            return;
+        }
         uiFunc.openUI("uiExit");
         cc.audioEngine.stop(this.bgmId);
     },
@@ -182,12 +187,12 @@ cc.Class({
         }
     },
     onDestroy() {
+        //clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
         clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
         clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.off(clientEvent.eventType.refreshSlateBtn, this.refreshSlateBtn, this);
         clientEvent.off(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoom, this);
         clientEvent.off(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
-        clientEvent.off(clientEvent.eventType.continueGame,this.gameStart,this);
         clientEvent.off(clientEvent.eventType.getReconnectionData, this.getReconnectionData, this);
         clientEvent.off(clientEvent.eventType.setCount, this.setCount, this);
         this.node.off(clientEvent.eventType.nextRound,this.initArrBlock,this);
@@ -197,7 +202,11 @@ cc.Class({
         cc.audioEngine.stop(this.bgmId);
     },
     setScoreProgressBar(){
-        var ratio = Game.PlayerManager.self.score / (Game.PlayerManager.self.score + Game.PlayerManager.rival.score)
+        var ratio = Game.PlayerManager.self.score / (Game.PlayerManager.self.score + Game.PlayerManager.rival.score);
+        if (Game.PlayerManager.self.score === 0
+            && Game.PlayerManager.rival.score === 0) {
+            ratio = 0.5;
+        }
         this.progressBar.getComponent(cc.ProgressBar).progress = ratio;
         this.progressBar.getChildByName("light").x = ratio * 500 - 250;
     },
@@ -228,11 +237,6 @@ cc.Class({
             this.countDown();
         }.bind(this), 1000);
     },
-    gameStop(){
-        Game.ClickManager.bClick = false;
-        clearInterval(this.scheduleCountDown);
-        uiFunc.openUI("uiGameStop");
-    },
     countDown(){
         if (this.count > 0){
             this.count--;
@@ -255,8 +259,7 @@ cc.Class({
     },
     getReconnectionData(){
         cc.log("发送重新连接数据");
-        this.gameStop();
-        this.RegenerationArrMap();
+        this.regenerationArrMap();
         var selfData = Game.PlayerManager.self.getData();
         var rivalData = Game.PlayerManager.rival.getData();
         var gameData = {
@@ -274,9 +277,12 @@ cc.Class({
             }));
         }
     },
-    RegenerationArrMap(){
+    regenerationArrMap(){
         cc.log("发送掉线玩家地图")
         var arrMap = Game.BlockManager.getArrMap();
+        if (arrMap === []){
+            return;
+        }
         for (let i = 0; i < arrMap.length; i++){
             if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
                 mvs.engine.sendFrameEvent(JSON.stringify({
@@ -287,25 +293,24 @@ cc.Class({
             }
         }
     },
-    setReconnectionData(data){
+    setReconnectionData(cpProto){
         cc.log("掉线玩家接受并更新数据");
-        if (this.count <=0){
-            this.gameStart();
-        }
-        if (data.round === 0 || data.gamestate !== GameState.Play){
+        var data = cpProto.gameData;
+        var id = cpProto.playerId;
+        if (data.gamestate !== GameState.Play){
             return;
         }
         Game.GameManager.bReconnect = true;
         this.round = data.round;
         this.count = data.count;
-        Game.PlayerManager.self.setData(data.rivalData);
-        Game.PlayerManager.rival.setData(data.selfData);
-        if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
-            mvs.engine.sendFrameEvent(JSON.stringify({
-                action: GLB.CONTINUE_GAME,
-                id: GLB.userInfo.id
-            }));
+        if (id === GLB.userInfo.id){
+            Game.PlayerManager.self.setData(data.selfData);
+            Game.PlayerManager.rival.setData(data.rivalData);
+        }else{
+            Game.PlayerManager.self.setData(data.rivalData);
+            Game.PlayerManager.rival.setData(data.selfData);
         }
+        this.gameStart();
         Game.PlayerManager.self.changeScore();
         Game.PlayerManager.rival.changeScore();
         this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";

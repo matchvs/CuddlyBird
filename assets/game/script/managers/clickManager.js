@@ -40,6 +40,7 @@ cc.Class({
                     this.curSelec = block;
                     this.setJump(block);
                 }else{
+                    this.setStop(this.curSelec);
                     this.sendEliminateBlock(this.curSelec,block,this.arrPath);
                     this.choiceBox.opacity = 0;
                 }

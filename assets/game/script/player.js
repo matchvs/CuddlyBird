@@ -39,11 +39,11 @@ cc.Class({
     },
     getData(){
         var data = {
-                score:this.score,
-                combo:this.combo,
-                maxCombo:this.maxCombo,
-                blockNumber:this.blockNumber,
-                buff:this.buff
+                score: this.score,
+                combo: this.combo,
+                maxCombo: this.maxCombo,
+                blockNumber: this.blockNumber,
+                buff: this.buff
         }
         return data;
     },

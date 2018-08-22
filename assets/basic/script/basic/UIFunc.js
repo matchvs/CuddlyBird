@@ -11,7 +11,7 @@ window.uiFunc = {
 uiFunc.openUI = function(uiName, callBack) {
     cc.loader.loadRes('ui/' + uiName, function(err, prefab) {
         if (err) {
-            cc.error(err.message || err);
+            cc.log(err.message || err);
             return;
         }
 

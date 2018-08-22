@@ -601,7 +601,10 @@
     "node": {
       "__id__": 17
     },
-    "_enabled": true
+    "_enabled": true,
+    "uiTip": {
+      "__uuid__": "5b156d8f-01d6-48e3-8fbe-507ec76a62ec"
+    }
   },
   {
     "__type__": "cc.BlockInputEvents",

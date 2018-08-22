@@ -69,8 +69,8 @@ cc.Class({
             ratio = 0.5;
         }
         this.nodeDict["scoreTwo"].getComponent(cc.ProgressBar).progress = ratio;
-
-
+        self.maxCombo = self.maxCombo > 2 ? self.maxCombo - 2 : 0;
+        rival.maxCombo = rival.maxCombo > 2 ? rival.maxCombo - 2 : 0;
         this.nodeDict["scoreThree"].getChildByName("self").getComponent(cc.Label).string = self.maxCombo;
         this.nodeDict["scoreThree"].getChildByName("rival").getComponent(cc.Label).string = rival.maxCombo;
         ratio = self.maxCombo / (self.maxCombo + rival.maxCombo);

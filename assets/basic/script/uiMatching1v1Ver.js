@@ -22,6 +22,7 @@ cc.Class({
         if (GLB.matchType === GLB.RANDOM_MATCH) {
             result = mvs.engine.joinRandomRoom(GLB.MAX_PLAYER_COUNT, '');
             if (result !== 0) {
+                Game.GameManager.recurLobby();
                 console.log('进入房间失败,错误码:' + result);
             }
         } else if (GLB.matchType === GLB.PROPERTY_MATCH) {

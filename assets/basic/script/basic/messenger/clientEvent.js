@@ -12,6 +12,7 @@ window.clientEvent = {
         getReconnectionData:"getReconnectionData",
         setReconnectionData:"setReconnectionData",
         setCount:"setCount",
+        aaa:"aaa",
 
         playerAccountGet: "playerAccountGet",
         initResponse: "initResponse",
@@ -26,7 +27,6 @@ window.clientEvent = {
         getRoomListResponse: "getRoomListResponse",
         getRoomDetailResponse: "getRoomDetailResponse",
         getRoomListExResponse: "getRoomListExResponse",
-        continueGame:"continueGame",
         kickPlayerResponse: "kickPlayerResponse",
         kickPlayerNotify: "kickPlayerNotify"
     },

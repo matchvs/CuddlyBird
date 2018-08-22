@@ -3,8 +3,11 @@ cc.Class({
     extends: uiPanel,
     properties: {},
 
-    onLoad() {
+    onload(){
         this._super();
+    },
+
+    start() {
         setTimeout(function() {
             if (this && this.node) {
                 uiFunc.closeUI(this.node.name);
