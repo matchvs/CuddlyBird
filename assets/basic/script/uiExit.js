@@ -17,6 +17,7 @@ cc.Class({
 
     sure() {
         mvs.engine.leaveRoom("");
+        Game.BlockManager.deleteWholeBlock();
         var gamePanel = uiFunc.findUI("uiGamePanel");
         if (gamePanel) {
             uiFunc.closeUI("uiGamePanel");

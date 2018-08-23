@@ -42,6 +42,7 @@ cc.Class({
     },
 
     bubblingSort(array){
+        //冒泡排序数组
         for (let i = 0 ; i < array.length - 1 ;i++){
             for (let j = 0; j < array.length - 1 -i;j++){
                 if (array[j][0].pos.y < array[j + 1][0].pos.y){
@@ -53,6 +54,7 @@ cc.Class({
         }
     },
     initMap(arrMap){
+        //初始化地图
         for(let row = 0; row < 8; row++){
             for (let col = 0; col < 9; col++){
                 if(arrMap[row][col].type !== null){
@@ -71,13 +73,16 @@ cc.Class({
         Game.PlayerManager.self.combo = 1;
         Game.PlayerManager.rival.combo = 1;
     },
-    deleteBlock(first,last,id){
+    deleteBlock(first,last,id,arrPath){
         if (this.arrMap[first.row][first.col].sprite === null
             || this.arrMap[last.row][last.col].sprite === null){
-
+            return false;
+        }
+        if (this.arrMap[first.row][first.col].type !== this.arrMap[last.row][last.col].type){
             return false;
         }
         cc.audioEngine.play(this.linkAudio, false, 1);
+        Game.PathManager.addPath(arrPath, id);
         this.arrMap[first.row][first.col].type = null;
         this.arrMap[first.row][first.col].sprite.removeFromParent();
         this.arrMap[first.row][first.col].sprite = null;
@@ -93,6 +98,7 @@ cc.Class({
                 pos: pos,
             }));
         }
+        Game.PathManager.addPath(arrPath, id);
         if (!this.automaticClearing()){
             this.node.dispatchEvent(new cc.Event.EventCustom(clientEvent.eventType.nextRound,true));
         }

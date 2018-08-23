@@ -20,6 +20,7 @@ cc.Class({
         this.arrMap = arrMap;
     },
     setChoiceBox(){
+        //创建点击效果的框 并隐藏
         this.choiceBox = cc.instantiate(this.choiceBoxPrefab);
         this.choiceBox.parent = Game.BlockManager.node;
         this.choiceBox.setPosition(cc.p(0,0));

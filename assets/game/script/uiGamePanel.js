@@ -215,6 +215,7 @@ cc.Class({
         this.nodeDict['prompt'].active = true;
         Game.ClickManager.bClick = false;
         if (this.round >= 4){
+            clearInterval(this.scheduleCountDown);
             this.nodeDict['gameOver'].opacity = 255;
             return false;
         }

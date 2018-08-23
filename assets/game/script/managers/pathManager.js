@@ -47,7 +47,7 @@ cc.Class({
                 this.setStraight(id,angle,data.pos,data.long);
 
             }else if(path === arrPath.length - 1){
-                let angle = this.twoNodeRotation(arrPath[path],arrPath[path-1]);
+                 let angle = this.twoNodeRotation(arrPath[path],arrPath[path-1]);
                 let pos = this.arrMap[arrPath[path].row][arrPath[path].col].pos;
                 this.setHead(id,angle,pos);
             }else{

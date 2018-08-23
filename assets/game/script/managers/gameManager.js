@@ -464,17 +464,16 @@ cc.Class({
             }
 
             if (info.cpProto.indexOf(GLB.DELETE_BLOCK) >= 0) {
-                if (!Game.BlockManager.deleteBlock(cpProto.firstPos, cpProto.lastPos, cpProto.playerId)) {
+                if (!Game.BlockManager.deleteBlock(cpProto.firstPos, cpProto.lastPos, cpProto.playerId ,cpProto.arrPath)) {
                     return;
                 }
                 if (GLB.userInfo.id === cpProto.playerId) {
                     Game.PlayerManager.self.addScore();
                 } else {
                     Game.PlayerManager.rival.addScore();
-                    Game.ClickManager.curBlocBeDelete(cpProto.firstPos,cpProto.lastPos);
-                    //Game.ClickManager.curBlocBeDelete(cpProto.lastPos);
+                    Game.ClickManager.curBlocBeDelete(cpProto.firstPos);
+                    Game.ClickManager.curBlocBeDelete(cpProto.lastPos);
                 }
-                Game.PathManager.addPath(cpProto.arrPath, cpProto.playerId);
             }
             if (info.cpProto.indexOf(GLB.BUBBLE) >= 0) {
                 Game.BubbleManager.initBubble(cpProto.type, cpProto.id);
