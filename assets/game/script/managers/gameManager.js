@@ -26,6 +26,7 @@ cc.Class({
 
         this.bUiReconnection = true;
         this.bReconnect = false;
+        this.bExit = true;
         this.number = 0;
 
         this.start_game_time = new Date().getTime();
@@ -226,12 +227,13 @@ cc.Class({
     },
 
     logoutResponse: function(status) {
+        Game.GameManager.network.disconnect();
         cc.game.removePersistRootNode(this.node);
         cc.director.loadScene('lobby');
     },
 
     errorResponse: function(error, msg) {
-        //clientEvent.dispatch(clientEvent.eventType.aaa);
+        clientEvent.dispatch(clientEvent.eventType.aaa);
         let recurLobby = true;
         var uiTip = cc.instantiate(this.uiTipBk);
         uiTip.active = true;
@@ -240,25 +242,33 @@ cc.Class({
         uiTip.setPosition(cc.p(0,0));
         console.log("错误信息：" + error);
         console.log("错误信息：" + msg);
-        var gamePanel = uiFunc.findUI("uiGamePanel");
-        if (gamePanel) {
-            if (this.bUiReconnection) {
-                this.bUiReconnection = false;
-                Game.GameManager.gameState = GameState.None;
-                this.schedule(this.reconnectCountDown,1);
+        if (error === 0 || error === 1001){
+            var gamePanel = uiFunc.findUI("uiGamePanel");
+            if (gamePanel) {
+                if (this.bUiReconnection) {
+                    this.bUiReconnection = false;
+                    Game.GameManager.gameState = GameState.None;
+                    this.schedule(this.reconnectCountDown,1);
+                }
+                recurLobby = false;
+                cc.log("游戏界面存在");
             }
-            recurLobby = false;
-            cc.log("游戏界面存在");
-        }
-        if (recurLobby) {
-            var uiLobbyPanelVer = uiFunc.findUI("uiLobbyPanelVer");
-            if (uiLobbyPanelVer) {
+            if (recurLobby) {
                 setTimeout(function() {
-                    uiFunc.closeUI("uiLobbyPanelVer");
-                    uiLobbyPanelVer.destroy();
+                    this.closeUiPanel();
                 }.bind(this), 2500);
-            }else{
                 this.recurLobby();
+            }
+        }
+    },
+    closeUiPanel(){
+        //var scene = cc.director.getScene().getName();
+        var uiList = uiFunc.getUiList();
+        for (let uiPanel of uiList){
+            var uiPanelName = uiPanel.getName();
+            if (uiPanelName !== ""){
+                uiFunc.closeUI(uiPanelName);
+                uiPanel.destroy();
             }
         }
     },
@@ -464,16 +474,8 @@ cc.Class({
             }
 
             if (info.cpProto.indexOf(GLB.DELETE_BLOCK) >= 0) {
-                if (!Game.BlockManager.deleteBlock(cpProto.firstPos, cpProto.lastPos, cpProto.playerId ,cpProto.arrPath)) {
-                    return;
-                }
-                if (GLB.userInfo.id === cpProto.playerId) {
-                    Game.PlayerManager.self.addScore();
-                } else {
-                    Game.PlayerManager.rival.addScore();
-                    Game.ClickManager.curBlocBeDelete(cpProto.firstPos);
-                    Game.ClickManager.curBlocBeDelete(cpProto.lastPos);
-                }
+               Game.BlockManager.deleteBlock(cpProto.firstPos, cpProto.lastPos, cpProto.playerId ,cpProto.arrPath);
+
             }
             if (info.cpProto.indexOf(GLB.BUBBLE) >= 0) {
                 Game.BubbleManager.initBubble(cpProto.type, cpProto.id);
@@ -725,8 +727,6 @@ cc.Class({
             }
         });
     },
-
-
     onDestroy() {
         clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.off(clientEvent.eventType.leaveRoomNotify, this.leaveRoom, this);

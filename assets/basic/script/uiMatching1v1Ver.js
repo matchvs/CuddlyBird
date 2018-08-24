@@ -56,7 +56,7 @@ cc.Class({
 
         var playerIcon = null;
         for (var j = 0; j < data.roomUserInfoList.length; j++) {
-            playerIcon = this.playerIcons[j].getComponent('playerIcon');
+            playerIcon = this.playerIcons[j + 1].getComponent('playerIcon');
             if (playerIcon && !playerIcon.userInfo) {
                 playerIcon.setData(data.roomUserInfoList[j]);
                 if (GLB.userInfo.id !== data.roomUserInfoList[j].userId) {

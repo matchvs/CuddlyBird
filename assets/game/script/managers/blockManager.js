@@ -76,10 +76,10 @@ cc.Class({
     deleteBlock(first,last,id,arrPath){
         if (this.arrMap[first.row][first.col].sprite === null
             || this.arrMap[last.row][last.col].sprite === null){
-            return false;
+            return;
         }
         if (this.arrMap[first.row][first.col].type !== this.arrMap[last.row][last.col].type){
-            return false;
+            return;
         }
         cc.audioEngine.play(this.linkAudio, false, 1);
         Game.PathManager.addPath(arrPath, id);
@@ -98,11 +98,16 @@ cc.Class({
                 pos: pos,
             }));
         }
-        Game.PathManager.addPath(arrPath, id);
+        if (id === GLB.userInfo.id) {
+            Game.PlayerManager.self.addScore();
+        } else {
+            Game.PlayerManager.rival.addScore();
+            Game.ClickManager.curBlocBeDelete(first);
+            Game.ClickManager.curBlocBeDelete(last);
+        }
         if (!this.automaticClearing()){
             this.node.dispatchEvent(new cc.Event.EventCustom(clientEvent.eventType.nextRound,true));
         }
-        return true;
     },
     deleteWholeBlock(){
         this.arrMap = [];

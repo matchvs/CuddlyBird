@@ -53,3 +53,7 @@ uiFunc.findUI = function(uiName) {
     }
     return null;
 }
+
+uiFunc.getUiList = function() {
+    return uiFunc.uiList;
+}

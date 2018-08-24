@@ -33,7 +33,7 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
-        //clientEvent.on(clientEvent.eventType.aaa, this.aaa, this);
+        clientEvent.on(clientEvent.eventType.aaa, this.aaa, this);
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -57,7 +57,7 @@ cc.Class({
         }
     },
     aaa(){
-        this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
+        //this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
     },
     showLcon(){
         this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
@@ -177,6 +177,10 @@ cc.Class({
         this.showLcon();
     },
     leaveRoom() {
+        Game.GameManager.bExit = false;
+        this.scheduleOnce(()=>{
+            Game.GameManager.bExit = true;
+        },2.0)
         if (Game.GameManager.gameState !== GameState.Over) {
             uiFunc.openUI("uiTip", function(obj) {
                 var uiTip = obj.getComponent("uiTip");
@@ -187,7 +191,7 @@ cc.Class({
         }
     },
     onDestroy() {
-        //clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
+        clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
         clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
         clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.off(clientEvent.eventType.refreshSlateBtn, this.refreshSlateBtn, this);
