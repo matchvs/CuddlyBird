@@ -3,10 +3,12 @@
     "__type__": "cc.Prefab",
     "_name": "",
     "_objFlags": 0,
-    "_rawFiles": null,
+    "_native": "",
     "data": {
       "__id__": 1
-    }
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false
   },
   {
     "__type__": "cc.Node",
@@ -27,21 +29,21 @@
         "__id__": 32
       },
       {
-        "__id__": 35
+        "__id__": 37
       },
       {
-        "__id__": 39
+        "__id__": 41
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 43
+        "__id__": 45
       }
     ],
     "_prefab": {
-      "__id__": 44
+      "__id__": 46
     },
     "_id": "",
     "_opacity": 255,
@@ -1015,16 +1017,70 @@
     "_parent": {
       "__id__": 1
     },
+    "_children": [
+      {
+        "__id__": 33
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [],
+    "_prefab": {
+      "__id__": 36
+    },
+    "_id": "",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 50,
+      "height": 50
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 251,
+      "y": 399
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "close",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 32
+    },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 33
+        "__id__": 34
       }
     ],
     "_prefab": {
-      "__id__": 34
+      "__id__": 35
     },
     "_id": "",
     "_opacity": 255,
@@ -1052,8 +1108,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 251,
-      "y": 399
+      "x": 0,
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1067,7 +1123,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 32
+      "__id__": 33
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1096,6 +1152,17 @@
     "asset": {
       "__uuid__": "648e6190-a923-4ea9-87f3-b19803875e9f"
     },
+    "fileId": "f7rf59uHtLor/1aAxMIauw",
+    "sync": false
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "648e6190-a923-4ea9-87f3-b19803875e9f"
+    },
     "fileId": "f6A0uWTsdOh54STAPk3RId",
     "sync": false
   },
@@ -1111,14 +1178,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 36
+        "__id__": 38
       },
       {
-        "__id__": 37
+        "__id__": 39
       }
     ],
     "_prefab": {
-      "__id__": 38
+      "__id__": 40
     },
     "_id": "",
     "_opacity": 255,
@@ -1161,7 +1228,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 35
+      "__id__": 37
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1187,7 +1254,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 35
+      "__id__": 37
     },
     "_enabled": true,
     "transition": 2,
@@ -1243,7 +1310,7 @@
       "__uuid__": "3257e4d8-6ffd-4475-800f-849300bc6505"
     },
     "_N$target": {
-      "__id__": 35
+      "__id__": 37
     }
   },
   {
@@ -1269,14 +1336,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 40
+        "__id__": 42
       },
       {
-        "__id__": 41
+        "__id__": 43
       }
     ],
     "_prefab": {
-      "__id__": 42
+      "__id__": 44
     },
     "_id": "",
     "_opacity": 255,
@@ -1319,7 +1386,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 39
+      "__id__": 41
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1345,7 +1412,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 39
+      "__id__": 41
     },
     "_enabled": true,
     "transition": 2,
@@ -1401,7 +1468,7 @@
       "__uuid__": "3257e4d8-6ffd-4475-800f-849300bc6505"
     },
     "_N$target": {
-      "__id__": 39
+      "__id__": 41
     }
   },
   {

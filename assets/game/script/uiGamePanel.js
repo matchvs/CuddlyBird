@@ -222,6 +222,7 @@ cc.Class({
             clearInterval(this.scheduleCountDown);
             this.nodeDict['gameOver'].opacity = 255;
             return false;
+
         }
         this.count = 60;
         clearInterval(this.scheduleCountDown);
@@ -302,7 +303,7 @@ cc.Class({
         cc.log("掉线玩家接受并更新数据");
         var data = cpProto.gameData;
         var id = cpProto.playerId;
-        if (data.gamestate !== GameState.Play){
+        if (data.round <= 0 || data.gamestate !== GameState.Play){
             return;
         }
         Game.GameManager.bReconnect = true;

@@ -255,9 +255,12 @@ cc.Class({
             }
             if (recurLobby) {
                 setTimeout(function() {
-                    this.closeUiPanel();
-                }.bind(this), 2500);
-                this.recurLobby();
+                    if (error === 0){
+                        this.closeUiPanel();
+                    }else{
+                        this.recurLobby();
+                    }
+                }.bind(this), 2000);
             }
         }
     },
@@ -284,6 +287,7 @@ cc.Class({
         this.number = 0;
         this.unschedule(this.reconnectCountDown);
         if(!success) {
+            //this.closeUiPanel();
             this.recurLobby();
         }
     },

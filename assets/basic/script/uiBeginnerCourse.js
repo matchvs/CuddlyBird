@@ -11,9 +11,9 @@ cc.Class({
 
     onLoad () {
         this._super();
-        this.nodeDict["close"].on(cc.Node.EventType.TOUCH_START, this.close, this);
-        this.nodeDict["left"].on(cc.Node.EventType.TOUCH_START, this.leftScroll, this);
-        this.nodeDict["right"].on(cc.Node.EventType.TOUCH_START, this.rightScroll, this);
+        this.nodeDict["close"].on(cc.Node.EventType.TOUCH_END, this.close, this);
+        this.nodeDict["left"].on(cc.Node.EventType.TOUCH_END, this.leftScroll, this);
+        this.nodeDict["right"].on(cc.Node.EventType.TOUCH_END, this.rightScroll, this);
     },
     leftScroll(){
         var index = this.pageView.getComponent(cc.PageView).getCurrentPageIndex();

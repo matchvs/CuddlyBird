@@ -230,7 +230,7 @@ cc.Class({
     },
     sendEliminateBlock(first,last,arrPath){
         //cc.log(arrPath);
-        var id = Game.PlayerManager.self.playerId
+        var id = Game.PlayerManager.self.playerId;
         if (Game.GameManager.gameState !== GameState.Over) {
             mvs.engine.sendFrameEvent(JSON.stringify({
                 action: GLB.DELETE_BLOCK,
