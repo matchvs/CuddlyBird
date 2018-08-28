@@ -240,6 +240,7 @@ cc.Class({
         uiTip.parent = cc.Canvas.instance.node;
         uiTip.getComponent("uiTip").setData("网络断开连接");
         uiTip.setPosition(cc.p(0,0));
+        GLB.isRoomOwner = false;
         console.log("错误信息：" + error);
         console.log("错误信息：" + msg);
         if (error === 0 || error === 1001){
@@ -351,7 +352,6 @@ cc.Class({
                     }.bind(this));
                 }.bind(this));
             }
-            GLB.isRoomOwner = false;
             this.bUiReconnection = true;
         } else {
             cc.log("重新连接失败" + status);

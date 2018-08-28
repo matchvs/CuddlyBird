@@ -81,8 +81,7 @@ cc.Class({
             this.gameOver();
            return;
         }
-        Game.BlockManager.arrMap = [];
-        Game.BlockManager.index = 0;
+        Game.BlockManager.deleteWholeBlock();
         if(!GLB.isRoomOwner){
             return;
         }
@@ -146,6 +145,9 @@ cc.Class({
         }
     },
     sendInitMapMsg(arrMap) {
+        if(!GLB.isRoomOwner){
+            return;
+        }
         for (let i = 0; i < arrMap.length; i++){
             if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
                 mvs.engine.sendFrameEvent(JSON.stringify({
@@ -290,13 +292,11 @@ cc.Class({
             return;
         }
         for (let i = 0; i < arrMap.length; i++){
-            if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
-                mvs.engine.sendFrameEvent(JSON.stringify({
-                    action: GLB.UPDATA_ARR_MAP,
-                    array: arrMap[i],
-                    id: GLB.userInfo.id
-                }));
-            }
+            mvs.engine.sendFrameEvent(JSON.stringify({
+                action: GLB.UPDATA_ARR_MAP,
+                array: arrMap[i],
+                id: GLB.userInfo.id
+            }));
         }
     },
     setReconnectionData(cpProto){
@@ -310,18 +310,20 @@ cc.Class({
         this.round = data.round;
         this.count = data.count;
         if (id === GLB.userInfo.id){
+            GLB.isRoomOwner = true;
             Game.PlayerManager.self.setData(data.selfData);
             Game.PlayerManager.rival.setData(data.rivalData);
         }else{
+            GLB.isRoomOwner = false;
             Game.PlayerManager.self.setData(data.rivalData);
             Game.PlayerManager.rival.setData(data.selfData);
         }
-        this.gameStart();
         Game.PlayerManager.self.changeScore();
         Game.PlayerManager.rival.changeScore();
         this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
         this.showLcon();
         Game.GameManager.gameState = GameState.Play;
+        this.gameStart();
     }
 
 

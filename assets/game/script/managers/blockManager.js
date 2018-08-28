@@ -22,8 +22,9 @@ cc.Class({
     receiveArrMap(array){
         this.arrMap.push(array);//unshift
         this.index++;
-        if(this.index === 8) {
+        if(this.index >= 8) {
             //this.arrMap.reverse();
+            this.index = 0;
             this.bubblingSort(this.arrMap);
             this.initMap(this.arrMap);
         }
@@ -32,7 +33,9 @@ cc.Class({
     updataArrMap(array){
         this.newArrMap.push(array);
         this.index++;
-        if(this.index === 8) {
+        if(this.index >= 8) {
+            cc.log("刷新地图方块");
+            this.index = 0;
             this.deleteWholeBlock();
             this.arrMap.push(...this.newArrMap);
             this.newArrMap = [];
