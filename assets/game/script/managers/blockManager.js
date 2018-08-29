@@ -23,7 +23,6 @@ cc.Class({
         this.arrMap.push(array);//unshift
         this.index++;
         if(this.index >= 8) {
-            //this.arrMap.reverse();
             this.index = 0;
             this.bubblingSort(this.arrMap);
             this.initMap(this.arrMap);
@@ -137,7 +136,7 @@ cc.Class({
         return arrMap;
     },
     nextRound(){
-        this.deleteWholeBlock()
+        this.deleteWholeBlock();
         this.node.dispatchEvent(new cc.Event.EventCustom(clientEvent.eventType.nextRound,true));
     },
     automaticClearing(){

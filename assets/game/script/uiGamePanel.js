@@ -57,7 +57,7 @@ cc.Class({
         }
     },
     aaa(){
-        //this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
+        this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
     },
     showLcon(){
         this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
@@ -192,21 +192,6 @@ cc.Class({
             }.bind(this));
         }
     },
-    onDestroy() {
-        clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
-        clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
-        clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
-        clientEvent.off(clientEvent.eventType.refreshSlateBtn, this.refreshSlateBtn, this);
-        clientEvent.off(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoom, this);
-        clientEvent.off(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
-        clientEvent.off(clientEvent.eventType.getReconnectionData, this.getReconnectionData, this);
-        clientEvent.off(clientEvent.eventType.setCount, this.setCount, this);
-        this.node.off(clientEvent.eventType.nextRound,this.initArrBlock,this);
-        this.node.off(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
-        this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);
-        clearInterval(this.scheduleCountDown);
-        cc.audioEngine.stop(this.bgmId);
-    },
     setScoreProgressBar(){
         var ratio = Game.PlayerManager.self.score / (Game.PlayerManager.self.score + Game.PlayerManager.rival.score);
         if (Game.PlayerManager.self.score === 0
@@ -292,11 +277,13 @@ cc.Class({
             return;
         }
         for (let i = 0; i < arrMap.length; i++){
-            mvs.engine.sendFrameEvent(JSON.stringify({
-                action: GLB.UPDATA_ARR_MAP,
-                array: arrMap[i],
-                id: GLB.userInfo.id
-            }));
+            if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
+                mvs.engine.sendFrameEvent(JSON.stringify({
+                    action: GLB.UPDATA_ARR_MAP,
+                    array: arrMap[i],
+                    id: GLB.userInfo.id
+                }));
+            }
         }
     },
     setReconnectionData(cpProto){
@@ -324,7 +311,21 @@ cc.Class({
         this.showLcon();
         Game.GameManager.gameState = GameState.Play;
         this.gameStart();
+    },
+    onDestroy() {
+        clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
+        clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
+        clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
+        clientEvent.off(clientEvent.eventType.refreshSlateBtn, this.refreshSlateBtn, this);
+        clientEvent.off(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoom, this);
+        clientEvent.off(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
+        clientEvent.off(clientEvent.eventType.getReconnectionData, this.getReconnectionData, this);
+        clientEvent.off(clientEvent.eventType.setCount, this.setCount, this);
+        this.node.off(clientEvent.eventType.nextRound,this.initArrBlock,this);
+        this.node.off(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
+        this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);
+        clearInterval(this.scheduleCountDown);
+        cc.audioEngine.stop(this.bgmId);
     }
-
 
 });

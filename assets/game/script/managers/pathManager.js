@@ -123,7 +123,7 @@ cc.Class({
         } else{
             straight = cc.instantiate(this.redStraight);
         }
-        straight.parent = this.node;0
+        straight.parent = this.node;
         straight.rotation = angle;
         straight.setPosition(pos);
         straight.height = long;

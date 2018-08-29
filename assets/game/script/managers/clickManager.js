@@ -15,6 +15,12 @@ cc.Class({
         this.bClick = false;
         this.arrPath = [];
         this.setChoiceBox();
+
+        this.jump = cc.repeatForever(
+            cc.sequence(
+                cc.moveBy(1, 0, 5),
+                cc.moveBy(0.5, 0, -5)
+            ));
     },
     setArrMap(arrMap){
         this.arrMap = arrMap;
@@ -49,12 +55,8 @@ cc.Class({
         }
     },
     setJump(block){
-        let seq = cc.repeatForever(
-            cc.sequence(
-                cc.moveBy(1, 0, 5),
-                cc.moveBy(0.5, 0, -5)
-            ));
-        block.runAction(seq);
+
+        block.runAction(this.jump);
         let pos = block.getPosition();
         this.choiceBox.setPosition(pos);
         this.choiceBox.opacity = 255;
