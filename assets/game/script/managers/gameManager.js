@@ -109,7 +109,10 @@ cc.Class({
             }
         });
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
-        clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
+        // if(Game.GameManager.gameState !== GameState.play){
+        //     this.recurLobby();
+        // }
+        //clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
     },
 
     kickPlayerNotify: function(kickPlayerNotify) {

@@ -81,6 +81,7 @@ cc.Class({
             this.gameOver();
            return;
         }
+        this.scheduleOnce(this.checkGameStatus,5);
         Game.BlockManager.deleteWholeBlock();
         if(!GLB.isRoomOwner){
             return;
@@ -122,6 +123,15 @@ cc.Class({
         }
         this.sendInitMapMsg(arrMap);
     },
+    checkGameStatus(){
+        uiFunc.openUI("uiTip", function(obj) {
+            var uiTip = obj.getComponent("uiTip");
+            if (uiTip) {
+                uiTip.setData("游戏无法进行");
+            }
+        });
+        Game.GameManager.recurLobby();
+    },
     arrBlcokData(row,col){
         let y = GLB.limitY - GLB.range * row;
         let x = GLB.limitX + GLB.range * col;
@@ -162,7 +172,6 @@ cc.Class({
             return;
         }
         uiFunc.openUI("uiExit");
-        cc.audioEngine.stop(this.bgmId);
     },
     gameOver: function() {
         //游戏结束--
@@ -182,7 +191,7 @@ cc.Class({
         Game.GameManager.bExit = false;
         this.scheduleOnce(()=>{
             Game.GameManager.bExit = true;
-        },2.0)
+        },2.0);
         if (Game.GameManager.gameState !== GameState.Over) {
             uiFunc.openUI("uiTip", function(obj) {
                 var uiTip = obj.getComponent("uiTip");
@@ -224,6 +233,7 @@ cc.Class({
     },
     gameStart(){
         clearInterval(this.scheduleCountDown);
+        this.unschedule(this.checkGameStatus);
         Game.ClickManager.bClick = true;
         this.nodeDict['prompt'].active = false;
         this.scheduleCountDown = setInterval(function(){
