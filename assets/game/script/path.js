@@ -19,7 +19,7 @@ cc.Class({
     },
     initDelete(time){
         this.scheduleOnce(()=>{
-            this.node.destroy();
+           Game.PathManager.recyclePath(this.node);
         },time)
     }
 

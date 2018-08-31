@@ -57,7 +57,7 @@ cc.Class({
         }
     },
     aaa(){
-        this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
+        //this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
     },
     showLcon(){
         this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
@@ -94,7 +94,7 @@ cc.Class({
             }
         }
         //随机一个id，通过id从表中拿取数组
-        var lenght = window.dataManager.layoutDtMgr.getArrLayoutLenght()
+        var lenght = window.dataManager.layoutDtMgr.getArrLayoutLenght();
         var removeId = Math.floor(Math.random() * lenght + 1);
         var arrRemove = window.dataManager.layoutDtMgr.getDataByID(removeId).array;
         //根据拿到的id，把地图数组中相应的部分置为null
@@ -106,7 +106,7 @@ cc.Class({
         //随机生成方块种类
         var arrBlock = [];
         for(let i = 0; i < number / 2; i++){
-            let blockType = Math.floor(Math.random()*10)
+            let blockType = Math.floor(Math.random()*10);
             arrBlock.push(blockType);
             arrBlock.push(blockType);
         }
@@ -219,7 +219,7 @@ cc.Class({
         this.nodeDict['round'].getComponent(cc.Animation).play("round1");
         this.scheduleOnce(()=>{
             cc.audioEngine.play(this.startAudio, false, 1);
-        },2.5)
+        },2.5);
         return true;
     },
     gameStart(){
@@ -261,7 +261,7 @@ cc.Class({
             selfData: selfData,
             rivalData: rivalData,
             gamestate: Game.GameManager.gameState
-        }
+        };
         if (Game.GameManager.gameState !== GameState.Over) {
             mvs.engine.sendFrameEvent(JSON.stringify({
                 action: GLB.RECONNECTION_DATA,

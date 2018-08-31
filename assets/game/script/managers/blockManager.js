@@ -3,14 +3,18 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        arrBlockPrefab:{
+        blockPrefab:{
             type: cc.Prefab,
-            default: []
+            default: null
         },
         linkAudio: {
             default: null,
             url: cc.AudioClip
         },
+        blockSpriteFrame:{
+            default:[],
+            type: cc.SpriteFrame
+        }
     },
 
     onLoad () {
@@ -18,9 +22,10 @@ cc.Class({
         this.index = 0;
         this.arrMap = [];
         this.newArrMap = [];
+        this.blockPool = new cc.NodePool();
     },
     receiveArrMap(array){
-        this.arrMap.push(array);//unshift
+        this.arrMap.push(array);
         this.index++;
         if(this.index >= 8) {
             this.index = 0;
@@ -60,13 +65,16 @@ cc.Class({
         for(let row = 0; row < 8; row++){
             for (let col = 0; col < 9; col++){
                 if(arrMap[row][col].type !== null){
-                    var block = cc.instantiate(this.arrBlockPrefab[arrMap[row][col].type]);
+                    var block = this.blockPool.get();
+                    if (!block){
+                       block = cc.instantiate(this.blockPrefab);
+                    }
+                    block.getComponent(cc.Sprite).spriteFrame = this.blockSpriteFrame[arrMap[row][col].type];
                     block.parent = this.node;
                     block.setPosition(arrMap[row][col].pos);
                     block.row = row;
                     block.col = col;
                     block.type = arrMap[row][col].type;
-                    //block.on("click",block.getComponent("block").click);
                     arrMap[row][col].sprite = block;
                 }
             }
@@ -86,10 +94,10 @@ cc.Class({
         cc.audioEngine.play(this.linkAudio, false, 1);
         Game.PathManager.addPath(arrPath, id);
         this.arrMap[first.row][first.col].type = null;
-        this.arrMap[first.row][first.col].sprite.removeFromParent();
+        this.recycleBlock(this.arrMap[first.row][first.col].sprite);
         this.arrMap[first.row][first.col].sprite = null;
         this.arrMap[last.row][last.col].type = null;
-        this.arrMap[last.row][last.col].sprite.removeFromParent();
+        this.recycleBlock(this.arrMap[last.row][last.col].sprite);
         this.arrMap[last.row][last.col].sprite = null;
 
         var pos = this.arrMap[last.row][last.col].pos;
@@ -118,6 +126,9 @@ cc.Class({
         }
         Game.ClickManager.curSelec = null;
         Game.ClickManager.setChoiceBox();
+    },
+    recycleBlock(target){
+        this.blockPool.put(target);
     },
     getArrMap(){
         var arrMap = [];

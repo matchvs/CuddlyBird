@@ -22,8 +22,9 @@ cc.Class({
         if (GLB.matchType === GLB.RANDOM_MATCH) {
             result = mvs.engine.joinRandomRoom(GLB.MAX_PLAYER_COUNT, '');
             if (result !== 0) {
-                Game.GameManager.recurLobby();
                 console.log('进入房间失败,错误码:' + result);
+                Game.GameManager.openTip("进入房间失败");
+                Game.GameManager.recurLobby();
             }
         } else if (GLB.matchType === GLB.PROPERTY_MATCH) {
             var matchinfo = new mvs.MatchInfo();

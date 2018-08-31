@@ -235,11 +235,7 @@ cc.Class({
     errorResponse: function(error, msg) {
         clientEvent.dispatch(clientEvent.eventType.aaa);
         let recurLobby = true;
-        var uiTip = cc.instantiate(this.uiTipBk);
-        uiTip.active = true;
-        uiTip.parent = cc.Canvas.instance.node;
-        uiTip.getComponent("uiTip").setData("网络断开连接");
-        uiTip.setPosition(cc.p(0,0));
+        this.openTip("网络连接中断");
         GLB.isRoomOwner = false;
         console.log("错误信息：" + error);
         console.log("错误信息：" + msg);
@@ -264,6 +260,13 @@ cc.Class({
                 }.bind(this), 2000);
             }
         }
+    },
+    openTip(string){
+        var uiTip = cc.instantiate(this.uiTipBk);
+        uiTip.active = true;
+        uiTip.parent = cc.Canvas.instance.node;
+        uiTip.getComponent("uiTip").setData(string);
+        uiTip.setPosition(cc.p(0,0));
     },
     closeUiPanel(){
         //var scene = cc.director.getScene().getName();
@@ -366,11 +369,11 @@ cc.Class({
         }
     },
     recurLobby() {
+        mvs.engine.logout("");
         setTimeout(function() {
-            mvs.engine.logout("");
             cc.game.removePersistRootNode(this.node);
             cc.director.loadScene('lobby');
-        }.bind(this), 2500);
+        }.bind(this), 1500);
     },
     initResponse: function() {
         console.log('初始化成功，开始注册用户');
@@ -509,6 +512,14 @@ cc.Class({
                         var uiTip = obj.getComponent("uiTip");
                         if (uiTip) {
                             uiTip.setData("对手重新连接");
+                        }
+                    });
+                }
+                if (cpProto.playerId !== GLB.userInfo.id) {
+                    uiFunc.openUI("uiTip", function(obj) {
+                        var uiTip = obj.getComponent("uiTip");
+                        if (uiTip) {
+                            uiTip.setData("重新连接成功");
                         }
                     });
                 }

@@ -31,6 +31,12 @@ cc.Class({
     onLoad () {
         Game.PathManager = this;
         this.arrMap = [];
+        this.blueHeadPool = new cc.NodePool();
+        this.blueCornerPool = new cc.NodePool();
+        this.blueStraightPool = new cc.NodePool();
+        this.redHeadPool = new cc.NodePool();
+        this.redCornerPool = new cc.NodePool();
+        this.redStraightPool = new cc.NodePool();
     },
     addPath(arrPath,id){
         this.arrMap = Game.BlockManager.arrMap;
@@ -92,24 +98,35 @@ cc.Class({
         return angle;
     },
     setHead(id,angle,pos){
-        var head = null;
         if (id === Game.PlayerManager.self.playerId){
-            head = cc.instantiate(this.blueHead);
+            var head = this.blueHeadPool.get();
+            if (!head) {
+                head = cc.instantiate(this.blueHead);
+            }
         } else{
-            head = cc.instantiate(this.redHead);
+            var head = this.redHeadPool.get();
+            if (!head) {
+                head = cc.instantiate(this.redHead);
+            }
         }
         head.parent = this.node;
         head.rotation = angle;
         head.setPosition(pos);
+        head.getComponent(cc.Animation).play("pathHead");
         head.getComponent("path").initDelete(0.4);
         Game.EffectManager.initEffect(pos);
     },
     setCorner(id,angle,pos){
-        var corner = null;
         if (id === Game.PlayerManager.self.playerId){
-            corner = cc.instantiate(this.blueCorner);
+            var corner = this.blueCornerPool.get();
+            if (!corner) {
+                corner = cc.instantiate(this.blueCorner);
+            }
         } else{
-            corner = cc.instantiate(this.redCorner);
+            var corner = this.redCornerPool.get();
+            if (!corner) {
+                corner = cc.instantiate(this.redCorner);
+            }
         }
         corner.parent = this.node;
         corner.rotation = angle;
@@ -117,11 +134,16 @@ cc.Class({
         corner.getComponent("path").initDelete(0.4);
     },
     setStraight(id,angle,pos,long){
-        var straight = null;
         if (id === Game.PlayerManager.self.playerId){
-            straight = cc.instantiate(this.blueStraight);
+            var straight = this.blueStraightPool.get();
+            if (!straight) {
+                straight = cc.instantiate(this.blueStraight);
+            }
         } else{
-            straight = cc.instantiate(this.redStraight);
+            var straight = this.redStraightPool.get();
+            if (!straight) {
+                straight = cc.instantiate(this.redStraight);
+            }
         }
         straight.parent = this.node;
         straight.rotation = angle;
@@ -153,9 +175,24 @@ cc.Class({
         let data = {
             pos: pos,
             long: long
-        }
+        };
         return data;
+    },
+    recyclePath(target){
+        switch (target.name){
+            case "blueHead": this.blueHeadPool.put(target);
+                break;
+            case "blueCorner": this.blueCornerPool.put(target);
+                break;
+            case "blueStraight": this.blueStraightPool.put(target);
+                break;
+            case "redHead": this.redHeadPool.put(target);
+                break;
+            case "redCorner": this.redCornerPool.put(target);
+                break;
+            case "redStraight": this.redStraightPool.put(target);
+                break;
+        }
     }
-
     // update (dt) {},
 });
