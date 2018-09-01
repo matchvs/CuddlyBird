@@ -112,7 +112,7 @@ cc.Class({
         // if(Game.GameManager.gameState !== GameState.play){
         //     this.recurLobby();
         // }
-        //clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
+        clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
     },
 
     kickPlayerNotify: function(kickPlayerNotify) {
@@ -236,8 +236,8 @@ cc.Class({
     },
 
     errorResponse: function(error, msg) {
-        clientEvent.dispatch(clientEvent.eventType.aaa);
         let recurLobby = true;
+
         this.openTip("网络连接中断");
         GLB.isRoomOwner = false;
         console.log("错误信息：" + error);

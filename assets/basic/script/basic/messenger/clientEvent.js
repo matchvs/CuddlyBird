@@ -12,7 +12,6 @@ window.clientEvent = {
         getReconnectionData:"getReconnectionData",
         setReconnectionData:"setReconnectionData",
         setCount:"setCount",
-        aaa:"aaa",
 
         playerAccountGet: "playerAccountGet",
         initResponse: "initResponse",

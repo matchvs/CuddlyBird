@@ -8,6 +8,9 @@ cc.Class({
         this._super();
         this.nodeDict["sure"].on("click", this.sure, this);
         this.nodeDict["close"].on("click", this.close, this);
+        if (!Game.GameManager.bExit){
+
+        }
     },
 
     close() {
@@ -29,5 +32,5 @@ cc.Class({
         uiFunc.closeUI(this.node.name);
         this.node.destroy();
         Game.GameManager.lobbyShow();
-    }
+    },
 });

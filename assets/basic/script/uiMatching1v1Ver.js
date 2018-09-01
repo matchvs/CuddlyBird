@@ -9,7 +9,7 @@ cc.Class({
     onLoad() {
         this._super();
         this.nodeDict["quit"].on("click", this.leaveRoom, this);
-
+        this.bQuit = true;
         clientEvent.on(clientEvent.eventType.joinRoomResponse, this.joinRoomResponse, this);
         clientEvent.on(clientEvent.eventType.joinRoomNotify, this.joinRoomNotify, this);
         clientEvent.on(clientEvent.eventType.leaveRoomResponse, this.leaveRoomResponse, this);
@@ -95,9 +95,13 @@ cc.Class({
                 break;
             }
         }
+        this.bQuit = false;
     },
 
     leaveRoom: function() {
+        if (!this.bQuit){
+            return;
+        }
         mvs.engine.leaveRoom("");
         uiFunc.closeUI(this.node.name);
         this.node.destroy();

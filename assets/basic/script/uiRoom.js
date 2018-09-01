@@ -98,6 +98,7 @@ cc.Class({
                 this.players[i].setData(this.players[i].userId, this.ownerId);
             }
         }
+        mvs.engine.kickPlayer(data.userID, "kick");
         this.refreshStartBtn();
     },
 
@@ -117,6 +118,7 @@ cc.Class({
                 this.players[i].setData(this.players[i].userId, this.ownerId);
             }
         }
+
         this.refreshStartBtn();
     },
 

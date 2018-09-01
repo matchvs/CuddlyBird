@@ -33,7 +33,6 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
-        clientEvent.on(clientEvent.eventType.aaa, this.aaa, this);
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -46,6 +45,7 @@ cc.Class({
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
         this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
+        //this.scheduleOnce(this.checkGameStatus,3);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -55,9 +55,6 @@ cc.Class({
                 id: Game.PlayerManager.self.playerId
             }));
         }
-    },
-    aaa(){
-        //this.nodeDict["aaa"].getComponent(cc.Label).string = "接受到断线连接消息";
     },
     showLcon(){
         this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
@@ -81,7 +78,6 @@ cc.Class({
             this.gameOver();
            return;
         }
-        this.scheduleOnce(this.checkGameStatus,5);
         Game.BlockManager.deleteWholeBlock();
         if(!GLB.isRoomOwner){
             return;
@@ -130,7 +126,9 @@ cc.Class({
                 uiTip.setData("游戏无法进行");
             }
         });
-        Game.GameManager.recurLobby();
+        this.scheduleOnce(()=>{
+            Game.GameManager.recurLobby();
+        },2.5)
     },
     arrBlcokData(row,col){
         let y = GLB.limitY - GLB.range * row;
@@ -139,7 +137,7 @@ cc.Class({
             pos: cc.p(x,y),
             type: 0,
             sprite: null
-        }
+        };
         return data;
     },
     leaveRoom(data) {
@@ -191,7 +189,7 @@ cc.Class({
         Game.GameManager.bExit = false;
         this.scheduleOnce(()=>{
             Game.GameManager.bExit = true;
-        },2.0);
+        },3.0);
         if (Game.GameManager.gameState !== GameState.Over) {
             uiFunc.openUI("uiTip", function(obj) {
                 var uiTip = obj.getComponent("uiTip");
@@ -233,7 +231,7 @@ cc.Class({
     },
     gameStart(){
         clearInterval(this.scheduleCountDown);
-        this.unschedule(this.checkGameStatus);
+        //this.unschedule(this.checkGameStatus);
         Game.ClickManager.bClick = true;
         this.nodeDict['prompt'].active = false;
         this.scheduleCountDown = setInterval(function(){
@@ -323,7 +321,6 @@ cc.Class({
         this.gameStart();
     },
     onDestroy() {
-        clientEvent.off(clientEvent.eventType.aaa, this.aaa, this);
         clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
         clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.off(clientEvent.eventType.refreshSlateBtn, this.refreshSlateBtn, this);
