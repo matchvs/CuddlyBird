@@ -41,6 +41,9 @@ cc.Class({
 
     setData: function(rankdata) {
         console.log("setData");
+        rankdata = rankdata.filter(function(data) {
+            return data.score >= 0;
+        });
         for (var i = 0; i < rankdata.length; i++) {
             if (i === 0) {
                 this.rank1Node.active = true;
