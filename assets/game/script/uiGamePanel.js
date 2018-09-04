@@ -44,8 +44,7 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.setCount, this.setCount, this);
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
-        this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
-        //this.scheduleOnce(this.checkGameStatus,3);
+        this.scheduleOnce(this.checkGameStatus,10);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -146,7 +145,8 @@ cc.Class({
                 var uiTip = obj.getComponent("uiTip");
                 if (uiTip) {
                     if (data.leaveRoomInfo.userId !== GLB.userInfo.id) {
-                        uiTip.setData("对手离开了游戏");
+                        uiTip.setData("对手重新连接失败，即将结束游戏");
+                        cc.log("对手离开了游戏");
                     }
                 }
             }.bind(this));
@@ -182,6 +182,7 @@ cc.Class({
         cc.audioEngine.stop(this.bgmId);
     },
     roundStart: function() {
+        this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
         this.initArrBlock();
         this.showLcon();
     },
@@ -195,6 +196,7 @@ cc.Class({
                 var uiTip = obj.getComponent("uiTip");
                 if (uiTip) {
                     uiTip.setData("对手离开了游戏");
+                    cc.log("对手离开了游戏");
                 }
             }.bind(this));
         }
@@ -231,7 +233,7 @@ cc.Class({
     },
     gameStart(){
         clearInterval(this.scheduleCountDown);
-        //this.unschedule(this.checkGameStatus);
+        this.unschedule(this.checkGameStatus);
         Game.ClickManager.bClick = true;
         this.nodeDict['prompt'].active = false;
         this.scheduleCountDown = setInterval(function(){

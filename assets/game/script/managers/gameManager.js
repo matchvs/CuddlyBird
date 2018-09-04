@@ -99,20 +99,25 @@ cc.Class({
     networkStateNotify: function(netNotify) {
         console.log("netNotify");
         console.log("netNotify.owner:" + netNotify.owner);
-        if (netNotify.userID !== GLB.userInfo.id) {
-            GLB.isRoomOwner = true;
-        }
-        uiFunc.openUI("uiTip", function(obj) {
-            var uiTip = obj.getComponent("uiTip");
-            if (uiTip) {
-                uiTip.setData("对手离开了游戏");
-            }
-        });
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
-        // if(Game.GameManager.gameState !== GameState.play){
-        //     this.recurLobby();
-        // }
-        clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
+        if (this.gameState === GameState.Play) {
+            GLB.isRoomOwner = true;
+            if (netNotify.state === 1){
+                uiFunc.openUI("uiTip", function(obj) {
+                    var uiTip = obj.getComponent("uiTip");
+                    if (uiTip) {
+                        uiTip.setData("对手离开了游戏");
+                    }
+                });
+            } else if (netNotify.state === 3){
+                var data = {
+                    leaveRoomInfo: netNotify
+                };
+                clientEvent.dispatch(clientEvent.eventType.leaveRoomNotify, data);
+            }
+        }else{
+            clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
+        }
     },
 
     kickPlayerNotify: function(kickPlayerNotify) {
@@ -237,31 +242,30 @@ cc.Class({
 
     errorResponse: function(error, msg) {
         let recurLobby = true;
-
         this.openTip("网络连接中断");
-        GLB.isRoomOwner = false;
+        if (this.gameState === GameState.Play){
+            GLB.isRoomOwner = false;
+        }
         console.log("错误信息：" + error);
         console.log("错误信息：" + msg);
-        if (error === 0 || error === 1001){
-            var gamePanel = uiFunc.findUI("uiGamePanel");
-            if (gamePanel) {
-                if (this.bUiReconnection) {
-                    this.bUiReconnection = false;
-                    Game.GameManager.gameState = GameState.None;
-                    this.schedule(this.reconnectCountDown,1);
+        var gamePanel = uiFunc.findUI("uiGamePanel");
+        if (gamePanel) {
+            if (this.bUiReconnection) {
+                this.bUiReconnection = false;
+                Game.GameManager.gameState = GameState.None;
+                this.schedule(this.reconnectCountDown,1);
+            }
+            recurLobby = false;
+            cc.log("游戏界面存在");
+        }
+        if (recurLobby) {
+            setTimeout(function() {
+                if (error === 0){
+                    this.closeUiPanel();
+                }else{
+                    this.recurLobby();
                 }
-                recurLobby = false;
-                cc.log("游戏界面存在");
-            }
-            if (recurLobby) {
-                setTimeout(function() {
-                    if (error === 0){
-                        this.closeUiPanel();
-                    }else{
-                        this.recurLobby();
-                    }
-                }.bind(this), 2000);
-            }
+            }.bind(this), 2000);
         }
     },
     openTip(string){
