@@ -15,7 +15,9 @@ cc.Class({
         this.userNameLb.string = data.nick;
         cc.loader.load({url: data.url, type: 'png'}, function(err, texture) {
             var spriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));
-            this.userIcon.spriteFrame = spriteFrame;
+            if(this.userIcon) {
+                this.userIcon.spriteFrame = spriteFrame;
+            }
         }.bind(this));
         this.userScoreLb.string = data.score;
     }
