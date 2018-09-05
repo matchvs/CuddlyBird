@@ -42,7 +42,7 @@ cc.Class({
     setData: function(rankdata) {
         console.log("setData");
         rankdata = rankdata.filter(function(data) {
-            return data.score >= 0;
+            return data.score !== Number.MAX_SAFE_INTEGER;
         });
         for (var i = 0; i < rankdata.length; i++) {
             if (i === 0) {

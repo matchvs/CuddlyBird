@@ -628,7 +628,7 @@ cc.Class({
                     }
                 }
                 if (!isContainSelf) {
-                    this.setRankData(-1, function() {
+                    this.setRankData(Number.MAX_SAFE_INTEGER, function() {
                         // 设置成功，取值--
                         this.getUserInfoFromRank();
                     }.bind(this));
@@ -702,7 +702,7 @@ cc.Class({
                 }
             }
             if (!isContainSelf) {
-                this.setRankData(-1);
+                this.setRankData(Number.MAX_SAFE_INTEGER);
             }
         });
     },
