@@ -38,6 +38,11 @@ cc.Class({
         this.uiTipBk = cc.instantiate(this.uiTip);
         this.uiTipBk.parent = this.node;
         this.uiTipBk.active = false;
+
+        if (window.BK){
+            BK.Audio.switch = false;
+            BK.Script.logToConsole = 1
+        }
     },
 
     leaveRoom: function(data) {
@@ -316,7 +321,6 @@ cc.Class({
         if (gamePanel) {
             uiFunc.closeUI("uiGamePanel");
             gamePanel.destroy();
-            cc.audioEngine.stop(gamePanel.getComponent("uiGamePanel").bgmId);
         }
         this.recurLobby();
     },

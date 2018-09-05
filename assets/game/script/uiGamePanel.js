@@ -33,6 +33,9 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
+        if (window.BK){
+            BK.Audio.switch = true;
+        }
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -180,6 +183,7 @@ cc.Class({
             Game.GameManager.sendEventEx(msg);
         }
         cc.audioEngine.stop(this.bgmId);
+
     },
     roundStart: function() {
         this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
@@ -335,6 +339,9 @@ cc.Class({
         this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);
         clearInterval(this.scheduleCountDown);
         cc.audioEngine.stop(this.bgmId);
+        if (window.BK){
+            BK.Audio.switch = false;
+        }
     }
 
 });
