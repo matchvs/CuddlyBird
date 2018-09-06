@@ -47,7 +47,7 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.setCount, this.setCount, this);
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
-        this.scheduleOnce(this.checkGameStatus,10);
+        this.scheduleOnce(this.checkGameStatus,5);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -122,12 +122,7 @@ cc.Class({
         this.sendInitMapMsg(arrMap);
     },
     checkGameStatus(){
-        uiFunc.openUI("uiTip", function(obj) {
-            var uiTip = obj.getComponent("uiTip");
-            if (uiTip) {
-                uiTip.setData("游戏无法进行");
-            }
-        });
+        Game.GameManager.openTip("游戏无法进行");
         this.scheduleOnce(()=>{
             Game.GameManager.recurLobby();
         },2.5)
