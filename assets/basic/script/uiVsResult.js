@@ -6,17 +6,16 @@ cc.Class({
     properties: {
         loseClip: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         },
         victoryClip: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         }
     },
 
     start() {
         var isLose = Game.GameManager.isRivalLeave ? false : Game.PlayerManager.self.score < Game.PlayerManager.rival.score;
-
         this.player = this.nodeDict["player"].getComponent("resultPlayerIcon");
         this.player.setData(Game.PlayerManager.self.playerId);
         this.rival = this.nodeDict["rival"].getComponent("resultPlayerIcon");
@@ -46,8 +45,6 @@ cc.Class({
         }
         uiFunc.closeUI(this.node.name);
         this.node.destroy();
-
-
         Game.GameManager.lobbyShow();
     },
     showScore(){

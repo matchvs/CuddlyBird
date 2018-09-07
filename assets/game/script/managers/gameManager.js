@@ -40,8 +40,7 @@ cc.Class({
         this.uiTipBk.active = false;
 
         if (window.BK){
-            BK.Audio.switch = false;
-            BK.Script.logToConsole = 1
+            BK.Audio.switch = true;
         }
     },
 
@@ -246,14 +245,17 @@ cc.Class({
     },
 
     errorResponse: function(error, msg) {
-        if (error !== 406 && error !== 405) {
-            let recurLobby = true;
-            this.openTip("网络连接中断");
-            if (this.gameState === GameState.Play) {
-                GLB.isRoomOwner = false;
-            }
-            console.log("错误信息：" + error);
-            console.log("错误信息：" + msg);
+        if (error === 406 || error === 405) {
+            return;
+        }
+        let recurLobby = true;
+        this.openTip("网络连接中断");
+        if (this.gameState === GameState.Play) {
+            GLB.isRoomOwner = false;
+        }
+        console.log("错误信息：" + error);
+        console.log("错误信息：" + msg);
+        if (error === 1001 || error === 0){
             var gamePanel = uiFunc.findUI("uiGamePanel");
             if (gamePanel) {
                 if (this.bUiReconnection) {
@@ -283,7 +285,6 @@ cc.Class({
         uiTip.setPosition(cc.p(0,0));
     },
     closeUiPanel(){
-        //var scene = cc.director.getScene().getName();
         var uiList = uiFunc.getUiList();
         for (let uiPanel of uiList){
             var uiPanelName = uiPanel.getName();
@@ -500,9 +501,6 @@ cc.Class({
             if (info.cpProto.indexOf(GLB.BUBBLE) >= 0) {
                 Game.BubbleManager.initBubble(cpProto.type, cpProto.id);
             }
-            if (info.cpProto.indexOf(GLB.ADD_COMBO) >= 0) {
-                Game.ComboManager.addCombo(cpProto.pos, cpProto.playerId);
-            }
             if (info.cpProto.indexOf(GLB.TIME_OUT) >= 0) {
                 Game.BlockManager.nextRound();
             }
@@ -534,6 +532,7 @@ cc.Class({
                         if (uiTip) {
                             uiTip.setData("重新连接成功");
                         }
+                        Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
                     });
                 }
                 clientEvent.dispatch(clientEvent.eventType.setReconnectionData, cpProto);
@@ -601,8 +600,8 @@ cc.Class({
                         this.network.send("connector.entryHandler.login", {
                             "account": GLB.userInfo.id + "",
                             "channel": "0",
-                            "userName": Game.GameManager.nickName ? Game.GameManager.nickName : GLB.userInfo.id + "",
-                            "headIcon": Game.GameManager.avatarUrl ? Game.GameManager.avatarUrl : "-"
+                            "userName": GLB.nickName ? GLB.nickName : GLB.userInfo.id + "",
+                            "headIcon": GLB.avatarUrl ? GLB.avatarUrl : "-"
                         });
                     }.bind(this)
                 );
@@ -627,8 +626,8 @@ cc.Class({
                         var rd = data.data.ranking_list[i];
                         if (rd.selfFlag) {
                             isContainSelf = true;
-                            Game.GameManager.avatarUrl = rd.url;
-                            Game.GameManager.nickName = rd.nick;
+                            GLB.avatarUrl = rd.url;
+                            GLB.nickName = rd.nick;
                             break;
                         }
                     }
@@ -645,13 +644,14 @@ cc.Class({
 
     userInfoReq: function(userId) {
         if (!Game.GameManager.network.isConnected()) {
-            try {
+
                 Game.GameManager.network.connect(GLB.IP, GLB.PORT, function() {
+
                         Game.GameManager.network.send("connector.entryHandler.login", {
                             "account": GLB.userInfo.id + "",
                             "channel": "0",
-                            "userName": Game.GameManager.nickName ? Game.GameManager.nickName : GLB.userInfo.id + "",
-                            "headIcon": Game.GameManager.avatarUrl ? Game.GameManager.avatarUrl : "-"
+                            "userName": GLB.nickName ? GLB.nickName : GLB.userInfo.id + "",
+                            "headIcon": GLB.avatarUrl ? GLB.avatarUrl : "-"
                         });
                         setTimeout(function() {
                             Game.GameManager.network.send("connector.entryHandler.findPlayerByAccount", {
@@ -660,10 +660,6 @@ cc.Class({
                         }, 200);
                     }
                 );
-            }
-            catch (e) {
-
-            }
         } else {
             Game.GameManager.network.send("connector.entryHandler.findPlayerByAccount", {
                 "account": userId + "",

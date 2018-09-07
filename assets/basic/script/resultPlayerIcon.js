@@ -15,6 +15,7 @@ cc.Class({
 
     setData: function(id) {
         this.playerId = id;
+        this.nameLb.string = this.playerId;
         clientEvent.on(clientEvent.eventType.playerAccountGet, this.userInfoSet, this);
         Game.GameManager.userInfoReq(this.playerId);
     },

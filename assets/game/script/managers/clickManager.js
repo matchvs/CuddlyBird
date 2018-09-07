@@ -28,7 +28,7 @@ cc.Class({
     setChoiceBox(){
         //创建点击效果的框 并隐藏
         this.choiceBox = cc.instantiate(this.choiceBoxPrefab);
-        this.choiceBox.parent = Game.BlockManager.node;
+        this.choiceBox.parent = this.node;
         this.choiceBox.setPosition(cc.p(0,0));
         this.choiceBox.setLocalZOrder(100);
         this.choiceBox.opacity = 0;

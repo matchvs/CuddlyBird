@@ -12,15 +12,17 @@ cc.Class({
         this.nodeDict["joinRoom"].on("click", this.joinRoom, this);
         this.nodeDict["inviteFriend"].on("click", this.inviteFriend, this);
         this.nodeDict["exit"].on("click", this.exit, this);
-        if (Game.GameManager.nickName) {
-            this.nodeDict["name"].getComponent(cc.Label).string = Game.GameManager.nickName;
+        if (GLB.nickName) {
+            this.nodeDict["name"].getComponent(cc.Label).string = GLB.nickName;
         } else {
             this.nodeDict["name"].getComponent(cc.Label).string = GLB.userInfo.id;
         }
-        if (Game.GameManager.avatarUrl) {
-            cc.loader.load({url: Game.GameManager.avatarUrl, type: 'png'}, function(err, texture) {
+        if (GLB.avatarUrl) {
+            cc.loader.load({url: GLB.avatarUrl, type: 'png'}, function(err, texture) {
                 var spriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));
-                this.nodeDict["userIcon"].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                if (this.node){
+                    this.nodeDict["userIcon"].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                }
             }.bind(this));
         }
         this.nodeDict["rank"].on("click", this.rank, this);

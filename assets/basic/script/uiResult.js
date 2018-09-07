@@ -6,17 +6,16 @@ cc.Class({
     properties: {
         loseClip: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         },
         victoryClip: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         }
     },
 
     onLoad() {
         this._super();
-
         this.player1 = this.nodeDict["player1"].getComponent("resultPlayerIcon");
         this.player1.node.active = false;
         this.player2 = this.nodeDict["player2"].getComponent("resultPlayerIcon");

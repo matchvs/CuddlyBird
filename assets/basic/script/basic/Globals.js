@@ -40,7 +40,6 @@ window.GLB = {
     DISTANCE: "distance",
     INITMAP:"initMap",
     BUBBLE:"bubble",
-    ADD_COMBO:"addCombo",
     TIME_OUT:"timeOut",
     GET_GAME_DATA:"getGameData",
     RECONNECTION_DATA:"ReconnectionData",
@@ -65,6 +64,8 @@ window.GLB = {
 
     syncFrame: true,
     FRAME_RATE: 10,
+    nickName: null,
+    avatarUrl: null,
 
     NormalBulletSpeed: 1000,
     limitX: 53,

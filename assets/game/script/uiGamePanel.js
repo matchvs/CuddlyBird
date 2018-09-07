@@ -6,11 +6,11 @@ cc.Class({
     properties: {
         bgmAudio: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         },
         startAudio: {
             default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip
         },
         selfScore:{
             default:null,
@@ -47,7 +47,7 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.setCount, this.setCount, this);
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
-        this.scheduleOnce(this.checkGameStatus,5);
+        this.scheduleOnce(this.checkGameStatus,10);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -93,8 +93,8 @@ cc.Class({
             }
         }
         //随机一个id，通过id从表中拿取数组
-        var lenght = window.dataManager.layoutDtMgr.getArrLayoutLenght();
-        var removeId = Math.floor(Math.random() * lenght + 1);
+        var length = window.dataManager.layoutDtMgr.getArrLayoutLenght();
+        var removeId = Math.floor(Math.random() * length + 1);
         var arrRemove = window.dataManager.layoutDtMgr.getDataByID(removeId).array;
         //根据拿到的id，把地图数组中相应的部分置为null
         for (let data of arrRemove){
@@ -181,6 +181,9 @@ cc.Class({
 
     },
     roundStart: function() {
+        if (window.BK){
+            BK.Audio.switch = true;
+        }
         this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
         this.initArrBlock();
         this.showLcon();
