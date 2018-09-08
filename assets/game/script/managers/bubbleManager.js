@@ -10,7 +10,7 @@ cc.Class({
         },
         bubbleClip:{
             default: null,
-            type: cc.AudioClip
+            url: cc.AudioClip
         },
         bubbleSpriteFrame:{
             default:[],

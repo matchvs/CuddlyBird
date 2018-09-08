@@ -43,7 +43,6 @@ window.GLB = {
     TIME_OUT:"timeOut",
     GET_GAME_DATA:"getGameData",
     RECONNECTION_DATA:"ReconnectionData",
-    UPDATA_ARR_MAP:"updataArrMap",
     COUNT_DOWN:"countDown",
 
     channel: 'MatchVS',

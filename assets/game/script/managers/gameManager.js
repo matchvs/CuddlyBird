@@ -35,13 +35,11 @@ cc.Class({
         this.findPlayerByAccountListener();
         this.getUserInfoFromRank();
 
+
         this.uiTipBk = cc.instantiate(this.uiTip);
         this.uiTipBk.parent = this.node;
         this.uiTipBk.active = false;
 
-        if (window.BK){
-            BK.Audio.switch = true;
-        }
     },
 
     leaveRoom: function(data) {
@@ -104,7 +102,7 @@ cc.Class({
         console.log("netNotify");
         console.log("netNotify.owner:" + netNotify.owner);
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
-        if (this.gameState === GameState.Play) {
+        if (this.gameState !== GameState.Over) {
             GLB.isRoomOwner = true;
             if (netNotify.state === 1){
                 uiFunc.openUI("uiTip", function(obj) {
@@ -331,6 +329,7 @@ cc.Class({
         if (status === 200) {
             cc.log("重新连接成功" + status);
             cc.log("重连玩家信息" + GLB.userInfo.id);
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
             if (roomUserInfoList.length <= 0) {
                 cc.log("无法获取房间信息，不能进行重新连接")
                 this.stopReconnectCountDown(false);
@@ -424,7 +423,6 @@ cc.Class({
             console.log('登录成功');
             if (info.roomID !== null && info.roomID !== "0") {
                 mvs.engine.reconnect();
-                //mvs.engine.reconnect();
             } else {
                 this.lobbyShow();
             }
@@ -513,9 +511,6 @@ cc.Class({
                     cc.log("精灵帧，准备获取未断线玩家数据");
                     clientEvent.dispatch(clientEvent.eventType.getReconnectionData);
                 }
-            }
-            if (info.cpProto.indexOf(GLB.UPDATA_ARR_MAP) >= 0) {
-                Game.BlockManager.updataArrMap(cpProto.array);
             }
             if (info.cpProto.indexOf(GLB.RECONNECTION_DATA) >= 0) {
                 if (cpProto.playerId === GLB.userInfo.id){

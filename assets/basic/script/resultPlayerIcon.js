@@ -15,14 +15,15 @@ cc.Class({
 
     setData: function(id) {
         this.playerId = id;
-        this.nameLb.string = this.playerId;
         clientEvent.on(clientEvent.eventType.playerAccountGet, this.userInfoSet, this);
         Game.GameManager.userInfoReq(this.playerId);
     },
 
     userInfoSet: function(recvMsg) {
         if (recvMsg.account == this.playerId) {
-            this.nameLb.string = recvMsg.userName;
+            if (this.nameLb){
+                this.nameLb.string = recvMsg.userName;
+            }
             if (recvMsg.headIcon && recvMsg.headIcon !== "-") {
                 cc.loader.load({url: recvMsg.headIcon, type: 'png'}, function(err, texture) {
                     var spriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));

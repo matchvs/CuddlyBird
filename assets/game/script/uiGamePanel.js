@@ -6,11 +6,11 @@ cc.Class({
     properties: {
         bgmAudio: {
             default: null,
-            type: cc.AudioClip
+            url: cc.AudioClip
         },
         startAudio: {
             default: null,
-            type: cc.AudioClip
+            url: cc.AudioClip
         },
         selfScore:{
             default:null,
@@ -33,9 +33,7 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
-        if (window.BK){
-            BK.Audio.switch = true;
-        }
+
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -48,6 +46,7 @@ cc.Class({
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
         this.scheduleOnce(this.checkGameStatus,10);
+        this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
     },
     sendExpressionMsg(event, customEventData){
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -89,7 +88,7 @@ cc.Class({
         for(let row = 0; row < 8; row++){
             arrMap[row] = [];
             for (let col = 0; col < 9; col++){
-                arrMap[row][col] = this.arrBlcokData(row,col);
+                arrMap[row][col] = 0;
             }
         }
         //随机一个id，通过id从表中拿取数组
@@ -98,7 +97,7 @@ cc.Class({
         var arrRemove = window.dataManager.layoutDtMgr.getDataByID(removeId).array;
         //根据拿到的id，把地图数组中相应的部分置为null
         for (let data of arrRemove){
-            arrMap[data[0]][data[1]].type = null;
+            arrMap[data[0]][data[1]] = null;
         }
         //number为需要生成方块的数量
         var number = 72 - arrRemove.length;
@@ -112,9 +111,9 @@ cc.Class({
         //循环给地图数组赋予方块种类
         for (let row = 0;row < 8 ; row++){
             for (let col = 0; col < 9; col++){
-                if (arrMap[row][col].type !== null) {
+                if (arrMap[row][col] !== null) {
                     let index = Math.floor(Math.random() * arrBlock.length);
-                    arrMap[row][col].type = arrBlock[index];
+                    arrMap[row][col] = arrBlock[index];
                     arrBlock.splice(index,1);
                 }
             }
@@ -126,16 +125,6 @@ cc.Class({
         this.scheduleOnce(()=>{
             Game.GameManager.recurLobby();
         },2.5)
-    },
-    arrBlcokData(row,col){
-        let y = GLB.limitY - GLB.range * row;
-        let x = GLB.limitX + GLB.range * col;
-        let data = {
-            pos: cc.p(x,y),
-            type: 0,
-            sprite: null
-        };
-        return data;
     },
     leaveRoom(data) {
         if (Game.GameManager.gameState !== GameState.Over) {
@@ -154,13 +143,11 @@ cc.Class({
         if(!GLB.isRoomOwner){
             return;
         }
-        for (let i = 0; i < arrMap.length; i++){
-            if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
-                mvs.engine.sendFrameEvent(JSON.stringify({
-                    action: GLB.INITMAP,
-                    array: arrMap[i]
-                }));
-            }
+        if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
+            mvs.engine.sendFrameEvent(JSON.stringify({
+                action: GLB.INITMAP,
+                array: arrMap
+            }));
         }
     },
     exit() {
@@ -181,10 +168,6 @@ cc.Class({
 
     },
     roundStart: function() {
-        if (window.BK){
-            BK.Audio.switch = true;
-        }
-        this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
         this.initArrBlock();
         this.showLcon();
     },
@@ -264,7 +247,8 @@ cc.Class({
     },
     getReconnectionData(){
         cc.log("发送重新连接数据");
-        this.regenerationArrMap();
+        var arrMap = Game.BlockManager.getArrMap();
+        this.sendInitMapMsg(arrMap);
         var selfData = Game.PlayerManager.self.getData();
         var rivalData = Game.PlayerManager.rival.getData();
         var gameData = {
@@ -280,22 +264,6 @@ cc.Class({
                 playerId: Game.PlayerManager.self.playerId,
                 gameData: gameData
             }));
-        }
-    },
-    regenerationArrMap(){
-        cc.log("发送掉线玩家地图")
-        var arrMap = Game.BlockManager.getArrMap();
-        if (arrMap === []){
-            return;
-        }
-        for (let i = 0; i < arrMap.length; i++){
-            if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
-                mvs.engine.sendFrameEvent(JSON.stringify({
-                    action: GLB.UPDATA_ARR_MAP,
-                    array: arrMap[i],
-                    id: GLB.userInfo.id
-                }));
-            }
         }
     },
     setReconnectionData(cpProto){
@@ -319,9 +287,11 @@ cc.Class({
         }
         Game.PlayerManager.self.changeScore();
         Game.PlayerManager.rival.changeScore();
-        this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
-        this.showLcon();
+        if (this.nodeDict['tab'] !== null){
+            this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
+        }
         Game.GameManager.gameState = GameState.Play;
+        this.showLcon();
         this.gameStart();
     },
     onDestroy() {
@@ -337,9 +307,6 @@ cc.Class({
         this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);
         clearInterval(this.scheduleCountDown);
         cc.audioEngine.stop(this.bgmId);
-        if (window.BK){
-            BK.Audio.switch = false;
-        }
-    }
+     }
 
 });

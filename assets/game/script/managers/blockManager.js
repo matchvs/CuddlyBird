@@ -9,7 +9,7 @@ cc.Class({
         },
         linkAudio: {
             default: null,
-            type: cc.AudioClip
+            url: cc.AudioClip
         },
         blockSpriteFrame:{
             default:[],
@@ -25,41 +25,26 @@ cc.Class({
         this.blockPool = new cc.NodePool();
     },
     receiveArrMap(array){
-        this.arrMap.push(array);
-        this.index++;
-        if(this.index >= 8) {
-            this.index = 0;
-            this.bubblingSort(this.arrMap);
-            this.initMap(this.arrMap);
+        this.deleteWholeBlock();
+        for(let row = 0; row < 8; row++){
+            this.arrMap[row] = [];
+            for (let col = 0; col < 9; col++){
+                this.arrMap[row][col] = this.arrBlcokData(row,col,array[row][col]);
+            }
         }
-
+        this.initMap(this.arrMap);
     },
-    updataArrMap(array){
-        this.newArrMap.push(array);
-        this.index++;
-        if(this.index >= 8) {
-            cc.log("刷新地图方块");
-            this.index = 0;
-            this.deleteWholeBlock();
-            this.arrMap.push(...this.newArrMap);
-            this.newArrMap = [];
-            this.bubblingSort(this.arrMap);
-            this.initMap(this.arrMap);
-        }
+    arrBlcokData(row,col,type){
+        let y = GLB.limitY - GLB.range * row;
+        let x = GLB.limitX + GLB.range * col;
+        let data = {
+            pos: cc.p(x,y),
+            type: type,
+            sprite: null
+        };
+        return data;
     },
 
-    bubblingSort(array){
-        //冒泡排序数组
-        for (let i = 0 ; i < array.length - 1 ;i++){
-            for (let j = 0; j < array.length - 1 -i;j++){
-                if (array[j][0].pos.y < array[j + 1][0].pos.y){
-                    var temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
-                }
-            } 
-        }
-    },
     initMap(arrMap){
         //初始化地图
         for(let row = 0; row < 8; row++){
@@ -155,13 +140,7 @@ cc.Class({
         for (let row = 0; row < 8 ; row++){
             arrMap[row] = [];
             for(let col = 0; col < 9; col++){
-                let data = {
-                    pos:this.arrMap[row][col].pos,
-                    type:this.arrMap[row][col].type,
-                    sprite:null
-                }
-                arrMap[row][col] = data;
-
+                arrMap[row][col] = this.arrMap[row][col].type;
             }
         }
         return arrMap;
