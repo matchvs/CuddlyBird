@@ -37,6 +37,7 @@ cc.Class({
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
+        clientEvent.on(clientEvent.eventType.updateMap, this.sendInitMapMsg, this);
         clientEvent.on(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.on(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
         clientEvent.on(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoom, this);
@@ -46,6 +47,9 @@ cc.Class({
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
         this.scheduleOnce(this.checkGameStatus,10);
+        if (window.BK && !BK.Audio.switch){
+            BK.Audio.switch = true;
+        }
         this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
     },
     sendExpressionMsg(event, customEventData){
@@ -140,9 +144,9 @@ cc.Class({
         }
     },
     sendInitMapMsg(arrMap) {
-        if(!GLB.isRoomOwner){
-            return;
-        }
+        // if(!GLB.isRoomOwner){
+        //     return;
+        // }
         if (Game.GameManager.gameState !== GameState.Over) { //&& GLB.isRoomOwner
             mvs.engine.sendFrameEvent(JSON.stringify({
                 action: GLB.INITMAP,
@@ -211,6 +215,10 @@ cc.Class({
         this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
         this.nodeDict['number'].getComponent(cc.Sprite).spriteFrame = this.numberSpriteFrame[this.round - 1];
         this.nodeDict['round'].getComponent(cc.Animation).play("round1");
+        if (window.BK && !BK.Audio.switch){
+            BK.Audio.switch = true;
+            this.bgmId = cc.audioEngine.play(this.bgmAudio, true, 1);
+        }
         this.scheduleOnce(()=>{
             cc.audioEngine.play(this.startAudio, false, 1);
         },2.5);
@@ -292,7 +300,14 @@ cc.Class({
         }
         Game.GameManager.gameState = GameState.Play;
         this.showLcon();
+        this.scheduleOnce(()=>{
+            if (!this.playerLcon.icon.spriteFrame){
+                Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+                this.showLcon();
+            }
+        },1);
         this.gameStart();
+
     },
     onDestroy() {
         clientEvent.off(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -307,6 +322,9 @@ cc.Class({
         this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);
         clearInterval(this.scheduleCountDown);
         cc.audioEngine.stop(this.bgmId);
+        if (window.BK){
+            BK.Audio.switch = false;
+        }
      }
 
 });

@@ -101,18 +101,26 @@ cc.Class({
             this.node.dispatchEvent(new cc.Event.EventCustom(clientEvent.eventType.nextRound,true));
             return;
         }
+
         if (this.automaticClearing()) {
             return;
         }
-        var number1 = 0;
-        var number2 = 0;
-        while (number1 === number2){
-            number1 = Math.floor(Math.random() * arrBlock.length);
-            number2 = Math.floor(Math.random() * arrBlock.length);
+        if(GLB.isRoomOwner){
+            while (true){
+                var number1 = 0;
+                var number2 = 0;
+                while (number1 === number2){
+                    number1 = Math.floor(Math.random() * arrBlock.length);
+                    number2 = Math.floor(Math.random() * arrBlock.length);
+                }
+                this.exchangeType(arrBlock[number1],arrBlock[number2]);
+                if (this.automaticClearing()) {
+                    break;
+                }
+            }
+            var arrMap = this.getArrMap();
+            clientEvent.dispatch(clientEvent.eventType.updateMap, arrMap);
         }
-        this.exchangeType(arrBlock[number1],arrBlock[number2]);
-        this.resettingMap();
-
     },
     exchangeType(block1,block2){
         var temp = block1.type;

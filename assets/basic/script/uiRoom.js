@@ -89,7 +89,9 @@ cc.Class({
                 break;
             }
         }
-        this.ownerId = data.owner;
+        if (data.userId !== GLB.userInfo.id) {
+            this.ownerId = GLB.userInfo.id;
+        }
         if (this.ownerId === GLB.userInfo.id) {
             GLB.isRoomOwner = true;
         }
@@ -109,7 +111,10 @@ cc.Class({
                 break;
             }
         }
-        this.ownerId = data.leaveRoomInfo.owner;
+        if (data.leaveRoomInfo.userId !== GLB.userInfo.id) {
+            this.ownerId = GLB.userInfo.id;
+        }
+
         if (this.ownerId === GLB.userInfo.id) {
             GLB.isRoomOwner = true;
         }

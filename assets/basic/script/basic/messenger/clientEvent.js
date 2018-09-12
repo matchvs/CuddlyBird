@@ -12,6 +12,7 @@ window.clientEvent = {
         getReconnectionData:"getReconnectionData",
         setReconnectionData:"setReconnectionData",
         setCount:"setCount",
+        updateMap:"updateMap",
 
         playerAccountGet: "playerAccountGet",
         initResponse: "initResponse",
@@ -30,7 +31,7 @@ window.clientEvent = {
         kickPlayerNotify: "kickPlayerNotify"
     },
     eventListener: null
-}
+};
 
 clientEvent.init = function() {
     clientEvent.eventListener = eventListener.create();

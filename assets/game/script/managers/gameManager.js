@@ -35,11 +35,13 @@ cc.Class({
         this.findPlayerByAccountListener();
         this.getUserInfoFromRank();
 
-
         this.uiTipBk = cc.instantiate(this.uiTip);
         this.uiTipBk.parent = this.node;
         this.uiTipBk.active = false;
 
+        if (window.BK && BK.Audio.switch){
+            BK.Audio.switch = false;
+        }
     },
 
     leaveRoom: function(data) {
@@ -102,7 +104,7 @@ cc.Class({
         console.log("netNotify");
         console.log("netNotify.owner:" + netNotify.owner);
         console.log("玩家：" + netNotify.userID + " state:" + netNotify.state);
-        if (this.gameState !== GameState.Over) {
+        if (this.gameState === GameState.Play) {
             GLB.isRoomOwner = true;
             if (netNotify.state === 1){
                 uiFunc.openUI("uiTip", function(obj) {
@@ -117,9 +119,8 @@ cc.Class({
                 };
                 clientEvent.dispatch(clientEvent.eventType.leaveRoomNotify, data);
             }
-        }else{
-            clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
         }
+        clientEvent.dispatch(clientEvent.eventType.leaveRoomMedNotify, netNotify);
     },
 
     kickPlayerNotify: function(kickPlayerNotify) {
@@ -266,11 +267,12 @@ cc.Class({
             }
             if (recurLobby) {
                 setTimeout(function() {
-                    if (error === 0) {
-                        this.closeUiPanel();
-                    } else {
-                        this.recurLobby();
-                    }
+                    // if (error === 0) {
+                    //     this.closeUiPanel();
+                    // } else {
+                    //     this.recurLobby();
+                    // }
+                    this.recurLobby();
                 }.bind(this), 2000);
             }
         }
@@ -527,8 +529,8 @@ cc.Class({
                         if (uiTip) {
                             uiTip.setData("重新连接成功");
                         }
-                        Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
                     });
+                    Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
                 }
                 clientEvent.dispatch(clientEvent.eventType.setReconnectionData, cpProto);
             }
