@@ -33,7 +33,8 @@ cc.Class({
         this._super();
         this.round = 0;
         this.count = 0;
-
+        this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
+        this.rivalLcon = this.nodeDict["rival"].getComponent("resultPlayerIcon");
         this.node.on(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.on(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         clientEvent.on(clientEvent.eventType.roundStart, this.roundStart, this);
@@ -44,6 +45,7 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.getReconnectionData, this.getReconnectionData, this);
         clientEvent.on(clientEvent.eventType.setReconnectionData, this.setReconnectionData, this);
         clientEvent.on(clientEvent.eventType.setCount, this.setCount, this);
+        clientEvent.on(clientEvent.eventType.checkLcon, this.checkLcon, this);
         this.nodeDict["exit"].on(cc.Node.EventType.TOUCH_START, this.exit, this);
         this.nodeDict['round'].getComponent(cc.Animation).on('finished', this.gameStart, this);
         this.scheduleOnce(this.checkGameStatus,10);
@@ -62,10 +64,14 @@ cc.Class({
         }
     },
     showLcon(){
-        this.playerLcon = this.nodeDict["player"].getComponent("resultPlayerIcon");
         this.playerLcon.setData(GLB.playerUserIds[0]);
-        this.rivalLcon = this.nodeDict["rival"].getComponent("resultPlayerIcon");
         this.rivalLcon.setData(GLB.playerUserIds[1]);
+    },
+    checkLcon(){
+        if (this.playerLcon.icon.spriteFrame === null){
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+            this.scheduleOnce(this.showLcon,1);
+        }
     },
     setPlayerId(data){
         var arrPlayer = data.rsp.userInfos;
@@ -137,7 +143,6 @@ cc.Class({
                 if (uiTip) {
                     if (data.leaveRoomInfo.userId !== GLB.userInfo.id) {
                         uiTip.setData("对手重新连接失败，即将结束游戏");
-                        cc.log("对手离开了游戏");
                     }
                 }
             }.bind(this));
@@ -295,17 +300,11 @@ cc.Class({
         }
         Game.PlayerManager.self.changeScore();
         Game.PlayerManager.rival.changeScore();
-        if (this.nodeDict['tab'] !== null){
+        if (this.nodeDict){
             this.nodeDict['tab'].getComponent(cc.Label).string = "Round "+this.round+"/3";
         }
         Game.GameManager.gameState = GameState.Play;
         this.showLcon();
-        this.scheduleOnce(()=>{
-            if (!this.playerLcon.icon.spriteFrame){
-                Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
-                this.showLcon();
-            }
-        },1);
         this.gameStart();
 
     },
@@ -317,6 +316,7 @@ cc.Class({
         clientEvent.off(clientEvent.eventType.getRoomDetailResponse, this.setPlayerId, this);
         clientEvent.off(clientEvent.eventType.getReconnectionData, this.getReconnectionData, this);
         clientEvent.off(clientEvent.eventType.setCount, this.setCount, this);
+        clientEvent.off(clientEvent.eventType.checkLcon, this.checkLcon, this);
         this.node.off(clientEvent.eventType.nextRound,this.initArrBlock,this);
         this.node.off(clientEvent.eventType.setScoreProgressBar,this.setScoreProgressBar,this);
         this.nodeDict["exit"].off(cc.Node.EventType.TOUCH_START, this.exit, this);

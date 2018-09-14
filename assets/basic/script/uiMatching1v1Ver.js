@@ -10,11 +10,13 @@ cc.Class({
         this._super();
         this.nodeDict["quit"].on("click", this.leaveRoom, this);
         this.bQuit = true;
+        this.joinRoom = false;
         clientEvent.on(clientEvent.eventType.joinRoomResponse, this.joinRoomResponse, this);
         clientEvent.on(clientEvent.eventType.joinRoomNotify, this.joinRoomNotify, this);
         clientEvent.on(clientEvent.eventType.leaveRoomResponse, this.leaveRoomResponse, this);
         clientEvent.on(clientEvent.eventType.leaveRoomNotify, this.leaveRoomNotify, this);
         clientEvent.on(clientEvent.eventType.joinOverResponse, this.joinOverResponse, this);
+        clientEvent.on(clientEvent.eventType.checkLcon, this.checkLcon, this);
     },
 
     joinRandomRoom: function() {
@@ -82,6 +84,23 @@ cc.Class({
             }
 
             GLB.playerUserIds = userIds;
+        }
+        this.joinRoom = true;
+    },
+
+    showLcon(){
+        for (var i = 0; i < GLB.playerUserIds.length; i++){
+            var playerIcon = this.playerIcons[i].getComponent('playerIcon');
+            if (playerIcon && !playerIcon.userInfo) {
+                playerIcon.setData(GLB.playerUserIds[i]);
+            }
+        }
+    },
+    checkLcon(){
+        if (this.playerIcons[i].getComponent('playerIcon').playerSprite.spriteFrame === null
+        || this.joinRoom){
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+            this.scheduleOnce(this.showLcon,1);
         }
     },
 
@@ -162,5 +181,6 @@ cc.Class({
         clientEvent.off(clientEvent.eventType.leaveRoomResponse, this.leaveRoomResponse, this);
         clientEvent.off(clientEvent.eventType.leaveRoomNotify, this.leaveRoomNotify, this);
         clientEvent.off(clientEvent.eventType.joinOverResponse, this.joinOverResponse, this);
+        clientEvent.off(clientEvent.eventType.checkLcon, this.checkLcon, this);
     }
 });

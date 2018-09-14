@@ -76,6 +76,7 @@ cc.Class({
         if (this.arrMap[first.row][first.col].type !== this.arrMap[last.row][last.col].type) {
             return;
         }
+
         cc.audioEngine.play(this.linkAudio, false, 1);
         Game.PathManager.addPath(arrPath, id);
         this.arrMap[first.row][first.col].type = null;

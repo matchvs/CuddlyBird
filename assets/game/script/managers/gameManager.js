@@ -42,6 +42,12 @@ cc.Class({
         if (window.BK && BK.Audio.switch){
             BK.Audio.switch = false;
         }
+
+        this.schedule(this.checkLcon,2);
+    },
+
+    checkLcon(){
+        clientEvent.dispatch(clientEvent.eventType.checkLcon);
     },
 
     leaveRoom: function(data) {
@@ -751,6 +757,7 @@ cc.Class({
     onDestroy() {
         clientEvent.off(clientEvent.eventType.gameOver, this.gameOver, this);
         clientEvent.off(clientEvent.eventType.leaveRoomNotify, this.leaveRoom, this);
+        this.unschedule(this.checkLcon);
     }
 
 });

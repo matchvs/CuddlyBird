@@ -13,6 +13,7 @@ window.clientEvent = {
         setReconnectionData:"setReconnectionData",
         setCount:"setCount",
         updateMap:"updateMap",
+        checkLcon:"checkLcon",
 
         playerAccountGet: "playerAccountGet",
         initResponse: "initResponse",
