@@ -64,7 +64,7 @@ cc.Class({
                 }
             }
         }
-        Game.ClickManager.setArrMap(arrMap)
+        Game.ClickManager.setArrMap(arrMap);
         Game.PlayerManager.self.combo = 1;
         Game.PlayerManager.rival.combo = 1;
     },

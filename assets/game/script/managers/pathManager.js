@@ -53,7 +53,7 @@ cc.Class({
                 this.setStraight(id,angle,data.pos,data.long);
 
             }else if(path === arrPath.length - 1){
-                 let angle = this.twoNodeRotation(arrPath[path],arrPath[path-1]);
+                let angle = this.twoNodeRotation(arrPath[path],arrPath[path-1]);
                 let pos = this.arrMap[arrPath[path].row][arrPath[path].col].pos;
                 this.setHead(id,angle,pos);
             }else{
@@ -114,7 +114,7 @@ cc.Class({
         head.setPosition(pos);
         head.getComponent(cc.Animation).play("pathHead");
         head.getComponent("path").initDelete(0.4);
-        Game.EffectManager.initEffect(pos);
+        //Game.EffectManager.initEffect(pos);
     },
     setCorner(id,angle,pos){
         if (id === Game.PlayerManager.self.playerId){

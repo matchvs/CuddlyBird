@@ -89,7 +89,6 @@ cc.Class({
             this.gameOver();
            return;
         }
-        Game.BlockManager.deleteWholeBlock();
         if(!GLB.isRoomOwner){
             return;
         }

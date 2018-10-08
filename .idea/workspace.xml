@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiGameStop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiGameStop.js.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiReconnection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiReconnection.js.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/anim/ringOfLight.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/anim/ringOfLight.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/script/managers/blockManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/managers/blockManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/script/managers/pathManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/managers/pathManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lobby/uiScript.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block_9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGameStop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGameStop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiReconnection.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiReconnection.prefab.meta" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="gameManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9937">
+              <caret line="523" column="58" selection-start-line="523" selection-start-column="58" selection-end-line="523" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientEvent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blockManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pathManager.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/pathManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="115" column="50" lean-forward="true" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="effectManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/effectManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiGamePanel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiVsResult.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiVsResult.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiMatching1v1Ver.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playerIcon.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/playerIcon.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clickManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/clickManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2850">
+              <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>uiLo</find>
+      <find>uiLobbyPanelVer</find>
+      <find>lobbyShow</find>
+      <find>cc.AudioClip</find>
+      <find>type: cc.AudioClip</find>
+      <find>uiLobbyPanel</find>
+      <find>uiFunc.openUI</find>
+      <find>gameState</find>
+      <find>userInfoReq</find>
+      <find>uiRoom</find>
+      <find>loginR</find>
+      <find>logoutr</find>
+      <find>isRoomOwner</find>
+      <find>leaveRoomMedNotify</find>
+      <find>WHITE</find>
+      <find>BLACK</find>
+      <find>leaveRoomR</find>
+      <find>leaveRoomResponse</find>
+      <find>ownerId</find>
+      <find>leaveRoom</find>
+      <find>login</find>
+      <find>uiResultVer</find>
+      <find>&quot;网络&quot;</find>
+      <find>&quot;&quot;</find>
+      <find>&quot;对手离开了游戏&quot;</find>
+      <find>playerIcons</find>
+      <find>bReconnect</find>
+      <find>deleteWholeBlock</find>
+      <find>sprite</find>
+      <find>initEffect</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiBeginnerCourse.js" />
+        <option value="$USER_HOME$/Downloads/ExtremeEvasion-master/assets/basic/script/basic/Globals.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/block.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/path.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiExit.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/playerManager.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/basic/Globals.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/resultPlayerIcon.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiResult.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/clickManager.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/blockManager.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/pathManager.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/packages/plugin-matchvs/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/packages/plugin-matchvs/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="106" />
+    <option name="y" value="23" />
+    <option name="width" value="1814" />
+    <option name="height" value="989" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="managers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CuddlyBird" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CuddlyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="move" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="" />
+      <created>1534903807203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534903807203</updated>
+      <workItem from="1534903808441" duration="68279000" />
+      <workItem from="1535523767796" duration="7646000" />
+      <workItem from="1535593219855" duration="1789000" />
+      <workItem from="1535614961012" duration="16120000" />
+      <workItem from="1535765168588" duration="10299000" />
+      <workItem from="1536024124821" duration="7688000" />
+      <workItem from="1536039861310" duration="48000" />
+      <workItem from="1536043785353" duration="7219000" />
+      <workItem from="1536054578009" duration="27000" />
+      <workItem from="1536054925240" duration="929000" />
+      <workItem from="1536109798513" duration="5777000" />
+      <workItem from="1536133831787" duration="2220000" />
+      <workItem from="1536215533133" duration="29423000" />
+      <workItem from="1536323679348" duration="29396000" />
+      <workItem from="1536649453358" duration="21351000" />
+      <workItem from="1536807032889" duration="13808000" />
+      <workItem from="1536889726452" duration="12141000" />
+      <workItem from="1538989798509" duration="205000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="234365000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="106" y="23" width="1814" height="989" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2097044" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/clickManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="114" column="20" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/data/layoutDt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="85" column="10" lean-forward="true" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiGameStop.js" />
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/comboManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.dev.js" />
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiBeginnerCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/ExtremeEvasion-master/assets/basic/script/basic/Globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/effectManager.js.meta">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/move/jump.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/effect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/path.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/imports/72/72f2fd5c-6066-4e84-8672-aaf7affab5b2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="102" column="47" lean-forward="true" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/imports/f7/f772d4ee-8495-4ea8-874e-82335e1613d7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="11104" column="8" selection-start-line="11104" selection-start-column="8" selection-end-line="11104" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiExit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret column="599897" selection-start-column="599897" selection-end-column="599897" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/断线重连异常232564 (1).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1412">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret column="507729" selection-start-column="507729" selection-end-column="507729" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/rankNetwork/pomeloBuild.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="1540" column="12" selection-start-line="1540" selection-start-column="12" selection-end-line="1540" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/rankNetwork/network.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4522">
+          <caret line="238" column="26" selection-start-line="238" selection-start-column="26" selection-end-line="238" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/playerManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/imports/cf/cf7a55a5-27b2-4185-849c-23f57ace9ea0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/Globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/imports/72/72f2fd5c-6066-4e84-8672-aaf7affab5b2.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret column="322" selection-start-column="322" selection-end-column="322" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creator.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="1576" column="20" selection-start-line="1576" selection-start-column="20" selection-end-line="1576" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/roomUserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/resultPlayerIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/playerIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiVsResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9937">
+          <caret line="523" column="58" selection-start-line="523" selection-start-column="58" selection-end-line="523" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/clickManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/effectManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/pathManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="115" column="50" lean-forward="true" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
