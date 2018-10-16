@@ -130,7 +130,6 @@ cc.Class({
 
     beginnerCourse: function() {
         uiFunc.openUI("uiBeginnerCourse");
-        //Game.GameManager.closeUiPanel();
         this.nodeDict["guide"].getComponent(cc.Button).interactable = false;
     },
     openBotton: function() {

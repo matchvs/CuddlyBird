@@ -273,11 +273,6 @@ cc.Class({
             }
             if (recurLobby) {
                 setTimeout(function() {
-                    // if (error === 0) {
-                    //     this.closeUiPanel();
-                    // } else {
-                    //     this.recurLobby();
-                    // }
                     this.recurLobby();
                 }.bind(this), 2000);
             }
@@ -289,16 +284,6 @@ cc.Class({
         uiTip.parent = cc.Canvas.instance.node;
         uiTip.getComponent("uiTip").setData(string);
         uiTip.setPosition(cc.p(0,0));
-    },
-    closeUiPanel(){
-        var uiList = uiFunc.getUiList();
-        for (let uiPanel of uiList){
-            var uiPanelName = uiPanel.getName();
-            if (uiPanelName !== ""){
-                uiFunc.closeUI(uiPanelName);
-                uiPanel.destroy();
-            }
-        }
     },
     reconnectCountDown(){
         this.number++;
@@ -312,8 +297,15 @@ cc.Class({
         this.number = 0;
         this.unschedule(this.reconnectCountDown);
         if(!success) {
-            //this.closeUiPanel();
-            this.recurLobby();
+            // uiFunc.openUI("uiTip", function(obj) {
+            //     var uiTip = obj.getComponent("uiTip");
+            //     if (uiTip) {
+            //         uiTip.setData("将要退出游戏");
+            //     }
+            // });
+            setTimeout(function() {
+                this.recurLobby();
+            }.bind(this), 2000);
         }
     },
     reconnect() {
@@ -347,7 +339,7 @@ cc.Class({
                         uiTip.setData("无法获取房间信息，不能进行重新连接");
                     }
                 });
-                this.recurLobby();
+                this.scheduleOnce(this.recurLobby(),2);
                 return;
             }
             this.stopReconnectCountDown(true);
@@ -382,11 +374,11 @@ cc.Class({
             uiFunc.openUI("uiTip", function(obj) {
                 var uiTip = obj.getComponent("uiTip");
                 if (uiTip) {
-                    uiTip.setData("重新连接失败");
+                    uiTip.setData("您已经离开房间");
                 }
             });
             this.stopReconnectCountDown(false);
-            this.recurLobby();
+            //this.recurLobby();
         }
     },
     recurLobby() {

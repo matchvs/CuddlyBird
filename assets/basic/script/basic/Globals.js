@@ -5,8 +5,7 @@ window.Game = {
     ClickManager: null,
     BubbleManager: null,
     PathManager: null,
-    ComboManager: null,
-    EffectManager: null
+    ComboManager: null
 }
 
 window.GameState = cc.Enum({

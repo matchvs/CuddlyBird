@@ -5,9 +5,9 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 223,
-      "y": 29,
-      "width": 1466,
+      "x": 98,
+      "y": 49,
+      "width": 1621,
       "height": 935,
       "layout": {
         "children": [
@@ -20,7 +20,7 @@
                 ],
                 "height": 400,
                 "type": "panel",
-                "width": 318
+                "width": 351.90625
               },
               {
                 "active": 0,
@@ -29,12 +29,12 @@
                 ],
                 "height": 441,
                 "type": "panel",
-                "width": 318
+                "width": 351.90625
               }
             ],
             "height": 844,
             "type": "dock-v",
-            "width": 318
+            "width": 351.90625
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 438,
                     "type": "panel",
-                    "width": 380
+                    "width": 420.65625
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 438,
                     "type": "panel",
-                    "width": 424
+                    "width": 469.375
                   }
                 ],
                 "height": 438,
                 "type": "dock-h",
-                "width": 807
+                "width": 893.03125
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 403,
                 "type": "panel",
-                "width": 807
+                "width": 893.03125
               }
             ],
             "height": 844,
             "type": "dock-v",
-            "width": 807
+            "width": 893.03125
           },
           {
             "active": 1,
@@ -86,7 +86,7 @@
             ],
             "height": 844,
             "type": "panel",
-            "width": 329
+            "width": 364.078125
           }
         ],
         "type": "dock-h"
@@ -101,7 +101,8 @@
         "assets",
         "scene"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "builder": {
