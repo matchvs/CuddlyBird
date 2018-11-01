@@ -84,7 +84,7 @@
             cc.loader.downloader._subpackages = settings.subpackages;
 
             if (true) {
-                BK.Script.loadlib('GameRes://src/project.js');
+                BK.Script.loadlib('GameRes://src/project.dev.js');
             }
 
             cc.view.resizeWithBrowserSize(true);
@@ -153,7 +153,7 @@
         var jsList = settings.jsList;
 
         if (!true) {
-            var bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.f6a82.js';
+            var bundledScript = settings.debug ? 'src/project.dev.d80f0.js' : 'src/project.js';
             if (jsList) {
                 jsList = jsList.map(function (x) {
                     return 'src/' + x;
@@ -190,21 +190,21 @@
     if (true) {
         BK.Script.loadlib('GameRes://libs/qqplay-adapter.js');
         BK.Script.loadlib('GameRes://src/settings.js');
-        BK.Script.loadlib('GameRes://cocos2d-js-min.js');
+        BK.Script.loadlib('GameRes://cocos2d-js.js');
         BK.Script.loadlib('GameRes://libs/qqplay-downloader.js');
         qqPlayDownloader.REMOTE_SERVER_ROOT = "";
         var prevPipe = cc.loader.md5Pipe || cc.loader.assetLoader;
         cc.loader.insertPipeAfter(prevPipe, qqPlayDownloader);
         
         // plugin script code
-        BK.Script.loadlib('GameRes://src/assets/basic/script/basic/rankNetwork/ProtoBuf.c130b.js'); 
+        BK.Script.loadlib('GameRes://src/assets/basic/script/basic/rankNetwork/ProtoBuf.dc3ef.js'); 
         
         boot();
         return;
     }
 
     if (false) {
-        require(window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.bf17e.js');
+        require(window._CCSettings.debug ? 'cocos2d-js.40383.js' : 'cocos2d-js-min.js');
         require('./libs/weapp-adapter/engine/index.js');
         var prevPipe = cc.loader.md5Pipe || cc.loader.assetLoader;
         cc.loader.insertPipeAfter(prevPipe, wxDownloader);
@@ -213,7 +213,7 @@
     }
 
     if (window.jsb) {
-        require('src/settings.55320.js');
+        require('src/settings.c5e05.js');
         require('src/jsb_polyfill.js');
         boot();
         return;
@@ -225,7 +225,7 @@
 
         var cocos2d = document.createElement('script');
         cocos2d.async = true;
-        cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.bf17e.js';
+        cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.40383.js' : 'cocos2d-js-min.js';
 
         var engineLoaded = function () {
             document.body.removeChild(cocos2d);

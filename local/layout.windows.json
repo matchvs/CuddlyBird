@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 98,
-      "y": 49,
+      "x": 148,
+      "y": 64,
       "width": 1621,
       "height": 935,
       "layout": {
@@ -20,7 +20,7 @@
                 ],
                 "height": 400,
                 "type": "panel",
-                "width": 351.90625
+                "width": 352
               },
               {
                 "active": 0,
@@ -29,12 +29,12 @@
                 ],
                 "height": 441,
                 "type": "panel",
-                "width": 351.90625
+                "width": 352
               }
             ],
             "height": 844,
             "type": "dock-v",
-            "width": 351.90625
+            "width": 352
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 438,
                     "type": "panel",
-                    "width": 420.65625
+                    "width": 421
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 438,
                     "type": "panel",
-                    "width": 469.375
+                    "width": 468.984375
                   }
                 ],
                 "height": 438,
                 "type": "dock-h",
-                "width": 893.03125
+                "width": 893
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 403,
                 "type": "panel",
-                "width": 893.03125
+                "width": 893
               }
             ],
             "height": 844,
             "type": "dock-v",
-            "width": 893.03125
+            "width": 893
           },
           {
             "active": 1,
@@ -86,7 +86,7 @@
             ],
             "height": 844,
             "type": "panel",
-            "width": 364.078125
+            "width": 364
           }
         ],
         "type": "dock-h"
@@ -122,6 +122,12 @@
       "y": 233,
       "width": 584,
       "height": 548
+    },
+    "sprite-editor": {
+      "x": 710,
+      "y": 233,
+      "width": 500,
+      "height": 522
     }
   }
 }

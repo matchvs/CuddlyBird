@@ -3,7 +3,7 @@
   "apiLevel": "",
   "appABIs": [],
   "buildPath": "./build",
-  "debug": false,
+  "debug": true,
   "embedWebDebugger": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
@@ -12,7 +12,7 @@
   "platform": "qqplay",
   "previewHeight": "720",
   "previewWidth": "1280",
-  "sourceMaps": true,
+  "sourceMaps": false,
   "template": "link",
   "useDebugKeystore": true,
   "vsVersion": "auto"
