@@ -3,12 +3,10 @@
     "__type__": "cc.Prefab",
     "_name": "",
     "_objFlags": 0,
-    "_native": "",
+    "_rawFiles": null,
     "data": {
       "__id__": 1
-    },
-    "optimizationPolicy": 0,
-    "asyncLoadAssets": false
+    }
   },
   {
     "__type__": "cc.Node",
@@ -130,8 +128,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 1.2,
+    "_scaleY": 1.2,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -388,7 +386,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 11
@@ -546,7 +544,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 15
@@ -770,8 +768,8 @@
     "_N$returnType": 0,
     "_N$inputFlag": 5,
     "_N$inputMode": 6,
-    "_N$fontSize": 40,
-    "_N$lineHeight": 40,
+    "_N$fontSize": 30,
+    "_N$lineHeight": 30,
     "_N$fontColor": {
       "__type__": "cc.Color",
       "r": 0,
@@ -780,7 +778,7 @@
       "a": 255
     },
     "_N$placeholder": " 输入房间名..",
-    "_N$placeholderFontSize": 40,
+    "_N$placeholderFontSize": 30,
     "_N$placeholderFontColor": {
       "__type__": "cc.Color",
       "r": 170,

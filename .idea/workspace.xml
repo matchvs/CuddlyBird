@@ -3,265 +3,358 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/game/script/data/layoutDt.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/data/layoutDt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg2.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg3.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg4.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/box_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/box_04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_05.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_06.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_07.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_08.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_09.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_13.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_14.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_15.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_16.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_17.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_18.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_19.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_20.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_21.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_22.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_23.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_25.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_26.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_27.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_28.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_29.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_30.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_31.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_32.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_33.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_34.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_37.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_38.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_39.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_40.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_41.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_42.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_43.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_44.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_45.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_46.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_47.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_48.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_49.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_50.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_51.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_52.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_53.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_54.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_55.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_56.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_57.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_58.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_59.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_60.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_61.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_62.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_63.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_64.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_66.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_67.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_68.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_70.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/number_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/cmshow_game_2829.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/cocos2d-js-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/cocos2d-js-min.js.51b5b.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/audio/gameover.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/gameover.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/audio/lose.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/lose.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/audio/readygo.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/readygo.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/audio/timeOver.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/timeOver.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/audio/vitory.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/vitory.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRoomList.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRoomList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user1.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user1.1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user1.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user1.2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user2.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user2.1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user2.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user2.2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user3.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user3.1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user3.3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user3.3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bian.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bian.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bot-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bot-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bot-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bot-bg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/box.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/btn-back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/btn-back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cel-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cel-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/con-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/con-user1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/con-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/con-user2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cpm-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cpm-logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cpm-logo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cpm-logo2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-use.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-use.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-user-squ.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-user-squ.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-user.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-user.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/di.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/di.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/friendsRanking.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/friendsRanking.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/gameov.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/gameov.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/go.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/go.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-k.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-k.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/icon-money.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/icon-money.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/icon-plus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/icon-plus.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/inviteFriends.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/inviteFriends.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kick.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/list-sign.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/list-sign.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/minus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/minus.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/play-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/play-user1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/play-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/play-user2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-bg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-bg4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-bg4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ready.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ready.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rome-gold.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rome-gold.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/room-kuang2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/room-kuang2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/room.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/room.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/shijiandao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/shijiandao.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-btn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-bg3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-bg3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-light.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-lose.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-lose.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-new.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-new.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-bg5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-bg5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-btn1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-btn1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-sign-user-.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-sign-user-.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-user-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/startGame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/startGame.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-bot-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-bot-bg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-con-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-con-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-con-light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-con-light.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-join-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-join-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-user-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/worldRanking.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/worldRanking.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/yuan.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/yuan.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/script/managers/comboManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/managers/comboManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/bg.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/bg.ogg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/buttonClicked.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/buttonClicked.ogg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/game.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/game.ogg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/link.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/link.ogg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/start.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/start.ogg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/bg.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_25.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_25.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_31.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_31.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_38.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_38.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_44.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_44.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_45.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_45.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_46.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_46.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_52.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_52.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/box_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/box_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_26.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_28.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_28.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_40.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_40.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_49.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_49.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_50.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_50.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_57.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_57.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_58.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_58.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_59.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_59.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_60.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_60.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_61.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_61.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_62.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_62.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_68.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_68.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/direction.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/direction.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/direction2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/direction2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/shutDown.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/shutDown.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_30.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_30.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_47.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_47.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_48.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_48.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_70.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_70.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_65.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/img_65.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/loading.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/loading.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_29.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_29.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_32.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_37.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_37.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_39.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_39.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_41.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_41.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_53.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_53.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_54.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_54.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_67.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_67.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/lobby.fire" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scenes/lobby.fire" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/cocos2d-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/libs/qqplay-downloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/qqplay/libs/qqplay-downloader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/qqplay/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/qqplay/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/022639c54.3a3d2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/02396cb92.b9c1e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/028bf33e9.e8794.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/02f3eb068.54d39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/03/031af66ed.8d4b2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/03/0381e4fd.21c68.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/04/04f004e6f.c21a3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/051254912.567f8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/0523a8ba8.bc33b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/0535b379.6cb8a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/05e6969a.bf674.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/068b790b7.ffb7f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/06b948d42.56ff3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/06c38d9b1.149fd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/07/0732ebf47.e4a16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/08582ab36.e84e3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/0864c91f9.0dd89.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/08ccf42c9.d65d3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/09/093214e6-e310-42f1-aa8a-249557f61409.4c8b3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/09/096370af7.d54e2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0c/0c54f6d72.734b7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0c/0cb711af0.d8ee0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0c/0ccfd0208.45dd4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0e/0e7396e80.50065.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0e/0e7e636ab.36cbc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0f/0f547e7f3.87a0b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0f/0fd4c6720.ec16a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/25/251b3a4b-bebc-4a3a-91c8-b98c364ecf28.a22e3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/25/25ee96c0-b377-41f1-8480-67ee7113890c.e3a28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/2a/2ae2e504-293b-407e-b2ee-34b2166909f1.d79bd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/2d/2dfde559-3b45-4e0d-954f-0da076b97772.fb7a2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/31/31da14ca-8baa-4f7f-bba3-803b9c01406b.87dc3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/34/34530aad-e587-49ce-a5e0-1aa6df6aea46.12e5b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/53/53c6bc5c-72fa-4cb8-8ca5-c230393bdb85.67655.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/60/60331843-cd45-4a29-845f-a04a25500983.411cb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/62/6289004e-d53c-402e-9628-37354fdd29a5.77e81.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/73/73480257-3054-4ef8-8aae-eb43051908e3.944eb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/74/74138760-6b01-4088-a9ea-390ba1054a55.1ca69.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/76/768e8d40-c04a-4e06-87a9-a8706781a462.51395.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/79/7990749f-c266-4ffa-b9dc-8b8591857128.f5036.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/a6/a6a1d79b-c85f-4bd5-884c-64b9534aded2.91fe5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/ab/abcc7af2-e685-45af-b478-6b66248a09ec.13396.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/c0/c088f19d-bc61-403b-8ed1-85c9ce748db2.b8db4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/c2/c264b86d-779d-4004-9e4e-477420cf57f5.e1158.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/cb/cb2065d6-7c11-457e-87ef-10844668ee4c.9921e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/d0/d0da580f-938e-48fc-97f8-5c17b93e1a3e.11005.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/e4/e4177bbb-17b2-4028-94d9-4557b2e4b8e8.8f5a4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/03/0341dee4-4b12-4c63-a404-8cb5847104bc.69b1b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/15/15c33c0a-6c2e-4cce-86f1-85c18bb5aee2.fcfb3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/1a/1a95feba-4736-4e0a-8451-c7654a782ef5.16820.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/1c/1c6f2226-34ac-4821-9fdd-9ca14522ef4b.e94d0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2a/2a920759-dcec-428d-ab3b-353f15e4b3c6.758dc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2b/2b098cb9-8b9a-4f43-bfa9-262f86d3fcc3.6b902.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2b/2b5fab3f-5668-4033-a8e5-b5e1a66877fc.415f0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/30/306d69f4-dc76-43ef-83c4-9139e627038d.25c6b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/30/30c6ff79-c38c-4382-82eb-9c8cbfc91bac.6b0f9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/31/3103a50a-ab84-4c61-b2e5-e885202465b0.112a1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/35/35e5ac88-e3f1-4a89-a75f-ef1b1df0eac3.07ef8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/38/38f61527-849c-46bf-902c-2584bddbb287.97603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/3d/3dc62e58-89c7-4fa9-a627-4f9206873ac0.15b98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/40/40997405-f04f-4e9b-a9da-ffdfc0381006.da2f3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/49/4939e374-0b54-4cd2-8f32-10775f1e6ad6.0f5d3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/4e/4effcaf7-34a0-499b-8f5f-f47383fdb066.82eb7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/4f/4fe20d41-fb5e-4594-abec-47c4c44b6736.afbb6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/50/50026f32-8fe4-47b1-9cd2-cec0375a205e.1435a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/52/52d692b0-3291-4b4d-a31e-5a59bd328936.96a81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5b/5b08a846-678d-432a-8fbc-3cce79bf5d26.c36a6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5e/5ee7da5c-6df5-40fd-b638-4b680dc70266.409a8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/69/69d314ab-4fa5-41f0-b93c-9ab9332ec7b2.901f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/6a/6a7cc694-21d0-47d6-80d8-29d984dabdd3.80fa3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/6b/6becf1b7-6569-4039-a8e4-e8118e5a2b90.d073a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/8b/8bfe86ff-d833-4723-b6d1-c92be90f0cc9.56f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/92/92ac6bac-40a2-4ba5-86fd-37bb995390f2.8bf5c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/95/95fbd769-c52d-4a00-b6e0-1a08c2e1ca77.6ce39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/96/96dec3e6-de09-45e1-b373-98e8489456d9.9a2bf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/97/97562d2b-cece-4f93-8e24-dd45077ab3aa.46081.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/99/995f2086-3487-40c5-8654-850f3798537e.2dfe1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/9a/9a9499ce-1843-475f-9886-0d40458f0d47.639c2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/9b/9b5a4512-d634-43bb-82fa-75bc45c441f6.96f3c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/9f/9f1a3e99-492d-4c72-88b6-abb886bba908.1b50c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a0/a01689ec-1b76-477b-beb7-fcaa1cc64815.30573.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a2/a22ead62-a06b-47d3-a9ce-66ef87c3ae9e.13e7d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a9/a953296e-4100-4714-97bb-dfa4b86811b1.e894e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/b1/b1685574-a49e-42c2-a92a-ea59b43b3a8a.7bd13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/b2/b29ab9d7-20ec-4e7b-a7f9-7356f2cc5dea.a8808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/bc/bc5a39a9-1291-4d46-aa46-faf9c432e5df.bab96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/c0/c0381a93-6dd4-4186-9d29-052ecf940d17.e3c0f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/c4/c4a0a233-ff3b-4bea-9b56-f83f63f864d1.8fcc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ca/ca4505c1-8877-42b8-93d2-1ad2d13c66fa.6f53f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/cb/cb2f396d-c280-46e2-9456-1acd7b4003fd.ec947.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/cb/cb565841-59f9-401f-a13d-024c7e2cb2d1.78bc6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/cc/cc0acd77-19c5-468f-b358-153e806f9556.34f5e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d0/d0b24574-ed0d-459c-88f2-39d0082f15db.8a6d0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d2/d26ba8a0-15b8-4ebd-8994-f2009b9d565a.2faec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d6/d6a7a96b-c03d-41b8-8b80-f554993fd258.dac56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d7/d75bba82-c009-4df2-b436-7694b370150a.61c45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/de/dea457e6-2769-4f39-ba3c-c81cc255b830.84b78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/e1/e109d30e-39ea-44dd-affa-bdd0e1902631.f88f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/eb/eb0b3888-82e0-498a-803a-17bc58abc850.2e0d4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/eb/eb3c91dc-cfc3-404b-b05f-90dc6aac0d9f.129d1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/eb/eb463bdb-9409-4d98-9594-a1760bbda7e9.443f8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/f0/f05d2d2d-4c9e-411e-a484-9c83609db21b.27515.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/f7/f756a962-d8a8-4193-824c-5042dda0e853.b94c1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ff/ff001df6-e905-4e3d-a3e8-044afb5f6dcc.ddf51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/src/assets/basic/script/basic/rankNetwork/ProtoBuf.c130b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/src/project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/qqplay/src/project.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/022639c54.6f1ae.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/02396cb92.8e6b3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/028bf33e9.28239.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/02/02f3eb068.6d733.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/03/031af66ed.7c41b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/03/0381e4fd.b3a9f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/04/04f004e6f.89565.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/051254912.a4b60.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/0523a8ba8.28522.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/0535b379.b178d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/05/05e6969a.e5913.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/068b790b7.0d439.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/06b948d42.e9a9d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/06/06c38d9b1.b6cf0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/07/0732ebf47.a6a8c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/08582ab36.47347.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/0864c91f9.4da9b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/08/08ccf42c9.07b1e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/09/096370af7.ebe6b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0a/0a29fb6dc.8a5e8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0c/0cb711af0.5ba2d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0c/0ccfd0208.20944.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0e/0e7396e80.6bf84.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0e/0e7e636ab.a46d9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0f/0f547e7f3.762cf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/0f/0fd4c6720.73870.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/11/1152cbd32.a548e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/13/13acb080a.a548e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/19/197edab3.a548e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/25/251b3a4b-bebc-4a3a-91c8-b98c364ecf28.639ef.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/2a/2ae2e504-293b-407e-b2ee-34b2166909f1.9838f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/2d/2dfde559-3b45-4e0d-954f-0da076b97772.7462f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/60/60331843-cd45-4a29-845f-a04a25500983.1b41f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/6b/6b66ded4-8282-4b6a-bbbd-db5591b63b15.4d404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/79/7990749f-c266-4ffa-b9dc-8b8591857128.108cf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/ab/abcc7af2-e685-45af-b478-6b66248a09ec.16d5f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/d2/d232d319-c6ca-456f-929e-a11de57a0eb1.0fbc7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/import/d6/d6753a4e-f3ef-4279-be16-447d3218ea56.1e1cd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/02/0275e94c-56a7-410f-bd1a-fc7483f7d14a.cea68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/07/078bb92c-6786-4150-86dc-fcfeca83955e.53a9a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/0a/0a73a4e4-ca89-436a-9fac-77d192704766.3109d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/0b/0b1983c6-9c3a-42d1-9d64-bcee6ffa4aba.4ae2f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/11/1152cbd32.46985.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/13/13acb080a.c32e0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/17/178901d5-ce5f-473c-9f5d-ee7bcac8aa59.8cfe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/19/1917764b-930f-4613-87b5-b3e5468a7384.c99c4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/19/197edab3.c8256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/19/19fe60d1-814a-4338-ba5e-4e51a2ba528a.b30ae.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/1f/1f93c5a3-be08-49a8-b817-2557507069e5.c3e7e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/23/232645c0-4fbe-4d3e-9942-8fd24631a0c1.f837f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/23/23dcd8bf-3dda-4c24-9708-03169a2f627d.f34ee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/24/24d0c965-300e-4f6f-9dce-bb726ddc32c8.26d64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/25/25017de6-dd8b-44ba-9bdd-8aa5a8a9e25f.4dd4f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/25/25318814-21db-4e16-88ba-d9f05a40e88b.3bf8d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/27/27e752ae-3790-495c-8b70-85fda2c277b1.0643d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/28/28c7d843-c7ef-4314-8daa-527436b0c204.607c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/29/29a7f6fb-f2d4-4b31-9a32-dc59e7fe6aa3.2ae51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2d/2d6c0fe5-7933-49a1-b40b-da57a5bcd602.dca27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2d/2d89a7d0-3d88-4c38-8c44-22d1b543874a.f1c44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/2d/2dfde559-3b45-4e0d-954f-0da076b97772.2f7e5.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/31/31f39558-57c1-437c-8952-38ed3f751b56.1d464.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/39/399f7ca0-134f-4624-a28d-6d1d90be5fd8.8a8d2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/3e/3e645b92-07a1-4dd1-a653-d855dab6f713.4c5bb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/41/4166c088-9245-4f3f-a686-6f300f1e5352.edeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/47/47342709-c25e-4f9b-84b0-a8af0791780a.a0903.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/47/47e2a05d-10b8-4c05-9246-06c9bc1d6fa5.11982.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/4d/4d56cb26-8b11-47f2-a8bb-4cd44a6224f2.c3f93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/4d/4dab00d7-6dfe-493b-bb73-10db3d98923c.09645.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/4e/4eda0fba-3a5f-4560-993b-f3750e132282.6acb0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/53/533ba2ef-a5d1-46c3-b7b9-6d992c5b23da.2bc1f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/53/53ff641a-556d-4498-ba84-15c343494673.88e2e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5a/5a685c2c-babb-4333-add5-23ff31b9da69.4db2d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5c/5c9fd8ee-8210-4f92-8b05-0c7a043983ea.f871a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5c/5cfc1ecc-3fd1-4816-895f-beb2b7c8cbf2.608d6.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/5d/5d48bf3d-1a37-4483-a062-e2a34c1e9b75.15a32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/60/60288606-49a7-4714-9b43-39243b39ef5a.86b43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/67/670e434f-a655-4ff8-925c-a0d9b82e030f.21a33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/68/684b07ba-e795-41ba-a85c-f7d8d5ebdc5b.36b57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/6a/6a447166-6cc7-42b5-9914-90dc4cad4da7.01422.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/6d/6dc29853-c804-4ea0-a4ed-4ddf2917db75.00a14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/6f/6f1c1b8b-8209-4d3d-a8cd-10d1e0eaa8e8.30ac9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/70/70288b0e-9c79-42c1-ad9d-d8a79698fbeb.ae7f0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/70/70fc80b8-f3f2-47dd-8314-acb782f45613.f1e91.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/71/71561142-4c83-4933-afca-cb7a17f67053.286c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/74/74b57a69-8e7f-41af-9779-632faaa2ff34.9801f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/75/75b7f83e-a8c0-4d3e-b25e-8b40fdf26edb.ad342.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/78/785f99ee-9dd6-48aa-86bc-731e5522df19.d7a51.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/7f/7f52cfaf-5408-4e79-9588-305ed5ac89d6.7763f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/84/8482ac90-34f9-4930-b8b5-36993687ecdf.61fda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/85/856839cf-5fba-41e8-b90c-ee7dada1e1b5.45701.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/87/8789a823-1d67-4d04-ad04-808b7fdf906a.c8911.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/87/87cc7223-5ed1-4c9c-b498-45ac546322a3.4c913.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/88/88267009-9427-4301-ad8d-8ecb256bee99.d36ec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/8b/8bdadb3b-974a-4a70-8060-1bf76096092c.0f790.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/8d/8de63424-e00d-49e9-b1a5-df5594696935.d8fe8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/8f/8f7c9204-e89a-4623-afcd-85b0cd2afeea.e019d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/91/9176ad62-5bcf-4b4e-8f9e-e678a42d4935.69a8d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/91/91bb3b94-42d7-4b65-b872-c3747bcbe966.eea1e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/93/93b31002-85b6-471c-8b3a-1783dd8140cb.03740.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/94/94d87ca9-e321-4107-90b5-f46c5fff13ee.8cdca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/95/95002b4d-89a2-42ed-821e-df2a106b4c95.87e39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/98/984e463a-4231-48b5-a248-86aabd6639de.8b5d5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/98/98943c89-7695-45b9-b83c-27a0d3282631.60ca6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/99/993fdada-c3f2-4c21-8a06-d99df1bf1e19.9b16d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/99/994b156b-d509-4487-96ab-7041100ac55b.a7008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/9d/9d7f2e18-f627-40e9-a6fa-e5fb6f1bac37.b1f26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/9e/9e1c0ec9-6ee2-4fb8-8255-43204ef2c90a.40d3d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a1/a11f8bde-29ff-4ed3-ac2e-37b96a89cd92.26db0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a2/a22e655a-0ccf-48fa-a575-2d5228c16c3b.04fb1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a4/a4a44fb4-ac1a-421c-85d6-3d23c06a018d.c821e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/a8/a88ad778-16b5-4611-bba2-4b1068bb178f.1a98e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/af/af622117-4631-4021-b4ec-645bef873c86.b3cfb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/af/affeb652-7425-4340-abf6-73b02eaea9c9.ba3d8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/b0/b0ba8081-b6cd-4fb0-9d5c-5fd2ad825c2f.f3964.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/b3/b3c623bf-f063-4ff3-82c0-237f46efa677.1d091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/b4/b43ff3c2-02bb-4874-81f7-f2dea6970f18.bedf4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ba/ba427ccf-ec82-435f-9ffd-9494c7c988dd.7c694.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/bc/bc94fce8-7341-48b8-89dc-0392427570b1.b191a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/bc/bce6a9fa-f2be-44ca-9457-7e9cc084e269.0cc96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/bd/bd062c01-16d8-499a-9956-5cbe16ead646.028af.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/c2/c21ff011-130b-4133-bb46-75fb01795ce6.8c45e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/c6/c6e7159b-7b16-46b9-8cdc-1b33c753588d.94360.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/c7/c777b469-1707-4eff-ad81-7ee37609e94a.a65c9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/cb/cbcd3591-9c27-4ad3-8d09-d2964b342708.a4ffc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ce/ce72fa49-40f2-41e9-a3cb-e8c71491f0ef.8713c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ce/ceb9c142-81ee-4b74-b7e1-403090b8bf22.cb321.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d4/d4a34004-fa42-4fe1-869c-5b192fa49319.33bff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d5/d5936939-3fae-4835-8970-e6fe0fcffdba.a7ac1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d6/d63caa51-20eb-49b2-b4e8-47abc32f82c2.401d7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d7/d782732e-2070-4419-80f3-5eab7cf649ba.e6924.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d8/d81ec8ad-247c-4e62-aa3c-d35c4193c7af.cdbc9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d8/d8791bdf-03dd-4bea-99c2-1114604af0c3.4d629.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/d9/d94b0fef-4659-4cac-a452-81a82c9648fa.bbeb5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/da/dae7d1bb-e58c-4058-8de7-4011a208f55b.779a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/de/de269b69-c718-4d63-978d-6d859eacb3c2.47a7c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/df/dfec0f5a-9ea2-449b-a0e5-696fcca6dd08.add01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/e1/e1693b03-6dd3-41af-a124-fb71fa3f7d2c.caa11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/e6/e618bc9a-9f17-4d0d-902d-882e505067af.5663f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/e8/e851e89b-faa2-4484-bea6-5c01dd9f06e2.1ecb7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/e8/e8f8fdd1-2888-4ed7-9b1e-5e9623f9556a.9f631.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/eb/eb90a423-9261-4fcc-a6ea-afb95f4ea3f2.793d6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ed/ed44842b-c536-4854-833f-8b142e9799ee.f1e25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/f6/f6d08263-8e2c-477a-8f0e-fb9e6997ea81.4183a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/f7/f7124012-d77c-4c41-8ba6-a26fc53c02f3.d91e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/res/raw-assets/ff/ffbe4e45-8424-43cb-9b28-bbff33f4347e.25a4c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/src/assets/basic/script/basic/rankNetwork/ProtoBuf.dc3ef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/qqplay/src/project.dev.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/qqplay/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/qqplay/src/settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/builder.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/builder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/hierarchy.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/hierarchy.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/layout.windows.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/layout.windows.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/logs/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/local/logs/project.log" afterDir="false" />
     </list>
@@ -280,26 +373,8 @@
       <file leaf-file-name="gameManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2281">
-              <caret line="360" column="58" selection-start-line="360" selection-start-column="58" selection-end-line="360" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uiLobbyPanel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="131" column="42" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientEvent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="505">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -307,7 +382,7 @@
       <file leaf-file-name="blockManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
+            <state relative-caret-position="531">
               <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
             </state>
           </provider>
@@ -318,47 +393,56 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="layoutDt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/data/layoutDt.js">
+      <file leaf-file-name="uiVsResult.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiVsResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+            <state relative-caret-position="487">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pathManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/pathManager.js">
+      <file leaf-file-name="uiRoom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1786">
-              <caret line="94" column="50" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
+            <state relative-caret-position="150">
+              <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uiGamePanel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comboManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/comboManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiRoomList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoomList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiCreateRoom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="46" column="9" selection-start-line="42" selection-start-column="7" selection-end-line="46" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiGamePanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="111" column="43" lean-forward="true" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Globals.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/Globals.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="14" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clickManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/clickManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2850">
-              <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+            <state relative-caret-position="-16">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -367,10 +451,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>uiRoom</find>
-      <find>loginR</find>
-      <find>logoutr</find>
-      <find>isRoomOwner</find>
       <find>leaveRoomMedNotify</find>
       <find>WHITE</find>
       <find>BLACK</find>
@@ -397,6 +477,10 @@
       <find>error</find>
       <find>closeUiPanel</find>
       <find>login</find>
+      <find>search</find>
+      <find>&quot;游戏无法</find>
+      <find>roomName</find>
+      <find>editBox</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -418,18 +502,22 @@
         <option value="$PROJECT_DIR$/assets/basic/script/resultPlayerIcon.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiResult.js" />
-        <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/clickManager.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js" />
-        <option value="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/blockManager.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/pathManager.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/basic/Globals.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" />
         <option value="$PROJECT_DIR$/assets/game/script/data/layoutDt.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiTip.js" />
+        <option value="$PROJECT_DIR$/assets/game/script/managers/comboManager.js" />
         <option value="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiRoomList.js" />
       </list>
     </option>
   </component>
@@ -448,7 +536,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="53" />
+    <option name="x" value="201" />
+    <option name="y" value="42" />
     <option name="width" value="1688" />
     <option name="height" value="989" />
   </component>
@@ -600,21 +689,24 @@
       <workItem from="1539413515575" duration="69000" />
       <workItem from="1539652516751" duration="8202000" />
       <workItem from="1539674993551" duration="1645000" />
-      <workItem from="1541037336370" duration="2834000" />
+      <workItem from="1541037336370" duration="3082000" />
+      <workItem from="1541051138164" duration="10094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247503000" />
+    <option name="totallyTimeSpent" value="257845000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="53" width="1688" height="989" extended-state="0" />
+    <frame x="201" y="42" width="1688" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22555488" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -625,10 +717,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,27 +733,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2166">
-          <caret line="114" column="20" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1102">
@@ -679,28 +748,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiGameStop.js" />
-    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/comboManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.dev.js" />
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiBeginnerCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -712,13 +760,6 @@
     <entry file="file://$PROJECT_DIR$/assets/game/script/managers/effectManager.js.meta" />
     <entry file="file://$PROJECT_DIR$/assets/game/script/move/jump.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/game/script/block.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/effect.js" />
     <entry file="file://$PROJECT_DIR$/assets/game/script/path.js">
@@ -749,14 +790,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret column="599897" selection-start-column="599897" selection-end-column="599897" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js.map" />
     <entry file="file://$USER_HOME$/Downloads/断线重连异常232564 (1).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1412">
@@ -771,13 +805,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret column="507729" selection-start-column="507729" selection-end-column="507729" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js" />
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -835,17 +863,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/imports/72/72f2fd5c-6066-4e84-8672-aaf7affab5b2.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret column="322" selection-start-column="322" selection-end-column="322" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/creator.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="1576" column="20" selection-start-line="1576" selection-start-column="20" selection-end-line="1576" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -853,13 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -881,13 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiVsResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -922,15 +929,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
+        <state relative-caret-position="2489">
           <caret line="131" column="42" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
+    <entry file="file://$PROJECT_DIR$/assets/game/script/data/layoutDt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="251">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiTip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -939,22 +953,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2281">
-          <caret line="360" column="58" selection-start-line="360" selection-start-column="58" selection-end-line="360" selection-end-column="58" />
+        <state relative-caret-position="505">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/game/script/data/layoutDt.js">
+    <entry file="file://$PROJECT_DIR$/creator.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+        <state relative-caret-position="491">
+          <caret line="3611" column="130" selection-start-line="3611" selection-start-column="108" selection-end-line="3611" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiBeginnerCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/comboManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="111" column="43" lean-forward="true" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
+        <state relative-caret-position="-16">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="46" column="9" selection-start-line="42" selection-start-column="7" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiVsResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gobang/assets/Script/Game.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoomList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -130,7 +130,7 @@ cc.Class({
         this.sendInitMapMsg(arrMap);
     },
     checkGameStatus(){
-        Game.GameManager.openTip("游戏无法进行");
+        Game.GameManager.openTip("服务器异常，即将结束游戏");
         this.scheduleOnce(()=>{
             Game.GameManager.recurLobby();
         },2.5)

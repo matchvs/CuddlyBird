@@ -16,6 +16,19 @@ cc.Class({
 
     start() {
         var isLose = Game.GameManager.isRivalLeave ? false : Game.PlayerManager.self.score < Game.PlayerManager.rival.score;
+        if (Game.GameManager.isRivalLeave || Game.PlayerManager.self.score>Game.PlayerManager.rival.score){
+            this.nodeDict["lose"].active = false;
+            this.nodeDict["win"].active = true;
+            this.nodeDict["draw"].active = false;
+        }else if (Game.PlayerManager.self.score < Game.PlayerManager.rival.score) {
+            this.nodeDict["lose"].active = true;
+            this.nodeDict["win"].active = false;
+            this.nodeDict["draw"].active = false;
+        }else{
+            this.nodeDict["lose"].active = false;
+            this.nodeDict["win"].active = false;
+            this.nodeDict["draw"].active = true;
+        }
         clientEvent.on(clientEvent.eventType.checkLcon, this.checkLcon, this);
         this.player = this.nodeDict["player"].getComponent("resultPlayerIcon");
         this.rival = this.nodeDict["rival"].getComponent("resultPlayerIcon");
@@ -23,9 +36,6 @@ cc.Class({
         this.nodeDict["vs"].active = true;
         //this.nodeDict["score"].active = true;
         this.nodeDict["quit"].on("click", this.quit, this);
-
-        this.nodeDict["lose"].active = isLose;
-        this.nodeDict["win"].active = !isLose;
 
         if (!isLose) {
             cc.audioEngine.play(this.victoryClip, false, 1);

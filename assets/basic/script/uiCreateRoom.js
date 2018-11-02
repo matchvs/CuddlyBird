@@ -14,6 +14,10 @@ cc.Class({
         this.nodeDict["addNode"].on("click", this.addPlayerCount, this);
         this.nodeDict["subNode"].on("click", this.subPlayerCount, this);
         this.nodeDict["create"].on("click", this.createRoom, this);
+        this.roomName = this.nodeDict["roomName"].getComponent(cc.EditBox);
+
+        this.nodeDict["roomName"].on("editing-did-began",this.editingDidBegan,this);
+        this.nodeDict["roomName"].on("editing-return",this.editingReturn,this);
 
         clientEvent.on(clientEvent.eventType.createRoomResponse, this.createRoomResponse, this);
     },
@@ -30,6 +34,23 @@ cc.Class({
 
         this.playerCntLb.string = this.playerCnt;
         this.refreshBtnState();
+    },
+
+    editingReturn(){
+        if (window.BK){
+            BK.Editor.hideKeyBoard();
+        }
+        if (this.roomName.string.length > 8){
+            var string = this.roomName.string.slice(0,8);
+            this.roomName.string = string;
+
+        }
+
+    },
+    editingDidBegan(){
+        if (window.BK){
+            BK.Editor.setText(this.roomName.string);
+        }
     },
 
     subPlayerCount: function() {
@@ -110,5 +131,8 @@ cc.Class({
 
     onDestroy: function() {
         clientEvent.off(clientEvent.eventType.createRoomResponse, this.createRoomResponse, this);
+        this.nodeDict["roomName"].off("editing-did-began",this.editingDidBegan,this);
+        this.nodeDict["roomName"].off("editing-return",this.editingReturn,this);
     }
+
 });

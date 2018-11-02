@@ -18,6 +18,8 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.getRoomListResponse, this.getRoomListResponse, this);
         clientEvent.on(clientEvent.eventType.joinRoomResponse, this.joinRoomResponse, this);
         clientEvent.on(clientEvent.eventType.getRoomListExResponse, this.getRoomListExResponse, this);
+        this.nodeDict["editBox"].on("editing-did-began",this.editingDidBegan,this);
+        this.nodeDict["editBox"].on("editing-return",this.editingReturn,this);
 
         this.getRoomList();
         this.roomRqId = setInterval(function() {
@@ -41,6 +43,22 @@ cc.Class({
             pageSize: 20
         }
         mvs.engine.getRoomListEx(filter);
+    },
+
+    editingReturn(){
+        if (window.BK){
+            BK.Editor.hideKeyBoard();
+        }
+        if (this.editBox.string.length > 20){
+            var string = this.editBox.string.slice(0,20);
+            this.editBox.string = string;
+
+        }
+    },
+    editingDidBegan(){
+        if (window.BK){
+            BK.Editor.setText(this.editBox.string);
+        }
     },
 
     getRoomListResponse: function(data) {
@@ -148,5 +166,7 @@ cc.Class({
         clientEvent.off(clientEvent.eventType.getRoomListResponse, this.getRoomListResponse, this);
         clientEvent.off(clientEvent.eventType.joinRoomResponse, this.joinRoomResponse, this);
         clientEvent.off(clientEvent.eventType.getRoomListExResponse, this.getRoomListExResponse, this);
+        this.nodeDict["editBox"].off("editing-did-began",this.editingDidBegan,this);
+        this.nodeDict["editBox"].off("editing-return",this.editingReturn,this);
     }
 });

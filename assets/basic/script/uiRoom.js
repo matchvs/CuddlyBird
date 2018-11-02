@@ -192,6 +192,7 @@ cc.Class({
         this.ownerId = rsp.owner;
         this.players[0].setData(this.ownerId, this.ownerId);
         GLB.isRoomOwner = true;
+        this.nodeDict["roomId"].getComponent(cc.Label).string = "房间号：" + this.roomId;
         this.refreshStartBtn();
     },
 
@@ -202,10 +203,12 @@ cc.Class({
             }
             return 0;
         });
+        this.roomId = roomInfo.roomID;
         this.ownerId = roomInfo.ownerId;
         for (var j = 0; j < roomUserInfoList.length; j++) {
             this.players[j].setData(roomUserInfoList[j].userId, this.ownerId);
         }
+        this.nodeDict["roomId"].getComponent(cc.Label).string = "房间号：" + this.roomId;
         this.refreshStartBtn();
     },
 
