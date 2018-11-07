@@ -6,7 +6,8 @@ CC游戏案例之 萌鸟连连看
 联网游戏通常为多人游戏,需要`开启多个客户端`,详情见[多开说明](http://www.matchvs.com/service?page=MultipleIdentities)
 
 ## 在线体验
-体验地址 [体验链接](http://demo.matchvs.com/CuddlyBird)
+PC体验地址 [http://demo.matchvs.com/CuddlyBird](http://demo.matchvs.com/CuddlyBird)
+PC体验地址 [http://demo.matchvs.com/CuddlyBird-mobile](http://demo.matchvs.com/CuddlyBird-mobile)
 
 ## 源码体验
 ### 准备
