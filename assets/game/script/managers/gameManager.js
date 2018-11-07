@@ -47,7 +47,7 @@ cc.Class({
     },
 
     checkLcon(){
-        clientEvent.dispatch(clientEvent.eventType.checkLcon);
+        clientEvent.dispatch(clientEvent.eventType.checkLcon,this);
     },
 
     leaveRoom: function(data) {
@@ -616,7 +616,7 @@ cc.Class({
             var rankType = 0;
             BK.QQ.getRankListWithoutRoom(attr, order, rankType, function(errCode, cmd, data) {
                 var isContainSelf = false;
-                if (data) {
+                if (data && data.data) {
                     for (var i = 0; i < data.data.ranking_list.length; ++i) {
                         var rd = data.data.ranking_list[i];
                         if (rd.selfFlag) {
@@ -680,7 +680,7 @@ cc.Class({
             }
             // 解析数据
             var isContainSelf = false;
-            if (data) {
+            if (data&&data.data) {
                 for (var i = 0; i < data.data.ranking_list.length; ++i) {
                     var rd = data.data.ranking_list[i];
                     // rd 的字段如下:

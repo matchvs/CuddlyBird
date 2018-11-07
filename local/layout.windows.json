@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 167,
-      "y": 33,
+      "x": 195,
+      "y": 44,
       "width": 1621,
       "height": 935,
       "layout": {
@@ -79,7 +79,7 @@
             "width": 893
           },
           {
-            "active": 0,
+            "active": 1,
             "children": [
               "inspector",
               "builder"
@@ -92,16 +92,17 @@
         "type": "dock-h"
       },
       "panels": [
+        "hierarchy",
         "node-library",
         "console",
         "timeline",
         "inspector",
         "builder",
-        "hierarchy",
         "assets",
         "scene"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "builder": {
