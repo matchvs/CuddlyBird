@@ -3,181 +3,73 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/audio/gameover.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/gameover.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/audio/lose.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/lose.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/audio/readygo.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/readygo.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/audio/timeOver.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/timeOver.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/audio/vitory.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/audio/vitory.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user1.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user1.1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user1.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user1.2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user2.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user2.1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user2.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user2.2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user3.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user3.1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bar-user3.3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bar-user3.3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bian.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bian.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bot-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bot-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/bot-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/bot-bg2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/box.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/btn-back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/btn-back.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cel-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cel-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiExit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiExit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/close.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/con-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/con-user1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/con-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/con-user2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cpm-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cpm-logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/cpm-logo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/cpm-logo2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/dating-btn3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/dating-btn3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-use.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-use.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-user-squ.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-user-squ.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/def-user.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/def-user.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/di.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/di.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/draw.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/draw.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/draw.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/draw.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/exit.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/friendsRanking.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/friendsRanking.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/gameov.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/gameov.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/go.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/go.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/handcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/handcon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-btn5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-btn5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/home-k.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/home-k.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/icon-money.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/icon-money.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/icon-plus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/icon-plus.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/inviteFriends.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/inviteFriends.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kick.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kuang.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kuang.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/list-sign.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/list-sign.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/minus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/minus.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/play-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/play-user1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/play-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/play-user2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-bg2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-bg4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-bg4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-num3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-num3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-user6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-user6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ready.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ready.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rome-gold.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rome-gold.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/room-kuang2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/room-kuang2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/room.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/room.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/share-icon5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/share-icon5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/shijiandao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/shijiandao.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-btn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-bg3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-bg3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-light.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-lose.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-lose.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-con-new.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-con-new.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-bg5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-bg5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-btn1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-btn1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-logo3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-rank-user.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-sign-user-.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-sign-user-.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/sr-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/sr-user-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/startGame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/startGame.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-bot-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-bot-bg2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-con-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-con-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-con-light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-con-light.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-join-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-join-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-rank-bg5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/ver-user-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/ver-user-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/texture/vs.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/vs.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/worldRanking.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/worldRanking.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/yuan.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/yuan.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/bg.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/bg.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/buttonClicked.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/buttonClicked.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/game.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/game.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/link.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/link.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/gameClips/start.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/gameClips/start.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/bg.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/bg.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_09.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_19.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_25.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_25.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_31.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_31.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_38.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_38.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_44.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_44.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_45.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_45.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_46.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_46.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/block/img_52.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/block/img_52.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/box_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/box_04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_20.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_28.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_28.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_40.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_40.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_49.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_49.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_50.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_50.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_57.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_57.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_58.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_58.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_59.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_59.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_60.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_60.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_61.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_61.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_62.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_62.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/effect/img_68.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/effect/img_68.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/direction.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/direction.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/direction2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/direction2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/miji3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/miji3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/block/block.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/box/rivalBox.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/box/rivalBox.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/box/selfBox.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/box/selfBox.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/combo.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/combo.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/blueCorner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/blueCorner.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/blueHead.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/blueHead.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redCorner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redCorner.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redHead.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redHead.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redStraight .prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redStraight .prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/shutDown.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/shutDown.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_13.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_14.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_15.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_17.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_18.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_30.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_30.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_47.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_47.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_48.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_48.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_70.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_70.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/img_65.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/img_65.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/loading.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/loading.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_06.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_08.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_22.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_29.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_29.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_37.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_37.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_39.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_39.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_41.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_41.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_53.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_53.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_54.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_54.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/img_67.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/img_67.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/tip/number_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/tip/number_3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMaskLayout.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMaskLayout.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiResultVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiResultVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiTip.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiTip.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scenes/lobby.fire" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scenes/lobby.fire" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/builder.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/builder.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/layout.windows.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/layout.windows.json" afterDir="false" />
@@ -195,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gameManager.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gameManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="603" column="23" lean-forward="true" selection-start-line="603" selection-start-column="23" selection-end-line="603" selection-end-column="23" />
+            <state relative-caret-position="468">
+              <caret line="692" column="35" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -207,24 +99,10 @@
       <file leaf-file-name="uiLobbyPanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="728">
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blockManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/blockManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/data/dataManager.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="uiVsResult.js" pinned="false" current-in-tab="false">
@@ -239,17 +117,35 @@
       <file leaf-file-name="uiRoom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3610">
-              <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
+            <state relative-caret-position="-140">
+              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comboManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/game/script/managers/comboManager.js">
+      <file leaf-file-name="uiRankPanel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state relative-caret-position="-194">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roomUserInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/roomUserInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="805">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rankUserInfo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -257,17 +153,8 @@
       <file leaf-file-name="uiRoomList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoomList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
+            <state relative-caret-position="-144">
               <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uiCreateRoom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="46" column="9" selection-start-line="42" selection-start-column="7" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -275,8 +162,17 @@
       <file leaf-file-name="uiGamePanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+            <state relative-caret-position="365">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiExit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiExit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -285,7 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leaveRoomR</find>
       <find>leaveRoomResponse</find>
       <find>ownerId</find>
       <find>leaveRoom</find>
@@ -315,6 +210,7 @@
       <find>data.ranking</find>
       <find>getRankData</find>
       <find>data.ranking_list</find>
+      <find>star</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -331,7 +227,6 @@
         <option value="$USER_HOME$/Downloads/ExtremeEvasion-master/assets/basic/script/basic/Globals.js" />
         <option value="$PROJECT_DIR$/assets/game/script/block.js" />
         <option value="$PROJECT_DIR$/assets/game/script/path.js" />
-        <option value="$PROJECT_DIR$/assets/basic/script/uiExit.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/playerManager.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/resultPlayerIcon.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/bubbleManager.js" />
@@ -347,11 +242,14 @@
         <option value="$PROJECT_DIR$/assets/basic/script/uiTip.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/comboManager.js" />
         <option value="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" />
-        <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiRoomList.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiExit.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" />
       </list>
     </option>
   </component>
@@ -370,8 +268,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="201" />
-    <option name="y" value="23" />
+    <option name="x" value="103" />
+    <option name="y" value="36" />
     <option name="width" value="1688" />
     <option name="height" value="989" />
   </component>
@@ -526,34 +424,35 @@
       <workItem from="1541037336370" duration="3082000" />
       <workItem from="1541051138164" duration="10094000" />
       <workItem from="1541555644266" duration="2368000" />
+      <workItem from="1543213564850" duration="11416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260213000" />
+    <option name="totallyTimeSpent" value="271629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="201" y="23" width="1688" height="989" extended-state="0" />
+    <frame x="103" y="36" width="1688" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22555488" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,20 +467,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/game/script/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiGameStop.js" />
     <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.dev.js" />
     <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
@@ -618,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiExit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js.map" />
     <entry file="file://$USER_HOME$/Downloads/断线重连异常232564 (1).txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -641,13 +519,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/qqplay/src/project.js" />
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/rankNetwork/pomeloBuild.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -698,17 +569,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/imports/72/72f2fd5c-6066-4e84-8672-aaf7affab5b2.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret column="322" selection-start-column="322" selection-end-column="322" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/roomUserInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -814,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3610">
-          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiCreateRoom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -838,31 +695,73 @@
     <entry file="file://$PROJECT_DIR$/../gobang/assets/Script/Game.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiExit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoomList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
+        <state relative-caret-position="-144">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../extremeEvasion_Horizontal/assets/common/script/uiRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2093">
+          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/uiGamePanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+        <state relative-caret-position="365">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="728">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="603" column="23" lean-forward="true" selection-start-line="603" selection-start-column="23" selection-end-line="603" selection-end-column="23" />
+        <state relative-caret-position="468">
+          <caret line="692" column="35" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/roomUserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -8,6 +8,7 @@ cc.Class({
         this._super();
         this.nodeDict["sure"].on("click", this.sure, this);
         this.nodeDict["close"].on("click", this.close, this);
+        this.nodeDict["close2"].on("click", this.close, this);
         if (!Game.GameManager.bExit){
 
         }

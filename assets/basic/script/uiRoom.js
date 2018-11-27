@@ -10,8 +10,6 @@ cc.Class({
         this.roomId = 0;
         this.roomInfo = null;
         this.owner = 0;
-        this.playerPrefab = this.nodeDict["player"];
-        this.playerPrefab.active = false;
         this.nodeDict["quit"].on("click", this.quit, this);
         this.nodeDict["startGame"].on("click", this.startGame, this);
 
@@ -23,14 +21,13 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.kickPlayerNotify, this.kickPlayerNotify, this);
         clientEvent.on(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoomMedNotify, this);
 
-        for (var i = 0; i < GLB.MAX_PLAYER_COUNT; i++) {
-            var temp = cc.instantiate(this.playerPrefab);
-            temp.active = true;
-            temp.parent = this.nodeDict["layout"];
-            var roomUserInfo = temp.getComponent('roomUserInfo');
-            roomUserInfo.init();
-            this.players.push(roomUserInfo);
-        }
+        var roomUserInfo1 = this.nodeDict["player1"].getComponent('roomUserInfo');
+        var roomUserInfo2 = this.nodeDict["player2"].getComponent('roomUserInfo');
+        roomUserInfo1.init();
+        roomUserInfo2.init();
+        this.players.push(roomUserInfo1);
+        this.players.push(roomUserInfo2);
+
     },
 
     kickPlayerResponse: function(data) {
@@ -131,11 +128,11 @@ cc.Class({
         var spNode = this.nodeDict["startGame"];
         var btn = this.nodeDict["startGame"].getComponent(cc.Button);
         if (GLB.isRoomOwner) {
-            spNode.color = cc.Color.WHITE;
-            btn.enabled = true;
+            //spNode.color = cc.Color.WHITE;
+            btn.interactable = true;
         } else {
-            spNode.color = cc.Color.BLACK;
-            btn.enabled = false;
+            //spNode.color = cc.Color.BLACK;
+            btn.interactable = false;
         }
     },
 

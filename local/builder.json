@@ -3,7 +3,7 @@
   "apiLevel": "",
   "appABIs": [],
   "buildPath": "./build",
-  "debug": true,
+  "debug": false,
   "embedWebDebugger": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
