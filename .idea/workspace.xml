@@ -3,75 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiExit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiExit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/close.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/draw.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/draw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/draw.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/draw.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/exit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/exit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/handcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/handcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/handcon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kuang.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kuang.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/kuang.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/rank-logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/roomnumber-bg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/vs.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/vs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/texture/vs.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/block/block.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/block/block.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/box/rivalBox.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/box/rivalBox.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/box/selfBox.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/box/selfBox.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/bubble/bubble.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/combo.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/combo.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/blueCorner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/blueCorner.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/blueHead.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/blueHead.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redCorner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redCorner.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redHead.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redHead.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/prefab/path/redStraight .prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/prefab/path/redStraight .prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/point2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/guide/textMiji.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_63.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/texture/icon/img_64.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiBeginnerCourse.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiCreateRoomVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiExit.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLogin.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMaskLayout.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMaskLayout.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiMatching1v1Ver.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRankPanelVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiResultVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiResultVer.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomListVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiTip.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiTip.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scenes/lobby.fire" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scenes/lobby.fire" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/builder.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/builder.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/layout.windows.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/layout.windows.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/logs/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/local/logs/project.log" afterDir="false" />
     </list>
@@ -118,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-140">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -127,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-194">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -144,8 +78,8 @@
       <file leaf-file-name="rankUserInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="323">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -424,12 +358,12 @@
       <workItem from="1541037336370" duration="3082000" />
       <workItem from="1541051138164" duration="10094000" />
       <workItem from="1541555644266" duration="2368000" />
-      <workItem from="1543213564850" duration="11416000" />
+      <workItem from="1543213564850" duration="12460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271629000" />
+    <option name="totallyTimeSpent" value="272673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="36" width="1688" height="989" extended-state="0" />
@@ -747,21 +681,21 @@
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-140">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-194">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="323">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>

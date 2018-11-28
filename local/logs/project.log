@@ -2178,3 +2178,660 @@ uuid: "1ceb701f-3aa5-45a6-9daf-c261fabbecbf"
 2018-11-27T10:08:27.848Z - normal: Finish building plugin scripts
 2018-11-27T10:08:27.853Z - normal: Generating main.js from /Applications/CocosCreator 1.10.app/Contents/Resources/static/build-templates/shares/main.js
 2018-11-27T10:08:28.052Z - normal: Built to "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay" successfully
+2018-11-28T01:21:32.484Z - normal: ScaleX != ScaleY. Don't know which one to return
+2018-11-28T01:35:40.707Z - normal: Start building with options : {
+  "actualPlatform": "QQ Play",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/mac/Documents/MatchVs/CuddlyBird/build",
+  "debug": false,
+  "dest": "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.doubleshoot",
+  "platform": "qqplay",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "79146b76-f001-46c3-9f85-5e013f21b436",
+    "60331843-cd45-4a29-845f-a04a25500983"
+  ],
+  "sourceMaps": false,
+  "startScene": "79146b76-f001-46c3-9f85-5e013f21b436",
+  "template": "link",
+  "title": "CuddlyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "https://data.tianziyou.com/matchvsGamesRes/extremeEvasion",
+    "appid": "wx793199d0ca521154",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c66654d5-e92d-40",
+  "zipCompressJs": true,
+  "project": "/Users/mac/Documents/MatchVs/CuddlyBird",
+  "projectName": "CuddlyBird",
+  "debugBuildWorker": false
+}
+2018-11-28T01:35:40.710Z - normal: Building /Users/mac/Documents/MatchVs/CuddlyBird
+2018-11-28T01:35:40.710Z - normal: Destination /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay
+2018-11-28T01:35:40.712Z - normal: Delete /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay/**/*
+2018-11-28T01:35:50.248Z - normal: Start building assets
+2018-11-28T01:35:50.248Z - normal: Start spawn build-worker
+2018-11-28T01:35:50.943Z - normal: Finish spawn build-worker
+2018-11-28T01:35:50.944Z - normal: Start init build-worker
+2018-11-28T01:35:53.302Z - warn: Please change the definition of property 'loseClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.303Z - warn: Please change the definition of property 'victoryClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.308Z - warn: Please change the definition of property 'loseClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.309Z - warn: Please change the definition of property 'victoryClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.318Z - warn: Please change the definition of property 'linkAudio' in class 'blockManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    linkAudio: cc.Texture2D,
+    // or:
+    linkAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    linkAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.322Z - warn: Please change the definition of property 'bubbleClip' in class 'bubbleManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bubbleClip: cc.Texture2D,
+    // or:
+    bubbleClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bubbleClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.343Z - warn: Please change the definition of property 'bgmAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bgmAudio: cc.Texture2D,
+    // or:
+    bgmAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bgmAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.343Z - warn: Please change the definition of property 'startAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    startAudio: cc.Texture2D,
+    // or:
+    startAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    startAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:35:53.354Z - normal: Finish init build-worker
+2018-11-28T01:35:53.354Z - normal: Start build-assets in worker
+2018-11-28T01:35:54.310Z - warn: Script attached to "uiMaskLayout" in prefab "uiMaskLayout.prefab" is missing or invalid. Detailed information:
+Node path: "uiMaskLayout"
+Asset url: "db://assets/resources/ui/uiMaskLayout.prefab"
+Script UUID: "a8513bdd-1a54-457c-92ab-e33439b9df7b"
+Class ID: "a8513vdGlRFfJKr4zQ5ud97"
+
+2018-11-28T01:35:54.542Z - warn: The referenced asset used in "db://assets/resources/ui/uiMaskLayout.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "8d844406-e950-4f57-a78d-c89587ed7d0d"
+2018-11-28T01:35:54.574Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "e649c1b8-6bdf-4209-9aee-e75231a2d824"
+2018-11-28T01:35:54.593Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "275a72f3-ffff-43cf-9c1c-b6495b147d60"
+2018-11-28T01:35:54.597Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "1ceb701f-3aa5-45a6-9daf-c261fabbecbf"
+2018-11-28T01:35:58.107Z - normal: Finish build-assets in worker
+2018-11-28T01:35:58.115Z - normal: Finish building assets
+2018-11-28T01:35:58.153Z - normal: Start building plugin scripts
+2018-11-28T01:36:00.100Z - normal: Finish building plugin scripts
+2018-11-28T01:36:00.105Z - normal: Generating main.js from /Applications/CocosCreator 1.10.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-28T01:36:00.326Z - normal: Built to "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay" successfully
+2018-11-28T01:37:32.508Z - normal: ScaleX != ScaleY. Don't know which one to return
+2018-11-28T01:37:35.625Z - normal: ScaleX != ScaleY. Don't know which one to return
+2018-11-28T01:45:36.383Z - normal: Start building with options : {
+  "actualPlatform": "QQ Play",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/mac/Documents/MatchVs/CuddlyBird/build",
+  "debug": false,
+  "dest": "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.doubleshoot",
+  "platform": "qqplay",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "79146b76-f001-46c3-9f85-5e013f21b436",
+    "60331843-cd45-4a29-845f-a04a25500983"
+  ],
+  "sourceMaps": false,
+  "startScene": "79146b76-f001-46c3-9f85-5e013f21b436",
+  "template": "link",
+  "title": "CuddlyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "https://data.tianziyou.com/matchvsGamesRes/extremeEvasion",
+    "appid": "wx793199d0ca521154",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c66654d5-e92d-40",
+  "zipCompressJs": true,
+  "project": "/Users/mac/Documents/MatchVs/CuddlyBird",
+  "projectName": "CuddlyBird",
+  "debugBuildWorker": false
+}
+2018-11-28T01:45:36.387Z - normal: Building /Users/mac/Documents/MatchVs/CuddlyBird
+2018-11-28T01:45:36.387Z - normal: Destination /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay
+2018-11-28T01:45:36.388Z - normal: Delete /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay/**/*
+2018-11-28T01:45:45.529Z - normal: Start building assets
+2018-11-28T01:45:45.529Z - normal: Start spawn build-worker
+2018-11-28T01:45:46.187Z - normal: Finish spawn build-worker
+2018-11-28T01:45:46.187Z - normal: Start init build-worker
+2018-11-28T01:45:48.498Z - warn: Please change the definition of property 'loseClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.499Z - warn: Please change the definition of property 'victoryClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.507Z - warn: Please change the definition of property 'loseClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.508Z - warn: Please change the definition of property 'victoryClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.518Z - warn: Please change the definition of property 'linkAudio' in class 'blockManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    linkAudio: cc.Texture2D,
+    // or:
+    linkAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    linkAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.522Z - warn: Please change the definition of property 'bubbleClip' in class 'bubbleManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bubbleClip: cc.Texture2D,
+    // or:
+    bubbleClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bubbleClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.550Z - warn: Please change the definition of property 'bgmAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bgmAudio: cc.Texture2D,
+    // or:
+    bgmAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bgmAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.550Z - warn: Please change the definition of property 'startAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    startAudio: cc.Texture2D,
+    // or:
+    startAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    startAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T01:45:48.553Z - normal: Finish init build-worker
+2018-11-28T01:45:48.553Z - normal: Start build-assets in worker
+2018-11-28T01:45:49.471Z - warn: Script attached to "uiMaskLayout" in prefab "uiMaskLayout.prefab" is missing or invalid. Detailed information:
+Node path: "uiMaskLayout"
+Asset url: "db://assets/resources/ui/uiMaskLayout.prefab"
+Script UUID: "a8513bdd-1a54-457c-92ab-e33439b9df7b"
+Class ID: "a8513vdGlRFfJKr4zQ5ud97"
+
+2018-11-28T01:45:49.689Z - warn: The referenced asset used in "db://assets/resources/ui/uiMaskLayout.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "8d844406-e950-4f57-a78d-c89587ed7d0d"
+2018-11-28T01:45:49.697Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "e649c1b8-6bdf-4209-9aee-e75231a2d824"
+2018-11-28T01:45:49.716Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "275a72f3-ffff-43cf-9c1c-b6495b147d60"
+2018-11-28T01:45:49.719Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "1ceb701f-3aa5-45a6-9daf-c261fabbecbf"
+2018-11-28T01:45:53.073Z - normal: Finish build-assets in worker
+2018-11-28T01:45:53.076Z - normal: Finish building assets
+2018-11-28T01:45:53.113Z - normal: Start building plugin scripts
+2018-11-28T01:45:54.970Z - normal: Finish building plugin scripts
+2018-11-28T01:45:54.975Z - normal: Generating main.js from /Applications/CocosCreator 1.10.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-28T01:45:55.181Z - normal: Built to "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay" successfully
+2018-11-28T02:21:00.281Z - normal: Start building with options : {
+  "actualPlatform": "QQ Play",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/mac/Documents/MatchVs/CuddlyBird/build",
+  "debug": false,
+  "dest": "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.doubleshoot",
+  "platform": "qqplay",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "79146b76-f001-46c3-9f85-5e013f21b436",
+    "60331843-cd45-4a29-845f-a04a25500983"
+  ],
+  "sourceMaps": false,
+  "startScene": "79146b76-f001-46c3-9f85-5e013f21b436",
+  "template": "link",
+  "title": "CuddlyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "https://data.tianziyou.com/matchvsGamesRes/extremeEvasion",
+    "appid": "wx793199d0ca521154",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c66654d5-e92d-40",
+  "zipCompressJs": true,
+  "project": "/Users/mac/Documents/MatchVs/CuddlyBird",
+  "projectName": "CuddlyBird",
+  "debugBuildWorker": false
+}
+2018-11-28T02:21:00.284Z - normal: Building /Users/mac/Documents/MatchVs/CuddlyBird
+2018-11-28T02:21:00.284Z - normal: Destination /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay
+2018-11-28T02:21:00.288Z - normal: Delete /Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay/**/*
+2018-11-28T02:21:13.261Z - normal: Start building assets
+2018-11-28T02:21:13.261Z - normal: Start spawn build-worker
+2018-11-28T02:21:14.043Z - normal: Finish spawn build-worker
+2018-11-28T02:21:14.043Z - normal: Start init build-worker
+2018-11-28T02:21:16.804Z - warn: Please change the definition of property 'loseClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.805Z - warn: Please change the definition of property 'victoryClip' in class 'uiResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.813Z - warn: Please change the definition of property 'loseClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    loseClip: cc.Texture2D,
+    // or:
+    loseClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    loseClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.814Z - warn: Please change the definition of property 'victoryClip' in class 'uiVsResult'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    victoryClip: cc.Texture2D,
+    // or:
+    victoryClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    victoryClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.836Z - warn: Please change the definition of property 'linkAudio' in class 'blockManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    linkAudio: cc.Texture2D,
+    // or:
+    linkAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    linkAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.839Z - warn: Please change the definition of property 'bubbleClip' in class 'bubbleManager'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bubbleClip: cc.Texture2D,
+    // or:
+    bubbleClip: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bubbleClip: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.888Z - warn: Please change the definition of property 'bgmAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    bgmAudio: cc.Texture2D,
+    // or:
+    bgmAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    bgmAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.888Z - warn: Please change the definition of property 'startAudio' in class 'uiGamePanel'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    startAudio: cc.Texture2D,
+    // or:
+    startAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    startAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-11-28T02:21:16.888Z - normal: Finish init build-worker
+2018-11-28T02:21:16.888Z - normal: Start build-assets in worker
+2018-11-28T02:21:18.138Z - warn: Script attached to "uiMaskLayout" in prefab "uiMaskLayout.prefab" is missing or invalid. Detailed information:
+Node path: "uiMaskLayout"
+Asset url: "db://assets/resources/ui/uiMaskLayout.prefab"
+Script UUID: "a8513bdd-1a54-457c-92ab-e33439b9df7b"
+Class ID: "a8513vdGlRFfJKr4zQ5ud97"
+
+2018-11-28T02:21:18.423Z - warn: The referenced asset used in "db://assets/resources/ui/uiMaskLayout.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "8d844406-e950-4f57-a78d-c89587ed7d0d"
+2018-11-28T02:21:18.441Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Used by "cc.PrefabInfo"
+uuid: "e649c1b8-6bdf-4209-9aee-e75231a2d824"
+2018-11-28T02:21:18.481Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "275a72f3-ffff-43cf-9c1c-b6495b147d60"
+2018-11-28T02:21:18.490Z - warn: The referenced asset used in "db://assets/resources/ui/uiResultVer.prefab" is not found, it may have been deleted. Detailed information:
+Node path: "uiResultVer"
+Used in Component: "uiResult"
+uuid: "1ceb701f-3aa5-45a6-9daf-c261fabbecbf"
+2018-11-28T02:21:22.487Z - normal: Finish build-assets in worker
+2018-11-28T02:21:22.490Z - normal: Finish building assets
+2018-11-28T02:21:22.534Z - normal: Start building plugin scripts
+2018-11-28T02:21:24.750Z - normal: Finish building plugin scripts
+2018-11-28T02:21:24.756Z - normal: Generating main.js from /Applications/CocosCreator 1.10.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-28T02:21:24.988Z - normal: Built to "/Users/mac/Documents/MatchVs/CuddlyBird/build/qqplay" successfully
