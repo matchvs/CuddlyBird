@@ -68,8 +68,8 @@ cc.Class({
         this.rivalLcon.setData(GLB.playerUserIds[1]);
     },
     checkLcon(){
-        if (this.playerLcon.icon.spriteFrame === null){
-            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+        if (!this.playerLcon.icon.spriteFrame){
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT);
             this.scheduleOnce(this.showLcon,1);
         }
     },

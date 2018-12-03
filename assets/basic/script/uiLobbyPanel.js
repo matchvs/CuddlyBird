@@ -6,6 +6,7 @@ cc.Class({
     properties: {},
 
     start() {
+
         this.nodeDict["guide"].on("click", this.beginnerCourse, this);
         this.nodeDict["randomRoom"].on("click", this.randomRoom, this);
         this.nodeDict["createRoom"].on("click", this.createRoom, this);
@@ -135,6 +136,4 @@ cc.Class({
     openBotton: function() {
         this.nodeDict["guide"].getComponent(cc.Button).interactable = true;
     }
-
-
 });

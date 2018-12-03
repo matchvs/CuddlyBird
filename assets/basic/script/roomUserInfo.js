@@ -17,6 +17,10 @@ cc.Class({
         userIcon: {
             default: null,
             type: cc.Sprite
+        },
+        invite:{
+            default: null,
+            type: cc.Node
         }
     },
 
@@ -27,10 +31,14 @@ cc.Class({
         this.kick.on("click", this.kickPlayer, this);
         this.userId = 0;
         this.userIcon.spriteFrame = null;
+        this.invite.active = true;
+        this.invite.getChildByName("invite").on("click", this.inviteFriend, this);
         clientEvent.on(clientEvent.eventType.playerAccountGet, this.userInfoSet, this);
     },
 
     setData: function(userId, ownerId) {
+        this.invite.active = false;
+        this.invite.getChildByName("invite").off("click", this.inviteFriend, this);
         this.userId = userId;
         if (this.userId === ownerId) {
             this.fangzhuNode.active = true;
@@ -63,7 +71,9 @@ cc.Class({
             }
         }
     },
-
+    inviteFriend(){
+        clientEvent.dispatch(clientEvent.eventType.inviteFriend, this);
+    },
     onDestroy() {
         clientEvent.off(clientEvent.eventType.playerAccountGet, this.userInfoSet, this);
     },

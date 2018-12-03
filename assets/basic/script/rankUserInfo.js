@@ -7,7 +7,7 @@ cc.Class({
         userIcon: cc.Sprite,
         userScoreLb: cc.Label,
         spriteBg:cc.Sprite,
-        frameBg:cc.SpriteFrame
+        frameBg:cc.SpriteFrame,
     },
 
     setData(rankIndex, data) {

@@ -20,6 +20,7 @@ cc.Class({
         clientEvent.on(clientEvent.eventType.kickPlayerResponse, this.kickPlayerResponse, this);
         clientEvent.on(clientEvent.eventType.kickPlayerNotify, this.kickPlayerNotify, this);
         clientEvent.on(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoomMedNotify, this);
+        clientEvent.on(clientEvent.eventType.inviteFriend, this.inviteFriend, this);
 
         var roomUserInfo1 = this.nodeDict["player1"].getComponent('roomUserInfo');
         var roomUserInfo2 = this.nodeDict["player2"].getComponent('roomUserInfo');
@@ -41,6 +42,17 @@ cc.Class({
             GLB.isRoomOwner = false;
             uiFunc.closeUI(this.node.name);
             this.node.destroy();
+        }
+    },
+
+    inviteFriend(){
+        cc.log("13465463154545646");
+        if (window.BK){
+            var data = {
+                roomId:this.roomId
+            }
+            //Game.GameManager.openTip("开始分享");
+            BK.QQ.shareToArk(0, '一起来玩游戏吧~', 'http://img.tianziyou.com/imgHub/Icon.jpg', true, data);
         }
     },
 
@@ -216,6 +228,7 @@ cc.Class({
         clientEvent.off(clientEvent.eventType.kickPlayerResponse, this.kickPlayerResponse, this);
         clientEvent.off(clientEvent.eventType.kickPlayerNotify, this.kickPlayerNotify, this);
         clientEvent.off(clientEvent.eventType.leaveRoomMedNotify, this.leaveRoomMedNotify, this);
+        clientEvent.off(clientEvent.eventType.inviteFriend, this.inviteFriend, this);
 
     }
 });

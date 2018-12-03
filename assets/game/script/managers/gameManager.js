@@ -5,7 +5,7 @@ cc.Class({
         uiTip:{
             type: cc.Prefab,
             default: null
-        }
+        },
     },
     blockInput() {
         Game.GameManager.getComponent(cc.BlockInputEvents).enabled = true;
@@ -28,6 +28,7 @@ cc.Class({
         this.bReconnect = false;
         this.bExit = true;
         this.number = 0;
+        this.roomId = null;
 
         this.start_game_time = new Date().getTime();
         this.network = window.network;
@@ -39,10 +40,15 @@ cc.Class({
         this.uiTipBk.parent = this.node;
         this.uiTipBk.active = false;
 
-        if (window.BK && BK.Audio.switch){
+        if (window.BK){
             BK.Audio.switch = false;
         }
-
+        if(window.BK && GameStatusInfo.gameParam){
+            var data = JSON.parse(GameStatusInfo.gameParam);
+            this.roomId = data.roomId;
+            GameStatusInfo.gameParam = null;
+            this.matchVsInit();
+        }
         this.schedule(this.checkLcon,2);
     },
 
@@ -207,6 +213,8 @@ cc.Class({
     joinRoomResponse: function(status, roomUserInfoList, roomInfo) {
         if (status !== 200) {
             console.log("失败 joinRoomResponse:" + status);
+            this.openTip("加入房间失败");
+            this.roomId = null;
             return;
         }
         var data = {
@@ -250,7 +258,8 @@ cc.Class({
     },
 
     errorResponse: function(error, msg) {
-        if (error === 406 || error === 405) {
+        if (error === 406 || error === 405 ||error === 409) {
+            this.recurLobby();
             return;
         }
         let recurLobby = true;
@@ -272,9 +281,7 @@ cc.Class({
                 cc.log("游戏界面存在");
             }
             if (recurLobby) {
-                setTimeout(function() {
-                    this.recurLobby();
-                }.bind(this), 2000);
+                this.scheduleOnce(this.recurLobby, 2);
             }
         }
     },
@@ -339,7 +346,7 @@ cc.Class({
                         uiTip.setData("无法获取房间信息，不能进行重新连接");
                     }
                 });
-                this.scheduleOnce(this.recurLobby(),2);
+                this.scheduleOnce(this.recurLobby,2);
                 return;
             }
             this.stopReconnectCountDown(true);
@@ -423,6 +430,8 @@ cc.Class({
             console.log('登录成功');
             if (info.roomID !== null && info.roomID !== "0") {
                 mvs.engine.reconnect();
+            } else if(Game.GameManager.roomId){
+                mvs.engine.joinRoom(this.roomId.toString(), "joinRoomSpecial");
             } else {
                 this.lobbyShow();
             }

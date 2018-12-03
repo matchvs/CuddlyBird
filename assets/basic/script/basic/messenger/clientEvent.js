@@ -14,6 +14,7 @@ window.clientEvent = {
         setCount:"setCount",
         updateMap:"updateMap",
         checkLcon:"checkLcon",
+        inviteFriend:"inviteFriend",
 
         playerAccountGet: "playerAccountGet",
         initResponse: "initResponse",

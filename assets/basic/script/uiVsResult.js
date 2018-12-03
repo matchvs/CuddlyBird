@@ -52,8 +52,8 @@ cc.Class({
     },
 
     checkLcon(){
-        if (this.player.icon.spriteFrame === null){
-            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+        if (!this.player.icon.spriteFrame){
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT);
             this.scheduleOnce(this.showLcon,1);
         }
     },

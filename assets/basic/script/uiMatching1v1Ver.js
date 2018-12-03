@@ -97,9 +97,9 @@ cc.Class({
         }
     },
     checkLcon(){
-        if (this.playerIcons[i].getComponent('playerIcon').playerSprite.spriteFrame === null
+        if (!this.playerIcons[i].getComponent('playerIcon').playerSprite.spriteFrame
         || this.joinRoom){
-            Game.GameManager.network.connect(GLB.IP, GLB.PORT,function(){});
+            Game.GameManager.network.connect(GLB.IP, GLB.PORT);
             this.scheduleOnce(this.showLcon,1);
         }
     },

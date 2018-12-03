@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 198,
-      "y": 38,
+      "x": 150,
+      "y": 26,
       "width": 1617,
       "height": 985,
       "layout": {
@@ -39,13 +39,29 @@
           {
             "children": [
               {
-                "active": 0,
                 "children": [
-                  "scene"
+                  {
+                    "active": 0,
+                    "children": [
+                      "scene"
+                    ],
+                    "height": 463.984375,
+                    "type": "panel",
+                    "width": 647.984375
+                  },
+                  {
+                    "active": 0,
+                    "children": [
+                      "node-library"
+                    ],
+                    "height": 463.984375,
+                    "type": "panel",
+                    "width": 264
+                  }
                 ],
                 "height": 463.984375,
-                "type": "panel",
-                "width": 938.984375
+                "type": "dock-h",
+                "width": 915
               },
               {
                 "active": 0,
@@ -55,12 +71,12 @@
                 ],
                 "height": 427,
                 "type": "panel",
-                "width": 938.984375
+                "width": 915
               }
             ],
             "height": 894,
             "type": "dock-v",
-            "width": 938.984375
+            "width": 915
           },
           {
             "active": 1,
@@ -70,13 +86,14 @@
             ],
             "height": 894,
             "type": "panel",
-            "width": 329
+            "width": 353
           }
         ],
         "type": "dock-h"
       },
       "panels": [
         "hierarchy",
+        "node-library",
         "console",
         "timeline",
         "inspector",
@@ -111,6 +128,12 @@
       "y": 233,
       "width": 500,
       "height": 522
+    },
+    "node-library": {
+      "x": 918,
+      "y": 351,
+      "width": 300,
+      "height": 502
     }
   }
 }
