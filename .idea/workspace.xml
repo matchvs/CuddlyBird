@@ -6,20 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7c04f5-1250-46aa-845c-32e6103cef0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/basic/messenger/clientEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/rankUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/basic/script/uiLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiMatching1v1Ver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiVsResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/basic/script/uiRankPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basic/script/uiRankPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/game/script/uiGamePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiGamePanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiLobbyPanelVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiRoomVer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resources/ui/uiVsResultVer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/lobby.fire" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scenes/lobby.fire" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/layout.windows.json" beforeDir="false" afterPath="$PROJECT_DIR$/local/layout.windows.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/logs/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/local/logs/project.log" afterDir="false" />
@@ -39,8 +30,8 @@
       <file leaf-file-name="gameManager.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+            <state relative-caret-position="315">
+              <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -48,8 +39,8 @@
       <file leaf-file-name="uiLobbyPanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
+            <state relative-caret-position="388">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -66,17 +57,35 @@
       <file leaf-file-name="uiLogin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+            <state relative-caret-position="-171">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uiRoom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoom.js">
+      <file leaf-file-name="UIFunc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="503">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiRankPanel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="804">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiLoading.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLoading.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -90,29 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Globals.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/Globals.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roomUserInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/basic/script/roomUserInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rankUserInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -130,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;网络连接中断</find>
       <find>网络连接中断</find>
       <find>bUiReconnection</find>
       <find>errorR</find>
@@ -158,8 +148,9 @@
       <find>&quot;邀请</find>
       <find>邀请</find>
       <find>roomAttrs</find>
-      <find>login</find>
       <find>error</find>
+      <find>uiRankPanel</find>
+      <find>login</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -197,8 +188,10 @@
         <option value="$PROJECT_DIR$/assets/basic/script/roomUserInfo.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiRoomList.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiRoom.js" />
-        <option value="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiLoading.js" />
         <option value="$PROJECT_DIR$/assets/basic/script/uiLogin.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js" />
+        <option value="$PROJECT_DIR$/assets/basic/script/uiRankPanel.js" />
         <option value="$PROJECT_DIR$/assets/game/script/managers/gameManager.js" />
       </list>
     </option>
@@ -218,8 +211,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="32" />
+    <option name="x" value="286" />
+    <option name="y" value="53" />
     <option name="width" value="1688" />
     <option name="height" value="989" />
   </component>
@@ -376,17 +369,18 @@
       <workItem from="1541555644266" duration="2368000" />
       <workItem from="1543213564850" duration="12681000" />
       <workItem from="1543396191473" duration="1730000" />
-      <workItem from="1543545843417" duration="24604000" />
+      <workItem from="1543545843417" duration="30673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299228000" />
+    <option name="totallyTimeSpent" value="305297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="32" width="1688" height="989" extended-state="0" />
+    <frame x="286" y="53" width="1688" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22555488" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -398,7 +392,6 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -419,7 +412,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/game/script/managers/effectManager.js.meta" />
     <entry file="file://$PROJECT_DIR$/assets/game/script/move/jump.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -595,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/rankNetwork/network.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -634,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="59" column="20" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -686,31 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRoomList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -728,10 +685,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/basic/UIFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/rankUserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLobbyPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiLoading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/basic/script/uiRankPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/game/script/managers/gameManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
         </state>
       </provider>
     </entry>

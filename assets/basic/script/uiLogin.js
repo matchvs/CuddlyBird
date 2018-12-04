@@ -1,7 +1,13 @@
 var uiPanel = require("uiPanel");
 cc.Class({
     extends: uiPanel,
-    properties: {},
+    properties: {
+        startButton:{
+            type:cc.Button,
+            default:null
+        }
+
+    },
 
     onLoad() {
         this._super();
@@ -13,6 +19,14 @@ cc.Class({
     },
 
     startGame() {
+        var uiLoading = uiFunc.findUI("uiLoading");
+        if (!uiLoading){
+            uiFunc.openUI("uiLoading");
+        }
+        this.startButton.interactable = false;
+        this.scheduleOnce(()=>{
+            this.startButton.interactable = true;
+        },5)
         Game.GameManager.matchVsInit();
     },
 

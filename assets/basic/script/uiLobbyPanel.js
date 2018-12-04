@@ -31,7 +31,6 @@ cc.Class({
 
     rank: function() {
         Game.GameManager.blockInput();
-
         Game.GameManager.getRankData(function(data) {
             uiFunc.openUI("uiRankPanelVer", function(obj) {
                 var uiRankPanelScript = obj.getComponent("uiRankPanel");

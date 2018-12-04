@@ -428,6 +428,8 @@ cc.Class({
             console.log('登录失败,异步回调错误码:' + info.status);
         } else {
             console.log('登录成功');
+            var uiLoading = uiFunc.findUI("uiLoading");
+            uiLoading.getComponent("uiLoading").exit();
             if (info.roomID !== null && info.roomID !== "0") {
                 mvs.engine.reconnect();
             } else if(Game.GameManager.roomId){

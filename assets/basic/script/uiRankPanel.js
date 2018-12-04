@@ -24,6 +24,15 @@ cc.Class({
 
     onLoad: function() {
         this._super();
+        var uiLoading = uiFunc.findUI("uiLoading");
+        if (!uiLoading){
+            uiFunc.openUI("uiLoading",function(obj) {
+                var uiLoadingScript = obj.getComponent("uiLoading");
+                if (uiLoadingScript) {
+                    uiLoadingScript.hideBg();
+                }
+            });
+        }
         this.rankPrefab.active = false;
         this.rank1Node.active = false;
         this.rank2Node.active = false;
@@ -62,5 +71,12 @@ cc.Class({
                 rankInfo.setData(i, rankdata[i]);
             }
         }
+        this.schedule(this.closeLoading,0.5);
+
+    },
+    closeLoading(){
+        this.unschedule(this.closeLoading);
+        var uiLoading = uiFunc.findUI("uiLoading");
+        uiLoading.getComponent("uiLoading").exit();
     }
 });
