@@ -1,10 +1,8 @@
 {
-  "actualPlatform": "QQ Play",
   "apiLevel": "",
   "appABIs": [],
   "buildPath": "./build",
   "debug": false,
-  "embedWebDebugger": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
   "keystorePassword": "",
@@ -15,5 +13,7 @@
   "sourceMaps": false,
   "template": "link",
   "useDebugKeystore": true,
-  "vsVersion": "auto"
+  "vsVersion": "auto",
+  "includeEruda": false,
+  "androidStudio": true
 }
